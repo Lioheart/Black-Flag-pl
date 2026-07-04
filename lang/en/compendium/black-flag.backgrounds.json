@@ -1,0 +1,180 @@
+{
+    "label": "Backgrounds (SRD)",
+    "mapping": {
+        "description": "system.description.value",
+        "short": "system.description.short",
+        "requirements": "system.requirements",
+        "materials": "system.materials.value",
+        "chat": "system.description.chat",
+        "activation": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "activities": {
+            "path": "system.activities",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "name",
+                "type"
+            ],
+            "mapping": {
+                "name": "name",
+                "description": "description",
+                "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
+                "duration": "duration.special",
+                "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
+                "range": {
+                    "path": "range",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "target",
+                    "converter": "imperialToMetric"
+                },
+                "profiles": {
+                    "path": "profiles",
+                    "converter": "nameCollection"
+                }
+            }
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "advancement": {
+            "path": "system.advancement",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "title"
+            ],
+            "mapping": {
+                "title": "title",
+                "hint": "hint",
+                "_variants": [
+                    {
+                        "_when": {
+                            "path": "type",
+                            "equals": "ScaleValue"
+                        },
+                        "distance": {
+                            "path": "configuration.distance",
+                            "converter": "imperialToMetric"
+                        },
+                        "scale": {
+                            "path": "configuration.scale",
+                            "converter": "imperialToMetric"
+                        }
+                    }
+                ]
+            }
+        },
+        "movement": {
+            "path": "system.movement",
+            "converter": "imperialToMetric"
+        },
+        "weight": {
+            "path": "system.weight",
+            "converter": "imperialToMetric"
+        },
+        "range": {
+            "path": "system.range",
+            "converter": "imperialToMetric"
+        },
+        "capacityWeight": {
+            "path": "system.capacity.weight",
+            "converter": "imperialToMetric"
+        },
+        "senses": {
+            "path": "system.senses",
+            "converter": "imperialToMetric"
+        },
+        "target": {
+            "path": "system.target",
+            "converter": "imperialToMetric"
+        },
+        "volume": {
+            "path": "system.capacity.volume",
+            "converter": "imperialToMetric"
+        }
+    },
+    "entries": {
+        "Criminal": {
+            "name": "Criminal",
+            "description": "<p>@Embed[.Advancement.S0mJoNomg3fwsPh9 inline]{Skill Proficiencies}</p><p>@Embed[.Advancement.uhDnJGd03n5tf8QI inline]{Additional Proficiencies}</p><p>@Embed[.Advancement.DeHsdenX3W8whQNx inline]{Equipment}</p><h5>Talent</h5><p>@Embed[.Advancement.f5eehJFY4H9AkMBJ inline list=false]</p>",
+            "advancement": {
+                "Skill Proficiencies": {
+                    "title": "Skill Proficiencies",
+                    "hint": "Choose two from Stealth, Investigation, Insight, or Deception."
+                },
+                "Additional Proficiencies": {
+                    "title": "Additional Proficiencies",
+                    "hint": "You know Thieves’ Cant. If you already know this language, you learn a different language of your choice. Gain proficiency with a tool and a vehicle."
+                },
+                "Talent": {
+                    "title": "Talent",
+                    "hint": "You have eked out a living on the fringes of lawful society. Choose a talent from this list to represent your experience: Covert, Scrutinous, or Touch of Luck."
+                },
+                "DeHsdenX3W8whQNx": {
+                    "hint": "Five pieces of chalk, a grappling hook, a set of dark traveler’s clothes or a costume, and a pouch containing 10 gp."
+                }
+            }
+        },
+        "Scholar": {
+            "name": "Scholar",
+            "description": "<p>@Embed[.Advancement.pEYskJJdpwVHJhJi inline]{Skill Proficiencies}</p><p>@Embed[.Advancement.3Qnb0oAVdHBgsK8t inline]{Additional Proficiencies}</p><p>@Embed[.Advancement.siKPfdbIxGakSmTN inline]{Equipment}</p><h5>Talent</h5><p>@Embed[.Advancement.8jc0KWnsuX1WvfdT inline list=false]</p>",
+            "advancement": {
+                "Skill Proficiencies": {
+                    "title": "Skill Proficiencies",
+                    "hint": "Choose two from Arcana, History, Nature, or Religion."
+                },
+                "Additional Proficiencies": {
+                    "title": "Additional Proficiencies",
+                    "hint": "Learn two additional languages of your choice or gain proficiency with a tool or vehicle relevant to your field of study."
+                },
+                "Talent": {
+                    "title": "Talent",
+                    "hint": "You have spent time researching particular academic subjects at an institute of learning or under a knowledgeable teacher. Choose a talent from this list to represent your experience: Polyglot, Ritualist, or School Specialization."
+                },
+                "siKPfdbIxGakSmTN": {
+                    "hint": "A bottle of ink, a quill, a small knife, a\nreference book on a highly specific subject, a set of common clothes, and a pouch containing 10 gp."
+                }
+            }
+        },
+        "Soldier": {
+            "name": "Soldier",
+            "description": "<p>@Embed[.Advancement.LU90CIyYZNPt2LMv inline]{Skill Proficiencies}</p><p>@Embed[.Advancement.q8kgh3KDjxCpXcH5 inline]{Additional Proficiencies}</p><p>@Embed[.Advancement.zDKJ2aoVzMQ2mlu1 inline]{Equipment}</p><h5>Talent</h5><p>@Embed[.Advancement.zyeIe2LttZsNCm3U inline list=false]</p>",
+            "advancement": {
+                "Skill Proficiencies": {
+                    "title": "Skill Proficiencies",
+                    "hint": "Choose two from Animal Handling, Athletics, Medicine, or Survival."
+                },
+                "Additional Proficiencies": {
+                    "title": "Additional Proficiencies",
+                    "hint": "Gain proficiency with a tool and a vehicle of your choice."
+                },
+                "Talent": {
+                    "title": "Talent",
+                    "hint": "As a soldier, you have received special training or honed natural capabilities that kept you safe during your service. Choose a talent from the following list to represent this experience."
+                },
+                "zDKJ2aoVzMQ2mlu1": {
+                    "hint": "A symbol of rank (like a letter, badge, or identification tags), a mess kit, a pack of playing cards or a set of dice, a set of common clothes, and a pouch containing 10 gp."
+                }
+            }
+        },
+        "Symbol of Rank": {
+            "name": "Symbol of Rank",
+            "description": "<p>Such as a letter, badge, or identification tags.</p>"
+        }
+    },
+    "folders": {
+        "Equipment": "Equipment"
+    }
+}

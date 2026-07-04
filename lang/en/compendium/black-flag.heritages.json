@@ -1,0 +1,327 @@
+{
+    "label": "Heritages",
+    "mapping": {
+        "description": "system.description.value",
+        "short": "system.description.short",
+        "requirements": "system.requirements",
+        "materials": "system.materials.value",
+        "chat": "system.description.chat",
+        "activation": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "activities": {
+            "path": "system.activities",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "name",
+                "type"
+            ],
+            "mapping": {
+                "name": "name",
+                "description": "description",
+                "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
+                "duration": "duration.special",
+                "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
+                "range": {
+                    "path": "range",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "target",
+                    "converter": "imperialToMetric"
+                },
+                "profiles": {
+                    "path": "profiles",
+                    "converter": "nameCollection"
+                }
+            }
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "advancement": {
+            "path": "system.advancement",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "title"
+            ],
+            "mapping": {
+                "title": "title",
+                "hint": "hint",
+                "_variants": [
+                    {
+                        "_when": {
+                            "path": "type",
+                            "equals": "ScaleValue"
+                        },
+                        "distance": {
+                            "path": "configuration.distance",
+                            "converter": "imperialToMetric"
+                        },
+                        "scale": {
+                            "path": "configuration.scale",
+                            "converter": "imperialToMetric"
+                        }
+                    }
+                ]
+            }
+        },
+        "movement": {
+            "path": "system.movement",
+            "converter": "imperialToMetric"
+        },
+        "weight": {
+            "path": "system.weight",
+            "converter": "imperialToMetric"
+        },
+        "range": {
+            "path": "system.range",
+            "converter": "imperialToMetric"
+        },
+        "capacityWeight": {
+            "path": "system.capacity.weight",
+            "converter": "imperialToMetric"
+        },
+        "senses": {
+            "path": "system.senses",
+            "converter": "imperialToMetric"
+        },
+        "target": {
+            "path": "system.target",
+            "converter": "imperialToMetric"
+        },
+        "volume": {
+            "path": "system.capacity.volume",
+            "converter": "imperialToMetric"
+        }
+    },
+    "entries": {
+        "Ancestral Arts": {
+            "name": "Ancestral Arts",
+            "description": "<p>You gain proficiency with Construction tools. Double your PB for any ability check you make that uses them. You also gain proficiency with one type of martial weapon of your choice.</p>",
+            "advancement": {
+                "Ancestral Construction": {
+                    "title": "Ancestral Construction"
+                },
+                "Ancestral Weapon": {
+                    "title": "Ancestral Weapon"
+                }
+            }
+        },
+        "Beast Affinity": {
+            "name": "Beast Affinity",
+            "description": "<p>Using gestures and sounds, you can communicate simple ideas with Beasts and creatures with the Animal tag, and you have advantage on checks made to interact with such creatures.</p>"
+        },
+        "Canopy Walker": {
+            "name": "Canopy Walker",
+            "description": "<p>You have a climbing speed equal to your walking speed.</p>",
+            "advancement": {
+                "Canopy Walker": {
+                    "title": "Canopy Walker",
+                    "hint": "You have a climbing speed equal to your walking speed."
+                }
+            }
+        },
+        "Comforts of Home": {
+            "name": "Comforts of Home",
+            "description": "<p>As part of a long rest, you can cook a meal, tell stories, or perform some other activity that comforts your allies. Choose a number of creatures who participated in the long rest equal to your PB (this can include you). Those creatures gain temporary HP equal to twice your PB. These temporary HP last until expended or until you complete your next long rest.</p>"
+        },
+        "Cosmopolitan": {
+            "name": "Cosmopolitan",
+            "description": "<p>@Embed[Compendium.black-flag.heritages.Item.BlvWLpQaiW5RrUhi inline]{Street Smarts}</p><p>@Embed[Compendium.black-flag.heritages.Item.ytqmqGeJ0twlpqIY inline]{Worldly Wisdom}</p><p>@Embed[.Advancement.sqKfqiFDAuLNgnQ3 inline]{Languages}</p>",
+            "advancement": {
+                "sqKfqiFDAuLNgnQ3": {
+                    "hint": "You know Common and three additional languages of your choice. Typical cosmopolitan heritage characters choose Dwarvish and Elvish."
+                }
+            }
+        },
+        "Cottage": {
+            "name": "Cottage",
+            "description": "<p>@Embed[Compendium.black-flag.heritages.Item.VvebtMb01hurrL2J inline]{Comforts of Home}</p><p>@Embed[Compendium.black-flag.heritages.Item.gf9BOd0EZXxzSbLc inline]{Homesteader}</p><p>@Embed[.Advancement.77WInvnTSQWABUBd inline]{Languages}</p>",
+            "advancement": {
+                "Languages": {
+                    "title": "Languages",
+                    "hint": "You know Common and one additional language of your choice. Typical cottage heritage characters choose Halfling or Gnomish."
+                }
+            }
+        },
+        "Diaspora": {
+            "name": "Diaspora",
+            "description": "<p>@Embed[Compendium.black-flag.heritages.Item.tF7uvryjhYzDm0SQ inline]{Preserved Traditions}</p><p>@Embed[Compendium.black-flag.heritages.Item.Xc7odqrgCmVFSdaq inline]{Timeless Resolve}</p><p>@Embed[.Advancement.NTXxZgJtZKXgkT2f inline]{Languages}</p>",
+            "advancement": {
+                "Languages": {
+                    "title": "Languages",
+                    "hint": "You know Common and one additional language of your choice. Many diaspora communities learn the languages most common to soldiers, mercenaries, and traders near the area in which they reside, most often Orcish or Dwarven."
+                }
+            }
+        },
+        "Eye for Quality": {
+            "name": "Eye for Quality",
+            "description": "<p>When you make an ability check related to the origin or purpose of an object or structure made of metal or stone, you can add your PB to the roll. If you have proficiency in a relevant skill or tool, double your PB for the roll.</p>"
+        },
+        "Grove": {
+            "name": "Grove",
+            "description": "<p>@Embed[Compendium.black-flag.heritages.Item.dY7HGWQ3eTZwCoJW inline]{Canopy Walker}</p><p>@Embed[Compendium.black-flag.heritages.Item.PgizKCeRI9qz8mGW inline]{Nature's Camouflage}</p><p>@Embed[.Advancement.5T1mnPI3SisIsc7h inline]{Languages}</p>",
+            "advancement": {
+                "5T1mnPI3SisIsc7h": {
+                    "hint": "You know Common and one additional language of your choice. Typical grove heritage characters choose Elvish."
+                }
+            }
+        },
+        "Homesteader": {
+            "name": "Homesteader",
+            "description": "<p>You have proficiency in either the Animal Handling or Nature skill.</p>",
+            "advancement": {
+                "Homesteader": {
+                    "title": "Homesteader"
+                }
+            }
+        },
+        "Natural Predator": {
+            "name": "Natural Predator",
+            "description": "<p>You have proficiency in the Intimidation skill. You have advantage on Intimidation checks to influence Beasts and creatures with the Animal tag.</p>",
+            "advancement": {
+                "Natural Predator": {
+                    "title": "Natural Predator"
+                }
+            }
+        },
+        "Nature's Camouflage": {
+            "name": "Nature's Camouflage",
+            "description": "<p>You have advantage on DEX (Stealth) checks made while you are lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena. While in such conditions, you can always attempt to take the Hide action, even if circumstances would not normally allow you to do so.</p>"
+        },
+        "Nomadic": {
+            "name": "Nomadic",
+            "description": "<p>@Embed[Compendium.black-flag.heritages.Item.GEB1SbyIvTiu9gCU inline]{Resilient}</p><p>@Embed[Compendium.black-flag.heritages.Item.YcFIqAdJ28v7FKHe inline]{Traveler}</p><p>@Embed[.Advancement.Otvbikum0s7Bz1e8 inline]{Languages}</p>",
+            "advancement": {
+                "Otvbikum0s7Bz1e8": {
+                    "hint": "You know Common and one additional language of your choice. Depending on the regions your people frequent or the kinds of communities your people trade with, typical nomadic heritage characters choose Dwarvish or Elvish."
+                }
+            }
+        },
+        "Preserved Traditions": {
+            "name": "Preserved Traditions",
+            "description": "<p>You gain proficiency with the History skill. You also gain proficiency with one type of martial weapon of your choice.</p>",
+            "advancement": {
+                "Preserved Traditions": {
+                    "title": "Preserved Traditions"
+                }
+            }
+        },
+        "Resilient": {
+            "name": "Resilient",
+            "description": "<p>You have advantage on checks or saves made to resist debilitating weather effects, such as those caused by extreme heat or cold. In addition, when you complete a short rest, you can reduce your exhaustion level by one. Once used, you can't reduce your exhaustion level in this way again until you complete a long rest.</p>",
+            "activities": {
+                "Reduce Exhaustion": {
+                    "name": "Reduce Exhaustion",
+                    "description": "<p>When you complete a short rest, you can reduce your exhaustion level by one.</p>"
+                }
+            }
+        },
+        "Scurry": {
+            "name": "Scurry",
+            "description": "<p>As a bonus action, you can move up to 10 feet without provoking opportunity attacks. This movement doesn't trigger traps or hazards that you are aware of, even if they are armed.</p>",
+            "activities": {
+                "Scurry": {
+                    "name": "Scurry"
+                }
+            }
+        },
+        "Shepherd's Gift": {
+            "name": "Shepherd's Gift",
+            "description": "<p>You have proficiency in the Animal Handling skill. Any Beast or creature with the Animal tag whose CR is equal to or less than your PB that targets you with an attack must first make a [[/check wisdom]] check contested by your [[/skill wisdom animalHandling]]. If you succeed, the creature must choose a new target or lose the attack.</p>",
+            "advancement": {
+                "Shepherd's Gift": {
+                    "title": "Shepherd's Gift"
+                }
+            }
+        },
+        "Slayer": {
+            "name": "Slayer",
+            "description": "<p>@Embed[Compendium.black-flag.heritages.Item.6J1NfgxVkXX2RIfE inline]{Ferocity}</p><p>@Embed[Compendium.black-flag.heritages.Item.SqSal1OIRyeCBN4e inline]{Natural Predator}</p><p>@Embed[.Advancement.keARfPlTLtOG9ree inline]{Languages}</p>",
+            "advancement": {
+                "keARfPlTLtOG9ree": {
+                    "hint": "You know Common and one additional language of your choice. Typical slayer heritage characters choose Primordial or Sylvan."
+                }
+            }
+        },
+        "Stone": {
+            "name": "Stone",
+            "description": "<p>@Embed[Compendium.black-flag.heritages.Item.ae45yXHxqribkGWz inline]{Ancestral Arts}</p><p>@Embed[Compendium.black-flag.heritages.Item.XOetZrMvNqZpHNqk inline]{Eye for Quality}</p><p>@Embed[.Advancement.xXPTXP1d51PbAzyc inline]{Languages}</p>",
+            "advancement": {
+                "xXPTXP1d51PbAzyc": {
+                    "hint": "You know Common and one additional language of your choice. Typical stone heritage characters choose Dwarvish."
+                }
+            }
+        },
+        "Street Smarts": {
+            "name": "Street Smarts",
+            "description": "<p>While in a city or other urban environment, you have advantage on ability checks made to avoid getting lost and checks made to find a particular kind of business or other destination open to the public. In addition, while you are in such environments, you can’t be surprised unless you are asleep or otherwise incapacitated.</p>"
+        },
+        "Supplicant": {
+            "name": "Supplicant",
+            "description": "<p>You have proficiency in either the Insight or Persuasion skill. When a creature within 30 feet of you spends Doom, you have advantage on ability checks and saves until the beginning of your next turn.</p>",
+            "advancement": {
+                "Supplicant": {
+                    "title": "Supplicant"
+                }
+            }
+        },
+        "Timeless Resolve": {
+            "name": "Timeless Resolve",
+            "description": "<p>When you or an allied creature within 5 feet of you makes a save against becoming frightened, you and the ally have advantage on the save.</p>"
+        },
+        "Tracker": {
+            "name": "Tracker",
+            "description": "<p>When you make a check to locate, spot, or track a creature, you can add your PB to the roll. If you have proficiency in the skill or tool being used, double your PB for the roll.</p>"
+        },
+        "Traveler": {
+            "name": "Traveler",
+            "description": "<p>You have proficiency in the Survival skill.</p>",
+            "advancement": {
+                "Traveler": {
+                    "title": "Traveler"
+                }
+            }
+        },
+        "Wildlands": {
+            "name": "Wildlands",
+            "description": "<p>@Embed[Compendium.black-flag.heritages.Item.60G46JAl2vtIp8PU inline]{Beast Affinity}</p><p>@Embed[Compendium.black-flag.heritages.Item.nPYmLXHoB7uhALKV inline]{Shepherd's Gift}</p><p>@Embed[.Advancement.6XFMqppJfCZOIRbe inline]{Languages}</p>",
+            "advancement": {
+                "6XFMqppJfCZOIRbe": {
+                    "hint": "You know Common and one additional language of your choice. Typical wildlands heritage characters choose Sylvan."
+                }
+            }
+        },
+        "Worldly Wisdom": {
+            "name": "Worldly Wisdom",
+            "description": "<p>You have proficiency with the History skill. When you make a check related to understanding the purpose or significance of a building, rite, or object from a culture you aren’t familiar with, you can add your PB to the roll. If you have proficiency in a relevant skill or tool, double your PB for the roll.</p>",
+            "advancement": {
+                "Worldly Wisdom": {
+                    "title": "Worldly Wisdom"
+                }
+            }
+        }
+    },
+    "folders": {
+        "Cosmopolitan Features": "Cosmopolitan Features",
+        "Cottage Features": "Cottage Features",
+        "Diaspora Features": "Diaspora Features",
+        "Grove Features": "Grove Features",
+        "Nomadic Features": "Nomadic Features",
+        "Slayer Features": "Slayer Features",
+        "Stone Features": "Stone Features",
+        "Supplicant Features": "Supplicant Features",
+        "Wildlands Features": "Wildlands Features"
+    }
+}

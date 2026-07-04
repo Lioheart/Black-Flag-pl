@@ -1,0 +1,341 @@
+{
+    "label": "Lineages",
+    "mapping": {
+        "description": "system.description.value",
+        "short": "system.description.short",
+        "requirements": "system.requirements",
+        "materials": "system.materials.value",
+        "chat": "system.description.chat",
+        "activation": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "activities": {
+            "path": "system.activities",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "name",
+                "type"
+            ],
+            "mapping": {
+                "name": "name",
+                "description": "description",
+                "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
+                "duration": "duration.special",
+                "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
+                "range": {
+                    "path": "range",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "target",
+                    "converter": "imperialToMetric"
+                },
+                "profiles": {
+                    "path": "profiles",
+                    "converter": "nameCollection"
+                }
+            }
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "advancement": {
+            "path": "system.advancement",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "title"
+            ],
+            "mapping": {
+                "title": "title",
+                "hint": "hint",
+                "_variants": [
+                    {
+                        "_when": {
+                            "path": "type",
+                            "equals": "ScaleValue"
+                        },
+                        "distance": {
+                            "path": "configuration.distance",
+                            "converter": "imperialToMetric"
+                        },
+                        "scale": {
+                            "path": "configuration.scale",
+                            "converter": "imperialToMetric"
+                        }
+                    }
+                ]
+            }
+        },
+        "movement": {
+            "path": "system.movement",
+            "converter": "imperialToMetric"
+        },
+        "weight": {
+            "path": "system.weight",
+            "converter": "imperialToMetric"
+        },
+        "range": {
+            "path": "system.range",
+            "converter": "imperialToMetric"
+        },
+        "capacityWeight": {
+            "path": "system.capacity.weight",
+            "converter": "imperialToMetric"
+        },
+        "senses": {
+            "path": "system.senses",
+            "converter": "imperialToMetric"
+        },
+        "target": {
+            "path": "system.target",
+            "converter": "imperialToMetric"
+        },
+        "volume": {
+            "path": "system.capacity.volume",
+            "converter": "imperialToMetric"
+        }
+    },
+    "entries": {
+        "Agile": {
+            "name": "Agile",
+            "description": "<p>Sharp claws, cloven hooves, robust limbs, reversed joints, or suction pads on your hands and feet allow you to scrabble up trees, rock faces, and uneven surfaces with ease. You have a climb speed equal to your walking speed. In addition, you have advantage on saves made to avoid being knocked prone.</p>",
+            "advancement": {
+                "Climb Speed": {
+                    "title": "Climb Speed",
+                    "hint": "You have a climbing speed equal to your walking speed."
+                }
+            }
+        },
+        "Ambitious": {
+            "name": "Ambitious",
+            "description": "<p>You gain proficiency in one skill of your choice, and you gain one talent of your choice. This talent can be from any of the talent lists, but you must meet the talent’s prerequisites if any are required.</p>",
+            "advancement": {
+                "Ambitious (skill)": {
+                    "title": "Ambitious (skill)"
+                },
+                "Ambitious (talent)": {
+                    "title": "Ambitious (talent)"
+                }
+            }
+        },
+        "Animal Instinct": {
+            "name": "Animal Instinct",
+            "description": "<p>You have proficiency in either the Perception or Survival skill (your choice).</p>",
+            "advancement": {
+                "Animal Instinct": {
+                    "title": "Animal Instinct"
+                }
+            }
+        },
+        "Aquatic": {
+            "name": "Aquatic",
+            "description": "<p>Oily fur, scales, fins, webbed hands and feet, or long, gangly limbs are common for your people. You have a swimming speed equal to your walking speed. You can hold your breath for up to 20 minutes.</p>",
+            "advancement": {
+                "Swim Speed": {
+                    "title": "Swim Speed",
+                    "hint": "You have a swimming speed equal to your walking speed."
+                }
+            }
+        },
+        "Avian": {
+            "name": "Avian",
+            "description": "<p>Leathery, feathery, or gossamer wings sprout from your back or connect to your outstretched arms. You have a flying speed equal to your walking speed. You can’t fly while wearing medium or heavy armor. Carrying a heavy load or a creature of your size or larger while flying reduces your speed by half.</p>",
+            "advancement": {
+                "Fly Speed": {
+                    "title": "Fly Speed",
+                    "hint": "You have a flying speed equal to your walking speed."
+                }
+            }
+        },
+        "Beastkin": {
+            "name": "Beastkin",
+            "description": "<p>Your beastkin character has the following hereditary traits.</p><p><em><strong>Age.</strong></em> Beastkin mature far more quickly than most Humanoids, reaching adulthood within 5 years. Though they may live nearly a century, some beastkin live only 20 or 30 years.</p><p>@Embed[.Advancement.gBcXRsYlpRJ7Bbvh inline]{Size}</p><p><em><strong>Speed.</strong></em> Your base walking speed is 30 feet.</p><p>@Embed[Compendium.black-flag.lineages.Item.zCFysqhfSYQLsLbn inline]{Animal Instinct}</p><p>@Embed[Compendium.black-flag.lineages.Item.sZo4dk5NpkJme6et inline]{Natural Weapons}</p><p>@Embed[Compendium.black-flag.lineages.Item.1OhikzT29y1Ulr47 inline]{Natural Adaptation}</p>",
+            "advancement": {
+                "gBcXRsYlpRJ7Bbvh": {
+                    "hint": "Your size is Medium or Small. Beastkin vary in weight and height, depending on their Beast characteristics. Most are between 4 and 8 feet tall, but if you choose to play a beastkin shorter than 4 feet, you can choose your size to be Small. Your weight varies depending on your Beast characteristics. For example, a Medium beastkin descended from bears likely weighs upward of 350 pounds, while an avian beastkin of the same size is likely to weigh around 100 pounds."
+                }
+            }
+        },
+        "Darkvision": {
+            "name": "Darkvision",
+            "description": "<p>You have darkvision to a range of 60 feet.</p>",
+            "advancement": {
+                "Darkvision": {
+                    "title": "Darkvision",
+                    "hint": "You have darkvision to a range of 60 feet."
+                }
+            }
+        },
+        "Dwarf": {
+            "name": "Dwarf",
+            "description": "<p>Your dwarf character has the following hereditary traits.</p><p><em><strong>Age.</strong></em> Dwarves are physically mature around age 20, but most consider themselves young until they reach age 50. On average, they live about 350 years.</p><p>@Embed[.Advancement.l1kfpwuGklkXVKel inline]{Size}</p><p><em><strong>Speed.</strong></em> Your base walking speed is 30 feet.</p><p>@Embed[Compendium.black-flag.lineages.Item.JggMXx1dvirjYkV9 inline]{Darkvision}</p><p>@Embed[Compendium.black-flag.lineages.Item.Ki3mxDpMO2TGLL24 inline]{Dwarven Resilience}</p><p>@Embed[Compendium.black-flag.lineages.Item.yjDyRfJH4hplyKfO inline]{Dwarven Toughness}</p>",
+            "advancement": {
+                "l1kfpwuGklkXVKel": {
+                    "hint": "Your size is Medium. Dwarves vary little in height or size, with most standing between 4 and 5 feet tall. Even the smallest dwarves possess broad frames and rarely weigh less than 150 pounds."
+                }
+            }
+        },
+        "Dwarven Resilience": {
+            "name": "Dwarven Resilience",
+            "description": "<p>You have advantage on saves against becoming poisoned, and you are resistant to poison damage.</p>",
+            "advancement": {
+                "Poison Resistance": {
+                    "title": "Poison Resistance",
+                    "hint": "You have advantage on saves against becoming poisoned, and you are resistant to poison damage."
+                }
+            }
+        },
+        "Dwarven Toughness": {
+            "name": "Dwarven Toughness",
+            "description": "<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>",
+            "advancement": {
+                "Toughness": {
+                    "title": "Toughness",
+                    "hint": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+                }
+            }
+        },
+        "Elf": {
+            "name": "Elf",
+            "description": "<p>Your elf character has the following hereditary traits.</p><p><em><strong>Age.</strong></em> Although elves reach physical maturity around age 20, mental and emotional faculties reach full maturity around the age of 100. Elves can live to be 750 years old.</p><p>@Embed[.Advancement.o6VRoFXrjVpeUUTc inline]{Size}</p><p><em><strong>Speed.</strong></em> Your base walking speed is 30 feet.</p><p>@Embed[Compendium.black-flag.lineages.Item.cVnYCq9cu59IFkuJ inline]{Heightened Senses}</p><p>@Embed[Compendium.black-flag.lineages.Item.vbtLke61QI5NPFLO inline]{Magic Ancestry}</p><p>@Embed[Compendium.black-flag.lineages.Item.831o9gvKiBO70RpI inline]{Trance}</p>",
+            "advancement": {
+                "o6VRoFXrjVpeUUTc": {
+                    "hint": "Your size is Medium. Elves range from under 5 feet to over 6 feet tall and tend toward slender builds, averaging around 110 pounds."
+                }
+            }
+        },
+        "Gnomish": {
+            "name": "Gnomish",
+            "description": "<p>Your ancestors made their homes underground or in dark woodlands, providing you with darkvision to a range of 60 feet. In addition, you learn the @UUID[Compendium.black-flag.spells.Item.AR6lGdaHEnUy6Em6]{minor illusion} cantrip. Choose whether INT, WIS, or CHA is your spellcasting ability for this spell during character creation.</p>",
+            "advancement": {
+                "Gnomish Magic": {
+                    "title": "Gnomish Magic"
+                },
+                "Darkvision": {
+                    "title": "Darkvision",
+                    "hint": "You have darkvision to a range of 60 feet."
+                }
+            }
+        },
+        "Grounded": {
+            "name": "Grounded",
+            "description": "<p>Once per day, when you fail a save, you can reroll the die and use the new roll. Regardless of whether the new roll is a success or failure, you generate 1 Luck.</p>",
+            "activities": {
+                "Re-roll Save": {
+                    "name": "Re-roll Save",
+                    "condition": "When you fail a save",
+                    "activationCondition": "When you fail a save"
+                }
+            }
+        },
+        "Halfling": {
+            "name": "Halfling",
+            "description": "<p>Your ancestors made their homes on the surface, displaying outsized pluck to drive back hostile wildlife and monsters. You have advantage on saves against being charmed or frightened.</p>"
+        },
+        "Heightened Senses": {
+            "name": "Heightened Senses",
+            "description": "<p>You have advantage on Perception checks that rely on sight or hearing. You can see through lightly obscured areas normally and areas of dim light as if it were bright light.</p>"
+        },
+        "Human": {
+            "name": "Human",
+            "description": "<p>Your human character has the following hereditary traits.</p><p><em><strong>Age.</strong></em> Humans reach adulthood in their late teenage years and rarely live to be more than 100 years old.</p><p>@Embed[.Advancement.U2E2ShFqidehrX3I inline]{Size}</p><p><em><strong>Speed.</strong></em> Your base walking speed is 30 feet.</p><p>@Embed[Compendium.black-flag.lineages.Item.nnTLBZROcTelysG5 inline]{Ambitious}</p>",
+            "advancement": {
+                "U2E2ShFqidehrX3I": {
+                    "hint": "Your size is Medium or Small. Humans vary in height and weight, but most adults range between 5 feet and 6 feet tall and average around 150 pounds. If you choose to play a human shorter than 4 feet however, you can choose your size to be Small."
+                }
+            }
+        },
+        "Magic Ancestry": {
+            "name": "Magic Ancestry",
+            "description": "<p>You have advantage on saves against being charmed.</p>",
+            "advancement": {
+                "Charm Resistance": {
+                    "title": "Charm Resistance"
+                }
+            }
+        },
+        "Natural Adaptation": {
+            "name": "Natural Adaptation",
+            "description": "<p>You inherit one of the following traits determined by what kind of animal characteristics you want your character to have:</p><p>@Embed[.Advancement.OvwPv4fjHZaHlH7A inline style=list]</p>",
+            "advancement": {
+                "Natural Adaptation": {
+                    "title": "Natural Adaptation",
+                    "hint": "You inherit one of the following traits determined by what kind of animal characteristics you want your character to have:"
+                }
+            }
+        },
+        "Natural Weapons": {
+            "name": "Natural Weapons",
+            "description": "<p>You have claws, horns, hooves, fangs, spines, or a similar adaptation that serves as a natural weapon. Work with your GM to determine what type of natural weapon you possess and decide whether it does bludgeoning, piercing, or slashing damage. You can use your natural weapon to make unarmed strikes. When you hit with it, the strike deals 1d6 + your STR or DEX modifier damage (choose which during character creation) of your chosen type, instead of the bludgeoning damage normal for an unarmed strike.</p>",
+            "activities": {
+                "Unarmed Strike": {
+                    "name": "Unarmed Strike"
+                }
+            }
+        },
+        "Orc": {
+            "name": "Orc",
+            "description": "<p>Your orc character has the following hereditary traits.</p><p><em><strong>Age.</strong></em> Orcs reach adulthood within two decades and seldom live longer than 60 years. However, orcs remain in their prime for most of their lives, undergoing few physical changes or signs of aging between adulthood and the end of their natural lifespan.</p><p>@Embed[.Advancement.sngAt3jgHJiYEN21 inline]{Size}</p><p><em><strong>Speed.</strong></em> Your base walking speed is 30 feet.</p><p>@Embed[Compendium.black-flag.lineages.Item.gq4X2TWJolsO9Ls1 inline]{Orcish Perseverance}</p><p>@Embed[Compendium.black-flag.lineages.Item.cVnYCq9cu59IFkuJ inline]{Heightened Senses}</p><p>@Embed[Compendium.black-flag.lineages.Item.nZkQuYiKKnLIdy7o inline]{Stalwart}</p>",
+            "advancement": {
+                "sngAt3jgHJiYEN21": {
+                    "hint": "Your size is Medium. Orcs stand between 6 and 8 feet tall and commonly range from 110 to 350 pounds in weight."
+                }
+            }
+        },
+        "Orcish Perseverance": {
+            "name": "Orcish Perseverance",
+            "description": "<p>When you would die due to suffocating or gaining levels of exhaustion, you instead enter a death-like stasis. While in stasis you are incapacitated, can’t move, can’t speak, and are unaware of your surroundings. You also cease to age, and your body is protected from decay. You can remain in this state until you are restored by mundane or magical healing, or your body is completely destroyed.</p>"
+        },
+        "Small Stature": {
+            "name": "Small Stature",
+            "description": "<p>You can move through the space of any creature that is Medium or larger size. You can also attempt to hide when you are obscured by a creature of Medium or larger size.</p>"
+        },
+        "Smallfolk": {
+            "name": "Smallfolk",
+            "description": "<p>Your smallfolk character has the following hereditary traits.</p><p><em><strong>Age.</strong></em> Smallfolk reach adulthood around 20 and typically live to be around 150 years old, though gnomes sometimes live twice as long.</p><p>@Embed[.Advancement.3xaQdDSxh1fZDCYW inline]{Size}</p><p><em><strong>Speed.</strong></em> Your base walking speed is 30 feet.</p><p>@Embed[Compendium.black-flag.lineages.Item.VKCrrfVz1eRp0q9a inline]{Grounded}</p><p>@Embed[Compendium.black-flag.lineages.Item.09csUUrIKoum4S7I inline]{Small Stature}</p><p>@Embed[Compendium.black-flag.lineages.Item.16psMWogIaoLGhSb inline]{Natural Adaptation}</p>",
+            "advancement": {
+                "3xaQdDSxh1fZDCYW": {
+                    "hint": "Your size is Small. Smallfolk are rarely more than 3 feet tall and average about 40 pounds."
+                }
+            }
+        },
+        "Stalwart": {
+            "name": "Stalwart",
+            "description": "<p>When you are subjected to an effect that requires you to make a save at the end of your turn, you can instead choose to make the save at the start of your turn.</p>"
+        },
+        "Sturdy": {
+            "name": "Sturdy",
+            "description": "<p>Powerful limbs, fat reserves, or a thick hide allow you to endure harm and accomplish feats of remarkable athleticism. When you aren’t wearing armor, you have a natural AC of 13 + your DEX modifier. In addition, you count as one size larger when determining your carrying capacity and the weight you can push or drag.</p>",
+            "advancement": {
+                "Natural Armor": {
+                    "title": "Natural Armor",
+                    "hint": "When you aren’t wearing armor, you have a natural AC of 13 + your DEX modifier."
+                }
+            }
+        },
+        "Trance": {
+            "name": "Trance",
+            "description": "<p>Elves don’t need to sleep. Instead, they enter a meditative trance state, remaining semiconscious for 4 hours a day. You choose whether or not you can dream while meditating. After resting in this way, you gain the same benefit that other creatures do from 8 hours of sleep.</p>"
+        }
+    },
+    "folders": {
+        "Beastkin Features": "Beastkin Features",
+        "Dwarf Features": "Dwarf Features",
+        "Elf Features": "Elf Features",
+        "Human Features": "Human Features",
+        "Natural Adaptation": "Natural Adaptation",
+        "Orc Features": "Orc Features",
+        "Shared Features": "Shared Features",
+        "Smallfolk Features": "Smallfolk Features"
+    }
+}

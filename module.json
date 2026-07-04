@@ -1,0 +1,57 @@
+{
+  "id": "lang-pl-black-flag",
+  "title": "Polska wersja Black Flag",
+  "description": "Polskie tłumaczenie do Black Flag",
+  "version": "vDev",
+  "socket": true,
+  "compatibility": {
+    "minimum": "14.359",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "esmodules": [
+    "babele-register.js"
+  ],
+  "styles": [
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "black-flag",
+        "type": "system",
+        "compatibility": {
+          "verified": "3.0.077"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polish",
+      "path": "lang/pl/pl.json",
+      "flags": {}
+    }
+  ],
+  "authors": [
+    {
+      "name": "Lioheart",
+      "discord": "lioheart77",
+      "email": "caco7.lioheart@gmail.com",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "url": "Filled in by the release workflow",
+  "manifest": "Filled in by the release workflow",
+  "download": "Filled in by the release workflow"
+}

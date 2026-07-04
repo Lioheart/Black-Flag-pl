@@ -1,0 +1,291 @@
+{
+    "label": "Npcs",
+    "mapping": {
+        "description": "description"
+    },
+    "entries": {
+        "Aberrant Resilience": {
+            "name": "Aberrant Resilience"
+        },
+        "AC & Movement in Wolf or Hybrid Form": {
+            "name": "AC & Movement in Wolf or Hybrid Form"
+        },
+        "AC and Speed in Bear & Hybrid Form": {
+            "name": "AC and Speed in Bear & Hybrid Form"
+        },
+        "AC and Speed in Boar & Hybrid Form": {
+            "name": "AC and Speed in Boar & Hybrid Form"
+        },
+        "Aggressive AC Reduction": {
+            "name": "Aggressive AC Reduction"
+        },
+        "Angelic Resilience": {
+            "name": "Angelic Resilience"
+        },
+        "Artistic Expression (Paint)": {
+            "name": "Artistic Expression (Paint)"
+        },
+        "Artistic Expression (Song or Oration)": {
+            "name": "Artistic Expression (Song or Oration)"
+        },
+        "Artistic Expression (Witty or Cleaver)": {
+            "name": "Artistic Expression (Witty or Cleaver)"
+        },
+        "Bane": {
+            "name": "Bane",
+            "description": "<p>You make an attack roll or a save before the spell ends, you must roll a [[/r d4]] and subtract the number rolled from the attack roll or save.</p>"
+        },
+        "Bat Form Speed": {
+            "name": "Bat Form Speed"
+        },
+        "Bless": {
+            "name": "Bless",
+            "description": "<p>When a target makes an attack roll or a save before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or save.</p>"
+        },
+        "Blinding Sickness": {
+            "name": "Blinding Sickness",
+            "description": "<p>Pain grips the creature’s mind, and its eyes turn milky white. The creature has disadvantage on WIS checks and WIS saves and is blinded.</p>"
+        },
+        "Camel Resilience": {
+            "name": "Camel Resilience"
+        },
+        "Celestial Resilience": {
+            "name": "Celestial Resilience"
+        },
+        "Charm": {
+            "name": "Charm",
+            "description": "<p>The target is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p>"
+        },
+        "Cirrus Deflection AC Bonus": {
+            "name": "Cirrus Deflection AC Bonus"
+        },
+        "Clumsy": {
+            "name": "Clumsy"
+        },
+        "Color Spray": {
+            "name": "Color Spray",
+            "description": "<p>A creature affected by this spell is blinded until the spell ends.</p>"
+        },
+        "Construct Resilience": {
+            "name": "Construct Resilience"
+        },
+        "Dark Devotion": {
+            "name": "Dark Devotion"
+        },
+        "Defensive AC Bonus": {
+            "name": "Defensive AC Bonus"
+        },
+        "Demonic Resilience": {
+            "name": "Demonic Resilience"
+        },
+        "Detect Magic": {
+            "name": "Detect Magic",
+            "description": "<p>You sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
+        },
+        "Devilish Resilience": {
+            "name": "Devilish Resilience"
+        },
+        "Disguise Self": {
+            "name": "Disguise Self",
+            "description": "<p>You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can’t change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.</p>"
+        },
+        "Divine Blessing (Necrotic)": {
+            "name": "Divine Blessing (Necrotic)"
+        },
+        "Divine Blessing (Radiant)": {
+            "name": "Divine Blessing (Radiant)"
+        },
+        "Duergar Resilience": {
+            "name": "Duergar Resilience"
+        },
+        "Elemental Resilience": {
+            "name": "Elemental Resilience"
+        },
+        "Entangle": {
+            "name": "Entangle",
+            "description": "<p>You are restrained by the entangling plants until the spell ends. You can use your action to make a [[/check strength]] check against the caster's spell save DC. On a success, you free yourself.</p>"
+        },
+        "Faerie Fire": {
+            "name": "Faerie Fire",
+            "description": "<p>You shed dim light in a 10-foot radius. Any attack roll against you has advantage if the attacker can see you, and you can’t benefit from being invisible.</p>"
+        },
+        "Fear": {
+            "name": "Fear",
+            "description": "<p>While frightened by this spell, you must take the Dash action and move away from the caster by the safest available route on each of your turns, unless there is nowhere to move. If you end your turn in a location where you don’t have line of sight to the caster, you can make a WIS save, ending the effect on yourself on a success.</p>"
+        },
+        "Fey Ancestry": {
+            "name": "Fey Ancestry"
+        },
+        "Fey Resilience": {
+            "name": "Fey Resilience"
+        },
+        "Filth Fever": {
+            "name": "Filth Fever",
+            "description": "<p>A raging fever sweeps through the creature’s body. The creature has disadvantage on STR checks, STR saves, and attack rolls that use STR.</p>"
+        },
+        "Flesh Golem Resilience": {
+            "name": "Flesh Golem Resilience"
+        },
+        "Flesh Rot": {
+            "name": "Flesh Rot",
+            "description": "<p>The creature’s flesh decays. The creature has disadvantage on CHA checks and becomes vulnerable to all damage.</p>"
+        },
+        "Fly": {
+            "name": "Fly"
+        },
+        "Freedom of Movement": {
+            "name": "Freedom of Movement"
+        },
+        "Gaseous Form": {
+            "name": "Gaseous Form"
+        },
+        "Geas": {
+            "name": "Geas"
+        },
+        "Giant Attributes": {
+            "name": "Giant Attributes"
+        },
+        "Golem Resilience": {
+            "name": "Golem Resilience"
+        },
+        "Greater Hold": {
+            "name": "Greater Hold",
+            "description": "<p>You are paralyzed. At the end of each of your turns, you can repeat the [[/save wisdom]] save, ending the effect on a success.</p>"
+        },
+        "Greater Invisibility": {
+            "name": "Greater Invisibility",
+            "description": "<p>You become invisible until the spell ends. Anything you are wearing or carrying is invisible as long as it is on your person.</p>"
+        },
+        "Guidance": {
+            "name": "Guidance",
+            "description": "<p>Once before the spell ends, you can roll a [[/r d4]] and add the number rolled to one ability check of your. You can roll the die before or after making the ability check. The spell then ends.</p>"
+        },
+        "Hold": {
+            "name": "Hold",
+            "description": "<p>You are paralyzed for the duration. At the end of each of your turns, you can repeat the [[/save WIS]] save, ending the effect on a success.</p>"
+        },
+        "Impenetrable Ego": {
+            "name": "Impenetrable Ego"
+        },
+        "Jagged Stones AC Reduction": {
+            "name": "Jagged Stones AC Reduction"
+        },
+        "Mage Armor": {
+            "name": "Mage Armor",
+            "description": "<p>Your base AC becomes 13 + your DEX modifier.</p>"
+        },
+        "Magic Ward": {
+            "name": "Magic Ward"
+        },
+        "Maneuverable": {
+            "name": "Maneuverable"
+        },
+        "Mindfire": {
+            "name": "Mindfire",
+            "description": "<p>The creature’s mind becomes feverish. The creature has disadvantage on INT checks and INT saves, and the creature behaves as if under the effects of the @UUID[Compendium.black-flag.spells.Item.Bcm0RKcg5os0dDhC]{confusion} spell during combat.</p>"
+        },
+        "Missile Deflection AC Bonus": {
+            "name": "Missile Deflection AC Bonus"
+        },
+        "Monstrosity Resilience": {
+            "name": "Monstrosity Resilience"
+        },
+        "Multiple Heads": {
+            "name": "Multiple Heads"
+        },
+        "Nature's Champion": {
+            "name": "Nature's Champion"
+        },
+        "New Effect": {
+            "name": "New Effect"
+        },
+        "Ooze Resilience": {
+            "name": "Ooze Resilience"
+        },
+        "Pack Tactics": {
+            "name": "Pack Tactics"
+        },
+        "Parry": {
+            "name": "Parry"
+        },
+        "Plant Resilience": {
+            "name": "Plant Resilience"
+        },
+        "Polymorph": {
+            "name": "Polymorph"
+        },
+        "Protective Slabs Speed Reduction": {
+            "name": "Protective Slabs Speed Reduction"
+        },
+        "Rat Form Speed": {
+            "name": "Rat Form Speed"
+        },
+        "Seizure": {
+            "name": "Seizure",
+            "description": "<p>The creature is overcome with shaking. The creature has disadvantage on DEX checks, DEX saves, and attack rolls that use DEX.</p>"
+        },
+        "Shield AC Bonus": {
+            "name": "Shield AC Bonus"
+        },
+        "Shield Wall AC Bonus": {
+            "name": "Shield Wall AC Bonus"
+        },
+        "Shimmering Shield": {
+            "name": "Shimmering Shield"
+        },
+        "Slimy Doom": {
+            "name": "Slimy Doom",
+            "description": "<p>The creature begins to bleed uncontrollably. The creature has disadvantage on CON checks and CON saves. In addition, when the creature takes damage, it is stunned until the end of its next turn.</p>"
+        },
+        "Speak with Animals": {
+            "name": "Speak with Animals"
+        },
+        "Speak with Plants": {
+            "name": "Speak with Plants"
+        },
+        "Speed in Rat & Hybrid Form": {
+            "name": "Speed in Rat & Hybrid Form"
+        },
+        "Speed in Tiger & Hybrid Form": {
+            "name": "Speed in Tiger & Hybrid Form"
+        },
+        "Swarm Resilience": {
+            "name": "Swarm Resilience"
+        },
+        "Undead Resilience": {
+            "name": "Undead Resilience"
+        },
+        "Vampiric Resilience": {
+            "name": "Vampiric Resilience"
+        },
+        "Vehicle Resilience": {
+            "name": "Vehicle Resilience"
+        },
+        "Void Strength": {
+            "name": "Void Strength"
+        },
+        "Web Shot (Recharge 4–6)": {
+            "name": "Web Shot (Recharge 4–6)"
+        },
+        "Wolf Form Speed": {
+            "name": "Wolf Form Speed"
+        }
+    },
+    "folders": {
+        "Aberration": "Aberration",
+        "Beast": "Beast",
+        "Celestial": "Celestial",
+        "Construct": "Construct",
+        "Dragon": "Dragon",
+        "Elemental": "Elemental",
+        "Fey": "Fey",
+        "Fiend": "Fiend",
+        "Giant": "Giant",
+        "Humanoid": "Humanoid",
+        "Monstrosity": "Monstrosity",
+        "Ooze": "Ooze",
+        "Plant": "Plant",
+        "Undead": "Undead",
+        "Vehicles": "Vehicles"
+    }
+}

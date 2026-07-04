@@ -1,0 +1,766 @@
+{
+    "label": "Effects",
+    "mapping": {
+        "description": "description"
+    },
+    "entries": {
+        "Acid Immunity": {
+            "name": "Acid Immunity"
+        },
+        "Acid Resistance": {
+            "name": "Acid Resistance"
+        },
+        "Acid Vulnerability": {
+            "name": "Acid Vulnerability"
+        },
+        "Acrobatics Advantage": {
+            "name": "Acrobatics Advantage",
+            "description": "<p>You have Advantage on Acrobatics Checks.</p>"
+        },
+        "Acrobatics Disadvantage": {
+            "name": "Acrobatics Disadvantage",
+            "description": "<p>You have Disadvantage on Acrobatics Checks.</p>"
+        },
+        "All Damage Immunity": {
+            "name": "All Damage Immunity"
+        },
+        "All Damage Resistance": {
+            "name": "All Damage Resistance"
+        },
+        "All Damage Vulnerability": {
+            "name": "All Damage Vulnerability"
+        },
+        "Animal Handling Advantage": {
+            "name": "Animal Handling Advantage",
+            "description": "<p>You have Advantage on Animal Handling Checks.</p>"
+        },
+        "Animal Handling Disadvantage": {
+            "name": "Animal Handling Disadvantage",
+            "description": "<p>You have Disadvantage on Animal Handling Checks.</p>"
+        },
+        "Arcana Advantage": {
+            "name": "Arcana Advantage",
+            "description": "<p>You have Advantage on Arcana Checks.</p>"
+        },
+        "Arcana Disadvantage": {
+            "name": "Arcana Disadvantage",
+            "description": "<p>You have Disadvantage on Arcana Checks.</p>"
+        },
+        "Athletics Advantage": {
+            "name": "Athletics Advantage",
+            "description": "<p>You have Advantage on Athletics Checks.</p>"
+        },
+        "Athletics Disadvantage": {
+            "name": "Athletics Disadvantage",
+            "description": "<p>You have Disadvantage on Athletics Checks.</p>"
+        },
+        "Attack Advantage": {
+            "name": "Attack Advantage",
+            "description": "<p>You have Advantage on all attacks.</p>"
+        },
+        "Attack Disadvantage": {
+            "name": "Attack Disadvantage",
+            "description": "<p>You have Disadvantage on all attacks.</p>"
+        },
+        "Bleeding": {
+            "name": "Bleeding"
+        },
+        "Bleeding Immunity": {
+            "name": "Bleeding Immunity"
+        },
+        "Bleeding Resistance": {
+            "name": "Bleeding Resistance"
+        },
+        "Bleeding Vulnerability": {
+            "name": "Bleeding Vulnerability"
+        },
+        "Blinded": {
+            "name": "Blinded"
+        },
+        "Blinded Immunity": {
+            "name": "Blinded Immunity"
+        },
+        "Blinded Resistance": {
+            "name": "Blinded Resistance"
+        },
+        "Blinded Vulnerability": {
+            "name": "Blinded Vulnerability"
+        },
+        "Bludgeoning Immunity": {
+            "name": "Bludgeoning Immunity"
+        },
+        "Bludgeoning Resistance": {
+            "name": "Bludgeoning Resistance"
+        },
+        "Bludgeoning Vulnerability": {
+            "name": "Bludgeoning Vulnerability"
+        },
+        "Burning": {
+            "name": "Burning"
+        },
+        "Burning Immunity": {
+            "name": "Burning Immunity"
+        },
+        "Burning Resistance": {
+            "name": "Burning Resistance"
+        },
+        "Burning Vulnerability": {
+            "name": "Burning Vulnerability"
+        },
+        "Burrow Speed": {
+            "name": "Burrow Speed"
+        },
+        "Charisma Check Advantage": {
+            "name": "Charisma Check Advantage",
+            "description": "<p>You have Advantage on CHA checks.</p>"
+        },
+        "Charisma Check Disadvantage": {
+            "name": "Charisma Check Disadvantage",
+            "description": "<p>You have Disadvantage on CHA checks.</p>"
+        },
+        "Charisma Save Advantage": {
+            "name": "Charisma Save Advantage",
+            "description": "<p>You have Advantage on CHA saves.</p>"
+        },
+        "Charisma Save Disadvantage": {
+            "name": "Charisma Save Disadvantage",
+            "description": "<p>You have Disadvantage on CHA saves.</p>"
+        },
+        "Charmed": {
+            "name": "Charmed"
+        },
+        "Charmed Immunity": {
+            "name": "Charmed Immunity"
+        },
+        "Charmed Resistance": {
+            "name": "Charmed Resistance"
+        },
+        "Charmed Vulnerability": {
+            "name": "Charmed Vulnerability"
+        },
+        "Climb Speed": {
+            "name": "Climb Speed"
+        },
+        "Cold Immunity": {
+            "name": "Cold Immunity"
+        },
+        "Cold Resistance": {
+            "name": "Cold Resistance"
+        },
+        "Cold Vulnerability": {
+            "name": "Cold Vulnerability"
+        },
+        "Constitution Check Advantage": {
+            "name": "Constitution Check Advantage",
+            "description": "<p>You have Advantage on CON checks.</p>"
+        },
+        "Constitution Check Disadvantage": {
+            "name": "Constitution Check Disadvantage",
+            "description": "<p>You have Disadvantage on CON checks.</p>"
+        },
+        "Constitution Save Advantage": {
+            "name": "Constitution Save Advantage",
+            "description": "<p>You have Advantage on CON saves.</p>"
+        },
+        "Constitution Save Disadvantage": {
+            "name": "Constitution Save Disadvantage",
+            "description": "<p>You have Disadvantage on CON saves.</p>"
+        },
+        "Cursed": {
+            "name": "Cursed"
+        },
+        "Cursed Immunity": {
+            "name": "Cursed Immunity"
+        },
+        "Cursed Resistance": {
+            "name": "Cursed Resistance"
+        },
+        "Cursed Vulnerability": {
+            "name": "Cursed Vulnerability"
+        },
+        "Deafened": {
+            "name": "Deafened"
+        },
+        "Deafened Immunity": {
+            "name": "Deafened Immunity"
+        },
+        "Deafened Resistance": {
+            "name": "Deafened Resistance"
+        },
+        "Deafened Vulnerability": {
+            "name": "Deafened Vulnerability"
+        },
+        "Deception Advantage": {
+            "name": "Deception Advantage",
+            "description": "<p>You have Advantage on Deception Checks.</p>"
+        },
+        "Deception Disadvantage": {
+            "name": "Deception Disadvantage",
+            "description": "<p>You have Disadvantage on Deception Checks.</p>"
+        },
+        "Dehydration": {
+            "name": "Dehydration"
+        },
+        "Dehydration Immunity": {
+            "name": "Dehydration Immunity"
+        },
+        "Dehydration Resistance": {
+            "name": "Dehydration Resistance"
+        },
+        "Dehydration Vulnerability": {
+            "name": "Dehydration Vulnerability"
+        },
+        "Dexterity Check Advantage": {
+            "name": "Dexterity Check Advantage",
+            "description": "<p>You have Advantage on DEX checks.</p>"
+        },
+        "Dexterity Check Disadvantage": {
+            "name": "Dexterity Check Disadvantage",
+            "description": "<p>You have Disadvantage on DEX checks.</p>"
+        },
+        "Dexterity Save Advantage": {
+            "name": "Dexterity Save Advantage",
+            "description": "<p>You have Advantage on DEX saves.</p>"
+        },
+        "Dexterity Save Disadvantage": {
+            "name": "Dexterity Save Disadvantage",
+            "description": "<p>You have Disadvantage on DEX saves.</p>"
+        },
+        "Diseased": {
+            "name": "Diseased"
+        },
+        "Diseased Immunity": {
+            "name": "Diseased Immunity"
+        },
+        "Diseased Resistance": {
+            "name": "Diseased Resistance"
+        },
+        "Diseased Vulnerability": {
+            "name": "Diseased Vulnerability"
+        },
+        "Exhaustion": {
+            "name": "Exhaustion"
+        },
+        "Exhaustion Immunity": {
+            "name": "Exhaustion Immunity"
+        },
+        "Exhaustion Resistance": {
+            "name": "Exhaustion Resistance"
+        },
+        "Exhaustion Vulnerability": {
+            "name": "Exhaustion Vulnerability"
+        },
+        "Falling": {
+            "name": "Falling"
+        },
+        "Falling Immunity": {
+            "name": "Falling Immunity"
+        },
+        "Falling Resistance": {
+            "name": "Falling Resistance"
+        },
+        "Falling Vulnerability": {
+            "name": "Falling Vulnerability"
+        },
+        "Fire Immunity": {
+            "name": "Fire Immunity"
+        },
+        "Fire Resistance": {
+            "name": "Fire Resistance"
+        },
+        "Fire Vulnerability": {
+            "name": "Fire Vulnerability"
+        },
+        "Fly Speed": {
+            "name": "Fly Speed"
+        },
+        "Force Immunity": {
+            "name": "Force Immunity"
+        },
+        "Force Resistance": {
+            "name": "Force Resistance"
+        },
+        "Force Vulnerability": {
+            "name": "Force Vulnerability"
+        },
+        "Frightened": {
+            "name": "Frightened"
+        },
+        "Frightened Immunity": {
+            "name": "Frightened Immunity"
+        },
+        "Frightened Resistance": {
+            "name": "Frightened Resistance"
+        },
+        "Frightened Vulnerability": {
+            "name": "Frightened Vulnerability"
+        },
+        "Grappled": {
+            "name": "Grappled"
+        },
+        "Grappled Immunity": {
+            "name": "Grappled Immunity"
+        },
+        "Grappled Resistance": {
+            "name": "Grappled Resistance"
+        },
+        "Grappled Vulnerability": {
+            "name": "Grappled Vulnerability"
+        },
+        "History Advantage": {
+            "name": "History Advantage",
+            "description": "<p>You have Advantage on History Checks.</p>"
+        },
+        "History Disadvantage": {
+            "name": "History Disadvantage",
+            "description": "<p>You have Disadvantage on History Checks.</p>"
+        },
+        "Incapacitated": {
+            "name": "Incapacitated"
+        },
+        "Incapacitated Immunity": {
+            "name": "Incapacitated Immunity"
+        },
+        "Incapacitated Resistance": {
+            "name": "Incapacitated Resistance"
+        },
+        "Incapacitated Vulnerability": {
+            "name": "Incapacitated Vulnerability"
+        },
+        "Insight Advantage": {
+            "name": "Insight Advantage",
+            "description": "<p>You have Advantage on Insight Checks.</p>"
+        },
+        "Insight Disadvantage": {
+            "name": "Insight Disadvantage",
+            "description": "<p>You have Disadvantage on Insight Checks.</p>"
+        },
+        "Intelligence Check Advantage": {
+            "name": "Intelligence Check Advantage",
+            "description": "<p>You have Advantage on INT checks.</p>"
+        },
+        "Intelligence Check Disadvantage": {
+            "name": "Intelligence Check Disadvantage",
+            "description": "<p>You have Disadvantage on INT checks.</p>"
+        },
+        "Intelligence Save Advantage": {
+            "name": "Intelligence Save Advantage",
+            "description": "<p>You have Advantage on INT saves.</p>"
+        },
+        "Intelligence Save Disadvantage": {
+            "name": "Intelligence Save Disadvantage",
+            "description": "<p>You have Disadvantage on INT saves.</p>"
+        },
+        "Intimidation Advantage": {
+            "name": "Intimidation Advantage",
+            "description": "<p>You have Advantage on Intimidation Checks.</p>"
+        },
+        "Intimidation Disadvantage": {
+            "name": "Intimidation Disadvantage",
+            "description": "<p>You have Disadvantage on Intimidation Checks.</p>"
+        },
+        "Investigation Advantage": {
+            "name": "Investigation Advantage",
+            "description": "<p>You have Advantage on Investigation Checks.</p>"
+        },
+        "Investigation Disadvantage": {
+            "name": "Investigation Disadvantage",
+            "description": "<p>You have Disadvantage on Investigation Checks.</p>"
+        },
+        "Invisible": {
+            "name": "Invisible"
+        },
+        "Invisible Immunity": {
+            "name": "Invisible Immunity"
+        },
+        "Invisible Resistance": {
+            "name": "Invisible Resistance"
+        },
+        "Invisible Vulnerability": {
+            "name": "Invisible Vulnerability"
+        },
+        "Lightning Immunity": {
+            "name": "Lightning Immunity"
+        },
+        "Lightning Resistance": {
+            "name": "Lightning Resistance"
+        },
+        "Lightning Vulnerability": {
+            "name": "Lightning Vulnerability"
+        },
+        "Malnutrition": {
+            "name": "Malnutrition"
+        },
+        "Malnutrition Immunity": {
+            "name": "Malnutrition Immunity"
+        },
+        "Malnutrition Resistance": {
+            "name": "Malnutrition Resistance"
+        },
+        "Malnutrition Vulnerability": {
+            "name": "Malnutrition Vulnerability"
+        },
+        "Medicine Advantage": {
+            "name": "Medicine Advantage",
+            "description": "<p>You have Advantage on Medicine Checks.</p>"
+        },
+        "Medicine Disadvantage": {
+            "name": "Medicine Disadvantage",
+            "description": "<p>You have Disadvantage on Medicine Checks.</p>"
+        },
+        "Melee Weapon Attack Advantage": {
+            "name": "Melee Weapon Attack Advantage",
+            "description": "<p>You have Advantage on melee weapon attacks.</p>"
+        },
+        "Melee Weapon Attack Disadvantage": {
+            "name": "Melee Weapon Attack Disadvantage",
+            "description": "<p>You have Disadvantage on melee weapon attacks.</p>"
+        },
+        "Nature Advantage": {
+            "name": "Nature Advantage",
+            "description": "<p>You have Advantage on Nature Checks.</p>"
+        },
+        "Nature Disadvantage": {
+            "name": "Nature Disadvantage",
+            "description": "<p>You have Disadvantage on Nature Checks.</p>"
+        },
+        "Necrotic Immunity": {
+            "name": "Necrotic Immunity"
+        },
+        "Necrotic Resistance": {
+            "name": "Necrotic Resistance"
+        },
+        "Necrotic Vulnerability": {
+            "name": "Necrotic Vulnerability"
+        },
+        "Paralyzed": {
+            "name": "Paralyzed"
+        },
+        "Paralyzed Immunity": {
+            "name": "Paralyzed Immunity"
+        },
+        "Paralyzed Resistance": {
+            "name": "Paralyzed Resistance"
+        },
+        "Paralyzed Vulnerability": {
+            "name": "Paralyzed Vulnerability"
+        },
+        "Perception Advantage": {
+            "name": "Perception Advantage",
+            "description": "<p>You have Advantage on Perception Checks.</p>"
+        },
+        "Perception Disadvantage": {
+            "name": "Perception Disadvantage",
+            "description": "<p>You have Disadvantage on Perception Checks.</p>"
+        },
+        "Performance Advantage": {
+            "name": "Performance Advantage",
+            "description": "<p>You have Advantage on Performance Checks.</p>"
+        },
+        "Performance Disadvantage": {
+            "name": "Performance Disadvantage",
+            "description": "<p>You have Disadvantage on Performance Checks.</p>"
+        },
+        "Persuasion Advantage": {
+            "name": "Persuasion Advantage",
+            "description": "<p>You have Advantage on Persuasion Checks.</p>"
+        },
+        "Persuasion Disadvantage": {
+            "name": "Persuasion Disadvantage",
+            "description": "<p>You have Disadvantage on Persuasion Checks.</p>"
+        },
+        "Petrified": {
+            "name": "Petrified"
+        },
+        "Petrified Immunity": {
+            "name": "Petrified Immunity"
+        },
+        "Petrified Resistance": {
+            "name": "Petrified Resistance"
+        },
+        "Petrified Vulnerability": {
+            "name": "Petrified Vulnerability"
+        },
+        "Piercing Immunity": {
+            "name": "Piercing Immunity"
+        },
+        "Piercing Resistance": {
+            "name": "Piercing Resistance"
+        },
+        "Piercing Vulnerability": {
+            "name": "Piercing Vulnerability"
+        },
+        "Poison Immunity": {
+            "name": "Poison Immunity"
+        },
+        "Poison Resistance": {
+            "name": "Poison Resistance"
+        },
+        "Poison Vulnerability": {
+            "name": "Poison Vulnerability"
+        },
+        "Poisoned": {
+            "name": "Poisoned"
+        },
+        "Poisoned Immunity": {
+            "name": "Poisoned Immunity"
+        },
+        "Poisoned Resistance": {
+            "name": "Poisoned Resistance"
+        },
+        "Poisoned Vulnerability": {
+            "name": "Poisoned Vulnerability"
+        },
+        "Prone": {
+            "name": "Prone"
+        },
+        "Prone Immunity": {
+            "name": "Prone Immunity"
+        },
+        "Prone Resistance": {
+            "name": "Prone Resistance"
+        },
+        "Prone Vulnerability": {
+            "name": "Prone Vulnerability"
+        },
+        "Psychic Immunity": {
+            "name": "Psychic Immunity"
+        },
+        "Psychic Resistance": {
+            "name": "Psychic Resistance"
+        },
+        "Psychic Vulnerability": {
+            "name": "Psychic Vulnerability"
+        },
+        "Radiant Immunity": {
+            "name": "Radiant Immunity"
+        },
+        "Radiant Resistance": {
+            "name": "Radiant Resistance"
+        },
+        "Radiant Vulnerability": {
+            "name": "Radiant Vulnerability"
+        },
+        "Ranged Weapon Attack Advantage": {
+            "name": "Ranged Weapon Attack Advantage",
+            "description": "<p>You have Advantage on ranged weapon attacks.</p>"
+        },
+        "Ranged Weapon Attack Disadvantage": {
+            "name": "Ranged Weapon Attack Disadvantage",
+            "description": "<p>You have Disadvantage on ranged weapon attacks.</p>"
+        },
+        "Religion Advantage": {
+            "name": "Religion Advantage",
+            "description": "<p>You have Advantage on Religion Checks.</p>"
+        },
+        "Religion Disadvantage": {
+            "name": "Religion Disadvantage",
+            "description": "<p>You have Disadvantage on Religion Checks.</p>"
+        },
+        "Restrained": {
+            "name": "Restrained"
+        },
+        "Restrained Immunity": {
+            "name": "Restrained Immunity"
+        },
+        "Restrained Resistance": {
+            "name": "Restrained Resistance"
+        },
+        "Restrained Vulnerability": {
+            "name": "Restrained Vulnerability"
+        },
+        "Silenced": {
+            "name": "Silenced"
+        },
+        "Silenced Immunity": {
+            "name": "Silenced Immunity"
+        },
+        "Silenced Resistance": {
+            "name": "Silenced Resistance"
+        },
+        "Silenced Vulnerability": {
+            "name": "Silenced Vulnerability"
+        },
+        "Slashing Immunity": {
+            "name": "Slashing Immunity"
+        },
+        "Slashing Resistance": {
+            "name": "Slashing Resistance"
+        },
+        "Slashing Vulnerability": {
+            "name": "Slashing Vulnerability"
+        },
+        "Sleight of Hand Advantage": {
+            "name": "Sleight of Hand Advantage",
+            "description": "<p>You have Advantage on Sleight of Hand Checks.</p>"
+        },
+        "Sleight of Hand Disadvantage": {
+            "name": "Sleight of Hand Disadvantage",
+            "description": "<p>You have Disadvantage on Sleight of Hand Checks.</p>"
+        },
+        "Spell Attack Advantage": {
+            "name": "Spell Attack Advantage",
+            "description": "<p>You have Advantage on spell attacks.</p>"
+        },
+        "Spell Attack Disadvantage": {
+            "name": "Spell Attack Disadvantage",
+            "description": "<p>You have Disadvantage on spell attacks.</p>"
+        },
+        "Spell Weapon Attack Advantage": {
+            "name": "Spell Weapon Attack Advantage",
+            "description": "<p>You have Advantage on ranged spell attacks.</p>"
+        },
+        "Spell Weapon Attack Disadvantage": {
+            "name": "Spell Weapon Attack Disadvantage",
+            "description": "<p>You have Disadvantage on ranged spell attacks.</p>"
+        },
+        "Stealth Advantage": {
+            "name": "Stealth Advantage",
+            "description": "<p>You have Advantage on Stealth Checks.</p>"
+        },
+        "Stealth Disadvantage": {
+            "name": "Stealth Disadvantage",
+            "description": "<p>You have Disadvantage on Stealth Checks.</p>"
+        },
+        "Strength Check Advantage": {
+            "name": "Strength Check Advantage",
+            "description": "<p>You have Advantage on STR checks.</p>"
+        },
+        "Strength Check Disadvantage": {
+            "name": "Strength Check Disadvantage",
+            "description": "<p>You have Disadvantage on STR checks.</p>"
+        },
+        "Strength Save Advantage": {
+            "name": "Strength Save Advantage",
+            "description": "<p>You have Advantage on STR saves.</p>"
+        },
+        "Strength Save Disadvantage": {
+            "name": "Strength Save Disadvantage",
+            "description": "<p>You have Disadvantage on STR saves.</p>"
+        },
+        "Stunned": {
+            "name": "Stunned"
+        },
+        "Stunned Immunity": {
+            "name": "Stunned Immunity"
+        },
+        "Stunned Resistance": {
+            "name": "Stunned Resistance"
+        },
+        "Stunned Vulnerability": {
+            "name": "Stunned Vulnerability"
+        },
+        "Suffocation": {
+            "name": "Suffocation"
+        },
+        "Suffocation Immunity": {
+            "name": "Suffocation Immunity"
+        },
+        "Suffocation Resistance": {
+            "name": "Suffocation Resistance"
+        },
+        "Suffocation Vulnerability": {
+            "name": "Suffocation Vulnerability"
+        },
+        "Surprised": {
+            "name": "Surprised"
+        },
+        "Surprised Immunity": {
+            "name": "Surprised Immunity"
+        },
+        "Surprised Resistance": {
+            "name": "Surprised Resistance"
+        },
+        "Surprised Vulnerability": {
+            "name": "Surprised Vulnerability"
+        },
+        "Survival Advantage": {
+            "name": "Survival Advantage",
+            "description": "<p>You have Advantage on Survival Checks.</p>"
+        },
+        "Survival Disadvantage": {
+            "name": "Survival Disadvantage",
+            "description": "<p>You have Disadvantage on Survival Checks.</p>"
+        },
+        "Swim Speed": {
+            "name": "Swim Speed"
+        },
+        "Thunder Immunity": {
+            "name": "Thunder Immunity"
+        },
+        "Thunder Resistance": {
+            "name": "Thunder Resistance"
+        },
+        "Thunder Vulnerability": {
+            "name": "Thunder Vulnerability"
+        },
+        "Transformed": {
+            "name": "Transformed"
+        },
+        "Transformed Immunity": {
+            "name": "Transformed Immunity"
+        },
+        "Transformed Resistance": {
+            "name": "Transformed Resistance"
+        },
+        "Transformed Vulnerability": {
+            "name": "Transformed Vulnerability"
+        },
+        "Unconscious": {
+            "name": "Unconscious"
+        },
+        "Unconscious Immunity": {
+            "name": "Unconscious Immunity"
+        },
+        "Unconscious Resistance": {
+            "name": "Unconscious Resistance"
+        },
+        "Unconscious Vulnerability": {
+            "name": "Unconscious Vulnerability"
+        },
+        "Weapon Attack Advantage": {
+            "name": "Weapon Attack Advantage",
+            "description": "<p>You have Advantage on weapon attacks.</p>"
+        },
+        "Weapon Attack Disadvantage": {
+            "name": "Weapon Attack Disadvantage",
+            "description": "<p>You have Disadvantage on weapon attacks.</p>"
+        },
+        "Wisdom Check Advantage": {
+            "name": "Wisdom Check Advantage",
+            "description": "<p>You have Advantage on WIS checks.</p>"
+        },
+        "Wisdom Check Disadvantage": {
+            "name": "Wisdom Check Disadvantage",
+            "description": "<p>You have Disadvantage on WIS checks.</p>"
+        },
+        "Wisdom Save Advantage": {
+            "name": "Wisdom Save Advantage",
+            "description": "<p>You have Advantage on WIS saves.</p>"
+        },
+        "Wisdom Save Disadvantage": {
+            "name": "Wisdom Save Disadvantage",
+            "description": "<p>You have Disadvantage on WIS saves.</p>"
+        }
+    },
+    "folders": {
+        "Ability Check Advantage": "Ability Check Advantage",
+        "Ability Check Disadvantage": "Ability Check Disadvantage",
+        "Ability Save Advantage": "Ability Save Advantage",
+        "Ability Save Disadvantage": "Ability Save Disadvantage",
+        "Advantages/Disadvantages": "Advantages/Disadvantages",
+        "Attack Advantage": "Attack Advantage",
+        "Attack Disadvantage": "Attack Disadvantage",
+        "Condition Immunities": "Condition Immunities",
+        "Condition Resistances": "Condition Resistances",
+        "Condition Vulnerabilities": "Condition Vulnerabilities",
+        "Conditions": "Conditions",
+        "Damage Immunities": "Damage Immunities",
+        "Damage Resistances": "Damage Resistances",
+        "Damage Vulnerabilities": "Damage Vulnerabilities",
+        "Resistances/Immunities/Vulnerabilities": "Resistances/Immunities/Vulnerabilities",
+        "Skill Advantage": "Skill Advantage",
+        "Skill Disadvantage": "Skill Disadvantage",
+        "Speeds": "Speeds"
+    }
+}

@@ -1,0 +1,799 @@
+{
+    "label": "Tables (SRD)",
+    "entries": {
+        "Adherent Motivation": {
+            "name": "Adherent Motivation",
+            "description": "<p>Many adherents do not stray far from the object of their devotion. Those who roam often do so for reasons specific to their order. When you begin your adventures, consider what has tempted—or called—you to step away from the safety of your order into the unknown.</p>",
+            "results": {
+                "1-1": {
+                    "description": "Adventuring lets me test the limits of my devotion."
+                },
+                "2-2": {
+                    "description": "Adventuring allows me to learn about and report on other religions and orders."
+                },
+                "3-3": {
+                    "description": "Adventuring allows me to practice more unorthodox methods of worship."
+                },
+                "4-4": {
+                    "description": "Adventuring is a way to find others sworn to my order."
+                },
+                "5-5": {
+                    "description": "Adventuring allows me to share my faith with heretics, pagans, and the uninitiated."
+                },
+                "6-6": {
+                    "description": "Adventuring brings glory and notoriety to my order."
+                },
+                "7-7": {
+                    "description": "Adventuring furnishes me with the tithe my order deserves."
+                },
+                "8-8": {
+                    "description": "Adventuring keeps me from being dragged back to the order from which I narrowly escaped."
+                }
+            }
+        },
+        "Ape": {
+            "name": "Ape",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.NLKyXyyesFlraxWi]{Ape}"
+        },
+        "Armor of Resistance Damage Type": {
+            "name": "Armor of Resistance Damage Type",
+            "results": {
+                "1-1": {
+                    "description": "Acid"
+                },
+                "2-2": {
+                    "description": "Cold"
+                },
+                "3-3": {
+                    "description": "Fire"
+                },
+                "4-4": {
+                    "description": "Force"
+                },
+                "5-5": {
+                    "description": "Lightning"
+                },
+                "6-6": {
+                    "description": "Necrotic"
+                },
+                "7-7": {
+                    "description": "Poison"
+                },
+                "8-8": {
+                    "description": "Psychic"
+                },
+                "9-9": {
+                    "description": "Radiant"
+                },
+                "10-10": {
+                    "description": "Thunder"
+                }
+            }
+        },
+        "Axe Beak": {
+            "name": "Axe Beak",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.QbwUREeTjQ2kv29j]{Axe Beak}"
+        },
+        "Baboon": {
+            "name": "Baboon",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.ImTx2hN7pQqGK6fe]{Baboon}"
+        },
+        "Badger": {
+            "name": "Badger",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.Ss0Bwrs6FOveDoFy]{Badger}"
+        },
+        "Bag of Beans Effects": {
+            "name": "Bag of Beans Effects",
+            "results": {
+                "1-1": {
+                    "description": "[[/r 5d4]] toadstools sprout. If a creature eats a toadstool, roll any die. On an odd roll, the eater must succeed on a [[/save DC 15 CON]] save or take [[/damage 5d6 poison]] damage and become &amp;Reference[poisoned] for 1 hour. On an even roll, the eater gains [[/healing 5d6 temp]] for 1 hour."
+                },
+                "2-10": {
+                    "description": "A geyser erupts and spouts water, beer, berry juice, tea, vinegar, wine, or oil (GM’s choice) 30 feet into the air for [[/r 1d12]] rounds."
+                },
+                "11-20": {
+                    "description": "A treant sprouts. There’s a 50 percent chance that the treant is cruelly wicked and attacks."
+                },
+                "21-30": {
+                    "description": "An animate, immobile stone statue in your likeness rises. It makes verbal threats against you. If you leave it and others come near, it describes you as the most heinous of villains and directs the newcomers to find and attack you. If you are on the same plane of existence as the statue, it knows where you are. The statue becomes inanimate after 24 hours."
+                },
+                "31-40": {
+                    "description": "A campfire with blue flames springs forth and burns for 24 hours (or until it is extinguished)."
+                },
+                "41-50": {
+                    "description": "[[/r 1d6 + 6]] shriekers sprout."
+                },
+                "51-60": {
+                    "description": "[[/r 1d4 + 8]] bright pink toads crawl forth. When a toad is touched, it transforms into a Large or smaller monster of the GM’s choice. The monster remains for 1 minute, then disappears in a puff of bright pink smoke."
+                },
+                "61-70": {
+                    "description": "A hungry bulette burrows up and attacks."
+                },
+                "71-80": {
+                    "description": "A fruit tree grows. It has [[/r 1d10 + 20]] fruit, [[/r 1d8]] of which act as randomly determined magic potions, while one acts as an ingested poison of the GM’s choice. The tree vanishes after 1 hour. Picked fruit remains, retaining any magic for 30 days."
+                },
+                "81-90": {
+                    "description": "A nest of [[/r 1d4 + 3]] eggs springs up. Any creature that eats an egg must make a [[/save DC 20 CON]] save. On a successful save, a creature permanently increases its lowest ability score by 1, randomly choosing among equally low scores. On a failed save, the creature takes [[/damage 10d6 force]] damage from an internal magical explosion."
+                },
+                "91-99": {
+                    "description": "A pyramid with a 60-foot-square base bursts upward. Inside is a sarcophagus containing a mummy lord. The pyramid is treated as the mummy lord’s lair, and its sarcophagus contains treasure of the GM’s choice."
+                },
+                "100-100": {
+                    "description": "A giant beanstalk sprouts, growing to a height of the GM’s choice. The top leads where the GM chooses, such as to a great view, a cloud giant’s castle, or a different plane of existence."
+                }
+            }
+        },
+        "Black Bear": {
+            "name": "Black Bear",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.BLi3PwiKwa4TVWVB]{Black Bear}"
+        },
+        "Boar": {
+            "name": "Boar",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.VgI9TWuZwWjD2xgg]{Boar}"
+        },
+        "Brown Bear": {
+            "name": "Brown Bear",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.2Uyw9ZrqRJur5bwE]{Brown Bear}"
+        },
+        "Confusion Effects": {
+            "name": "Confusion Effects",
+            "description": "<p>An affected target must roll a d10 at the start of each of its turns to determine its behavior for that turn.</p>",
+            "results": {
+                "1-1": {
+                    "description": "The creature uses all its movement to move in a random direction. To determine the direction, roll a [[/r d8]] and assign a direction to each die face. The creature doesn’t take an action this turn."
+                },
+                "2-6": {
+                    "description": "The creature doesn’t move or take actions this turn."
+                },
+                "7-8": {
+                    "description": "The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within reach, the creature does nothing this turn."
+                },
+                "9-10": {
+                    "description": "The creature can act and move normally. At the end of each of its turns, an affected creature can make a [[/save wisdom]] save, ending the effect on itself on a success."
+                }
+            }
+        },
+        "Damage Resistance Type": {
+            "name": "Damage Resistance Type",
+            "results": {
+                "1-1": {
+                    "description": "Acid"
+                },
+                "2-2": {
+                    "description": "Cold"
+                },
+                "3-3": {
+                    "description": "Fire"
+                },
+                "4-4": {
+                    "description": "Force"
+                },
+                "5-5": {
+                    "description": "Lightning"
+                },
+                "6-6": {
+                    "description": "Necrotic"
+                },
+                "7-7": {
+                    "description": "Poison"
+                },
+                "8-8": {
+                    "description": "Psychic"
+                },
+                "9-9": {
+                    "description": "Radiant"
+                },
+                "10-10": {
+                    "description": "Thunder"
+                }
+            }
+        },
+        "Dire Wolf": {
+            "name": "Dire Wolf",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.jrFETGwaRC12Gcgo]{Dire Wolf}"
+        },
+        "Efreeti Bottle Effects": {
+            "name": "Efreeti Bottle Effects",
+            "results": {
+                "1-10": {
+                    "description": "The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic."
+                },
+                "11-90": {
+                    "description": "The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can’t be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its magic."
+                },
+                "91-100": {
+                    "description": "The efreeti can cast the wish spell three times for you. It disappears when it grants the final wish or after 1 hour, and the bottle loses its magic."
+                }
+            }
+        },
+        "Feather Token Type": {
+            "name": "Feather Token Type",
+            "results": {
+                "1-20": {
+                    "description": "Anchor"
+                },
+                "21-35": {
+                    "description": "Bird"
+                },
+                "36-50": {
+                    "description": "Fan"
+                },
+                "51-65": {
+                    "description": "Swan boat"
+                },
+                "66-90": {
+                    "description": "Tree"
+                },
+                "91-100": {
+                    "description": "Whip"
+                }
+            }
+        },
+        "Flying Carpet Size": {
+            "name": "Flying Carpet Size",
+            "description": "<p>Size / Capacity / Flying Speed</p>",
+            "results": {
+                "1-20": {
+                    "description": "3 ft. × 5 ft. / 200 lb. / 80 ft."
+                },
+                "21-55": {
+                    "description": "4 ft. × 6 ft. / 400 lb. / 60 ft."
+                },
+                "56-80": {
+                    "description": "5 ft. × 7 ft. / 600 lb. / 40 ft."
+                },
+                "81-100": {
+                    "description": "6 ft. × 9 ft. / 800 lb. / 30 ft."
+                }
+            }
+        },
+        "Giant Badger": {
+            "name": "Giant Badger",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.6aHtiu1tmyE9zRkJ]{Giant Badger}"
+        },
+        "Giant Boar": {
+            "name": "Giant Boar",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.h1hoa6N6IlypbFz0]{Giant Boar}"
+        },
+        "Giant Elk": {
+            "name": "Giant Elk",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.xi88QgskH6ueJ6Ma]{Giant Elk}"
+        },
+        "Giant Goat": {
+            "name": "Giant Goat",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.X82CDCyHgR41wdQE]{Giant Goat}"
+        },
+        "Giant Hyena": {
+            "name": "Giant Hyena",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.YZB7WaKKKDjkd5la]{Giant Hyena}"
+        },
+        "Giant Rat": {
+            "name": "Giant Rat",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.XfSCmCndblO973ag]{Giant Rat}"
+        },
+        "Giant Weasel": {
+            "name": "Giant Weasel",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.opwZgKqVqntUSyxN]{Giant Weasel}"
+        },
+        "Goat": {
+            "name": "Goat",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.sC5LVxumiNuA8EJH]{Goat}"
+        },
+        "Gray Bag of Tricks": {
+            "name": "Gray Bag of Tricks",
+            "results": {
+                "1-1": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.VeVmo85SztJhGZsN]{Weasel}"
+                },
+                "2-2": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.XfSCmCndblO973ag]{Giant Rat}"
+                },
+                "3-3": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.Ss0Bwrs6FOveDoFy]{Badger}"
+                },
+                "4-4": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.VgI9TWuZwWjD2xgg]{Boar}"
+                },
+                "5-5": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.vsJSzta9m9xgEXbW]{Panther}"
+                },
+                "6-6": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.6aHtiu1tmyE9zRkJ]{Giant Badger}"
+                },
+                "7-7": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.jrFETGwaRC12Gcgo]{Dire Wolf}"
+                },
+                "8-8": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.xi88QgskH6ueJ6Ma]{Giant Elk}"
+                }
+            }
+        },
+        "Iron Flask Contents": {
+            "name": "Iron Flask Contents",
+            "results": {
+                "1-50": {
+                    "description": "Empty"
+                },
+                "51-66": {
+                    "description": "Demon"
+                },
+                "67-67": {
+                    "description": "Deva"
+                },
+                "68-69": {
+                    "description": "Devil (greater)"
+                },
+                "70-73": {
+                    "description": "Devil (lesser)"
+                },
+                "74-75": {
+                    "description": "Djinni"
+                },
+                "76-77": {
+                    "description": "Efreeti"
+                },
+                "78-83": {
+                    "description": "Elemental (any)"
+                },
+                "84-86": {
+                    "description": "Invisible stalker"
+                },
+                "87-90": {
+                    "description": "Night hag"
+                },
+                "91-91": {
+                    "description": "Planetar"
+                },
+                "92-95": {
+                    "description": "Salamander"
+                },
+                "96-96": {
+                    "description": "Solar"
+                },
+                "97-99": {
+                    "description": "Succubus/incubus"
+                },
+                "100-100": {
+                    "description": "Xorn"
+                }
+            }
+        },
+        "Jackal": {
+            "name": "Jackal",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.yjd5EqF2xIbyppga]{Jackal}"
+        },
+        "Lion": {
+            "name": "Lion",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.PIz6OxdTiqdlix0y]{Lion}"
+        },
+        "Manual of Golems Type": {
+            "name": "Manual of Golems Type",
+            "description": "<p>Golem / Time / Cost</p>",
+            "results": {
+                "1-5": {
+                    "description": "Clay / 30 days / 65,000 gp"
+                },
+                "6-17": {
+                    "description": "Flesh / 60 days / 50,000 gp"
+                },
+                "18-18": {
+                    "description": "Iron / 120 days / 100,000 gp"
+                },
+                "19-20": {
+                    "description": "Stone / 90 days / 80,000 gp"
+                }
+            }
+        },
+        "Mastiff": {
+            "name": "Mastiff",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.ck0kqumkVqWznctK]{Mastiff}"
+        },
+        "Outcast Motivation": {
+            "name": "Outcast Motivation",
+            "description": "<p>Outcasts like you are familiar with the hardships adventurers face on their travels, but think about how your own history of such hardship shapes your relationships and reasons to travel to unfamiliar places. When you begin your adventures, consider why you chose—or were forced—to exchange a life of familiarity and criminal enterprise for a life of exploration and bravura.</p>",
+            "results": {
+                "1-1": {
+                    "description": "Adventuring is a way to stay ahead of the law, I hope."
+                },
+                "2-2": {
+                    "description": "Adventuring is how I’ll finally earn (or seize) my fortune."
+                },
+                "3-3": {
+                    "description": "Adventuring is a way to amass power and influence before my inevitable return home."
+                },
+                "4-4": {
+                    "description": "Adventuring is how I’ll make amends for a life of wrongdoing."
+                },
+                "5-5": {
+                    "description": "Adventuring is a way to master my skills without fear of ending up in a cell."
+                },
+                "6-6": {
+                    "description": "Adventuring is a way to make a name for myself that will be feared and respected."
+                },
+                "7-7": {
+                    "description": "Adventuring is how I’ll track down the person who ruined my life."
+                },
+                "8-8": {
+                    "description": "Adventuring is a way to find a crew I can trust."
+                }
+            }
+        },
+        "Owl": {
+            "name": "Owl",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.tI2hsbBl6skqEkOp]{Owl}"
+        },
+        "Panther": {
+            "name": "Panther",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.vsJSzta9m9xgEXbW]{Panther}"
+        },
+        "Patch Effects": {
+            "name": "Patch Effects",
+            "results": {
+                "1-8": {
+                    "description": "Bag of 100 gp"
+                },
+                "9-15": {
+                    "description": "Silver coffer (1 foot long, 6 inches wide and deep) worth 500 gp"
+                },
+                "16-22": {
+                    "description": "Iron door (up to 10 feet wide and 10 feet high, barred on one side of your choice), which you can place in an opening you can reach; it conforms to fit the opening, attaching and hinging itself"
+                },
+                "23-30": {
+                    "description": "Ten gems worth 100 gp each"
+                },
+                "31-44": {
+                    "description": "Wooden ladder (24 feet long)"
+                },
+                "45-51": {
+                    "description": "A riding horse with saddle bags"
+                },
+                "52-59": {
+                    "description": "Pit (a cube 10 feet on a side), which you can place on the ground within 10 feet of you"
+                },
+                "60-68": {
+                    "description": "Four potions of healing"
+                },
+                "69-75": {
+                    "description": "Rowboat (12 feet long)"
+                },
+                "76-83": {
+                    "description": "Spell scroll containing one spell of 1st to 3rd circle"
+                },
+                "84-90": {
+                    "description": "Two mastiffs"
+                },
+                "91-96": {
+                    "description": "Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach"
+                },
+                "97-100": {
+                    "description": "Portable ram"
+                }
+            }
+        },
+        "Prayer Bead Effects": {
+            "name": "Prayer Bead Effects",
+            "description": "<p>Bead of… / Spell</p>",
+            "results": {
+                "1-6": {
+                    "description": "Blessing / Bless"
+                },
+                "7-12": {
+                    "description": "Curing / Cure wounds (2nd-circle) or restoration"
+                },
+                "13-16": {
+                    "description": "Favor / Greater restoration"
+                },
+                "17-18": {
+                    "description": "Smiting / Branding smite"
+                },
+                "19-19": {
+                    "description": "Summons / Planar ally"
+                },
+                "20-20": {
+                    "description": "Wind walking / Wind walk"
+                }
+            }
+        },
+        "Prismatic Spray": {
+            "name": "Prismatic Spray",
+            "results": {
+                "1-1": {
+                    "description": "Red. The target takes [[/damage 10d6 fire]] damage on a failed save, or half as much damage on a successful one."
+                },
+                "2-2": {
+                    "description": "Orange. The target takes [[/damage 10d6 acid]] damage on a failed save, or half as much damage on a successful one."
+                },
+                "3-3": {
+                    "description": "Yellow. The target takes [[/damage 10d6 lightning]] damage on a failed save, or half as much damage on a successful one."
+                },
+                "4-4": {
+                    "description": "Green. The target takes [[/damage 10d6 poison]] damage on a failed save, or half as much damage on a successful one."
+                },
+                "5-5": {
+                    "description": "Blue. The target takes [[/damage 10d6 cold]] damage on a failed save, or half as much damage on a successful one."
+                },
+                "6-6": {
+                    "description": "Indigo. On a failed save, the target is restrained. It must then make a [[/save CON]] save at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the &amp;Reference[petrified] condition. The successes and failures don’t need to be consecutive; keep track of both until the target collects three of a kind."
+                },
+                "7-7": {
+                    "description": "Violet. On a failed save, the target is &amp;Reference[blinded]. It must then make a [[/save WIS]] save at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the GM’s choosing and is no longer blinded. Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes."
+                },
+                "8-8": {
+                    "description": "Special. The target is struck by two rays. Roll twice more, rerolling any 8."
+                }
+            }
+        },
+        "Rat": {
+            "name": "Rat",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.Wu2QaZI38nWZEZtb]{Rat}"
+        },
+        "Reincarnate": {
+            "name": "Reincarnate",
+            "results": {
+                "1-4": {
+                    "description": "Beastkin, Avian"
+                },
+                "5-8": {
+                    "description": "Beastkin, Agile"
+                },
+                "9-10": {
+                    "description": "Beastkin, Aquatic"
+                },
+                "11-13": {
+                    "description": "Beastkin, Sturdy"
+                },
+                "14-24": {
+                    "description": "Dwarf"
+                },
+                "25-36": {
+                    "description": "Elf"
+                },
+                "37-76": {
+                    "description": "Human"
+                },
+                "77-81": {
+                    "description": "Orc"
+                },
+                "82-93": {
+                    "description": "Smallfolk, Gnome"
+                },
+                "94-100": {
+                    "description": "Smallfolk, Halfling"
+                }
+            }
+        },
+        "Ring of Resistance Damage Type": {
+            "name": "Ring of Resistance Damage Type",
+            "description": "<p>Type / Gem</p>",
+            "results": {
+                "1-1": {
+                    "description": "Acid"
+                },
+                "2-2": {
+                    "description": "Cold"
+                },
+                "3-3": {
+                    "description": "Fire"
+                },
+                "4-4": {
+                    "description": "Force"
+                },
+                "5-5": {
+                    "description": "Lightning"
+                },
+                "6-6": {
+                    "description": "Necrotic"
+                },
+                "7-7": {
+                    "description": "Poison"
+                },
+                "8-8": {
+                    "description": "Psychic"
+                },
+                "9-9": {
+                    "description": "Radiant"
+                },
+                "10-10": {
+                    "description": "Thunder"
+                }
+            }
+        },
+        "Rust Bag of Tricks": {
+            "name": "Rust Bag of Tricks",
+            "results": {
+                "1-1": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.Wu2QaZI38nWZEZtb]{Rat}"
+                },
+                "2-2": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.tI2hsbBl6skqEkOp]{Owl}"
+                },
+                "3-3": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.ck0kqumkVqWznctK]{Mastiff}"
+                },
+                "4-4": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.sC5LVxumiNuA8EJH]{Goat}"
+                },
+                "5-5": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.X82CDCyHgR41wdQE]{Giant Goat}"
+                },
+                "6-6": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.h1hoa6N6IlypbFz0]{Giant Boar}"
+                },
+                "7-7": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.PIz6OxdTiqdlix0y]{Lion}"
+                },
+                "8-8": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.2Uyw9ZrqRJur5bwE]{Brown Bear}"
+                }
+            }
+        },
+        "Scholar Motivation": {
+            "name": "Scholar Motivation",
+            "description": "<p>Most scholars happily spend their lives cloistered within libraries, laboratories, and workshops, immersed in academia. When you begin your adventures, consider why you chose—or were driven—to leave the comforts of a traditional lifestyle to heed the call of the unknown.</p>",
+            "results": {
+                "1-1": {
+                    "description": "Adventuring supplies me with coin to fund my research."
+                },
+                "2-2": {
+                    "description": "Adventuring allows me to gain field experience relevant to my field of study."
+                },
+                "3-3": {
+                    "description": "Adventuring is a way to actually experience and see the things I’ve read in books."
+                },
+                "4-4": {
+                    "description": "Adventuring is a way to make ends meet until I can prove the validity of my research."
+                },
+                "5-5": {
+                    "description": "Adventuring allows me to uncover lost or fobidden knowledge not found within typical institutions."
+                },
+                "6-6": {
+                    "description": "Adventuring is the best way to collect data for my patron or employer."
+                },
+                "7-7": {
+                    "description": "Adventuring may lead me to the answers I desperately seek."
+                },
+                "8-8": {
+                    "description": "Adventuring is a way to escape a life of academia I never wanted."
+                }
+            }
+        },
+        "Soldier Motivation": {
+            "name": "Soldier Motivation",
+            "description": "<p>As a soldier, you are accustomed to the dangers and demands of an adventurer’s lifestyle, but you must consider how your military responsibilities have altered to accommodate your new path. When you begin your adventures, consider why your duties as a soldier have ended—or changed—to allow for less-regimented pursuits.</p>",
+            "results": {
+                "1-1": {
+                    "description": "Adventuring is a way to support myself after being dishonorably discharged from service."
+                },
+                "2-2": {
+                    "description": "Adventuring is a way to continue fighting, even though the war is over."
+                },
+                "3-3": {
+                    "description": "Adventuring is a way to keep protecting others, since those I used to protect are now gone."
+                },
+                "4-4": {
+                    "description": "Adventuring is a way to use the skills I learned in military training without having to give my life to the military."
+                },
+                "5-5": {
+                    "description": "Adventuring is a way to perform special missions for those I serve."
+                },
+                "6-6": {
+                    "description": "Adventuring is a way to take justice into my own hands without concern for policy or politics."
+                },
+                "7-7": {
+                    "description": "Adventuring is the return to action I’ve craved since my retirement."
+                },
+                "8-8": {
+                    "description": "Adventuring is a way to keep my skills sharp before I can return to duty."
+                }
+            }
+        },
+        "Tan Bag of Tricks": {
+            "name": "Tan Bag of Tricks",
+            "results": {
+                "1-1": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.yjd5EqF2xIbyppga]{Jackal}"
+                },
+                "2-2": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.NLKyXyyesFlraxWi]{Ape}"
+                },
+                "3-3": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.ImTx2hN7pQqGK6fe]{Baboon}"
+                },
+                "4-4": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.QbwUREeTjQ2kv29j]{Axe Beak}"
+                },
+                "5-5": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.BLi3PwiKwa4TVWVB]{Black Bear}"
+                },
+                "6-6": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.opwZgKqVqntUSyxN]{Giant Weasel}"
+                },
+                "7-7": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.YZB7WaKKKDjkd5la]{Giant Hyena}"
+                },
+                "8-8": {
+                    "description": "@UUID[Compendium.black-flag.npcs.Actor.44drnXUj8btZkBGo]{Tiger}"
+                }
+            }
+        },
+        "Tiger": {
+            "name": "Tiger",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.44drnXUj8btZkBGo]{Tiger}"
+        },
+        "Wand of Wonder Effects": {
+            "name": "Wand of Wonder Effects",
+            "results": {
+                "1-5": {
+                    "description": "You cast slow."
+                },
+                "6-10": {
+                    "description": "You cast faerie fire."
+                },
+                "11-15": {
+                    "description": "You are stunned until the start of your next turn, believing something awesome just happened."
+                },
+                "16-20": {
+                    "description": "You cast gust of wind."
+                },
+                "21-25": {
+                    "description": "You cast detect thoughts on the target you chose. If you didn’t target a creature, you instead take [[/damage 1d6 psychic]] damage."
+                },
+                "26-30": {
+                    "description": "You cast stinking cloud."
+                },
+                "31-33": {
+                    "description": "Rain falls in a 60-foot radius centered on the target. The area becomes lightly obscured. The rain falls until the start of your next turn."
+                },
+                "34-36": {
+                    "description": "An animal appears in the unoccupied space nearest the target. The animal isn’t under your control and acts as it normally would. Roll a [[/r d100]]: on a 01–25, a rhinoceros appears; on a 26–50, an elephant appears; and on a 51–100, a rat appears."
+                },
+                "37-46": {
+                    "description": "You cast lightning bolt."
+                },
+                "47-49": {
+                    "description": "A cloud of 600 oversized butterflies fills a 30-foot radius centered on the target. The area becomes heavily obscured. The butterflies remain for 10 minutes."
+                },
+                "50-53": {
+                    "description": "You enlarge the target as if you had cast enlarge/reduce. If the target can’t be affected by that spell, or if you didn’t target a creature, you become the target."
+                },
+                "54-58": {
+                    "description": "You cast darkness."
+                },
+                "59-62": {
+                    "description": "Grass grows on the ground in a 60-foot radius centered on the target. If grass is already there, it grows to ten times its normal size and remains overgrown for 1 minute."
+                },
+                "63-65": {
+                    "description": "An object of the GM’s choice disappears into the Ethereal Plane. The object must be neither worn nor carried, within 120 feet of the target, and no larger than 10 feet in any dimension."
+                },
+                "66-69": {
+                    "description": "You shrink as if you had cast enlarge/reduce on yourself."
+                },
+                "70-79": {
+                    "description": "You cast fireball."
+                },
+                "80-84": {
+                    "description": "You cast invisibility on yourself."
+                },
+                "85-87": {
+                    "description": "Leaves grow from the target. If you chose a point in space as the target, leaves sprout from the creature nearest to that point. Unless they are picked off, the leaves turn brown and fall off after 24 hours."
+                },
+                "88-90": {
+                    "description": "A stream of [[/r 1d4 * 10]]{1d4 × 10} gems, each worth 1 gp, shoots from the wand’s tip in a line 30 feet long and 5 feet wide. Each gem deals 1 bludgeoning damage, and the total damage of the gems is divided equally among all creatures in the line."
+                },
+                "91-95": {
+                    "description": "A burst of colorful shimmering light extends from you in a 30-foot radius. You and each creature in the area that can see must succeed on a [[/save DC 15 CON]] save or become blinded for 1 minute. A creature can repeat the save at the end of each of its turns, ending the effect on itself on a success."
+                },
+                "96-97": {
+                    "description": "The target’s skin turns blue for [[/r 1d10]] days. If you chose a point in space, the creature nearest to that point is affected."
+                },
+                "98-100": {
+                    "description": "If you targeted a creature, it must make a [[/save DC 15 CON]] save. If you didn’t target a creature, you become the target and must make the save. If the save fails by 5 or more, the target is instantly petrified. On any other failed save, the target is restrained and begins to turn to stone. While restrained in this way, the target must repeat the save at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the target is freed by the greater restoration spell or similar magic."
+                }
+            }
+        },
+        "Weasel": {
+            "name": "Weasel",
+            "description": "@UUID[Compendium.black-flag.npcs.Actor.VeVmo85SztJhGZsN]{Weasel}"
+        }
+    }
+}
