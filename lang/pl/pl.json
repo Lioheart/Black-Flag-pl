@@ -1,0 +1,5003 @@
+{
+  "BF.BlackFlagRoleplaying": "Gra fabularna Black Flag",
+  "BF.Ability": {
+    "Action": {
+      "CheckGeneric": "Test Cechy",
+      "CheckSpecific": "Test: {ability}",
+      "SaveGenericLong": "Rzut obronny na cechę",
+      "SaveGenericShort": "Rzut obronny cechy",
+      "SaveSpecificLong": "Rzut obronny na {ability}",
+      "SaveSpecificShort": "Rzut obronny: {ability}"
+    },
+    "Base": {
+      "Label": "Wartość podstawowa"
+    },
+    "Charisma": {
+      "Label": "Charyzma",
+      "Abbreviation": "CHA"
+    },
+    "Constitution": {
+      "Label": "Kondycja",
+      "Abbreviation": "KON"
+    },
+    "Dexterity": {
+      "Label": "Zręczność",
+      "Abbreviation": "ZRC"
+    },
+    "Intelligence": {
+      "Label": "Inteligencja",
+      "Abbreviation": "INT"
+    },
+    "Label[one]": "Cecha",
+    "Label[other]": "Cechy",
+    "Score": {
+      "Label[one]": "Wartość Cechy",
+      "Label[other]": "Wartości Cech",
+      "Base": "Wartość podstawowa"
+    },
+    "Spellcasting": {
+      "Label": "Rzucanie zaklęć"
+    },
+    "Strength": {
+      "Label": "Siła",
+      "Abbreviation": "SIŁ"
+    },
+    "Wisdom": {
+      "Label": "Mądrość",
+      "Abbreviation": "MDR"
+    }
+  },
+  "BF.AbilityAssignment": {
+    "Label": "Określ wartości cech",
+    "RolledAbilityScore": "Rzut na cechę",
+    "Action": {
+      "Assign": "Przydziel",
+      "ChooseAnother": "Wybierz inną metodę",
+      "Confirm": "Potwierdź wynik",
+      "Reset": "Zresetuj przypisanie",
+      "Roll": "Rzut"
+    },
+    "ScoringMethods": {
+      "Label": "Metody przypisania punktów",
+      "Hint": "Istnieją trzy metody ustalania początkowych wartości cech postaci. Żadna z nich nie jest „lepsza” od pozostałych, ale niektórzy gracze preferują jedną z nich, dlatego przedstawiamy je wszystkie, aby zaspokoić potrzeby różnych typów graczy."
+    },
+    "Method": {
+      "Manual": {
+        "Label": "Przypisanie ręczne"
+      },
+      "Rolling": {
+        "Label": "Rzucanie",
+        "Hint": "To klasyk, który kryje w sobie niespodzianki i być może stawia cię przed trudnym wyborem. Dzięki temu tworzysz postać, do której się dostosowujesz, zamiast samemu podejmować wszystkie decyzje.",
+        "NoRolls": "Bez rzutów"
+      },
+      "PointBuy": {
+        "Label": "System punktowy",
+        "Hint": "Jeśli nie chcesz pozostawiać tego przypadkowi, możesz przydzielić wartości cech metodą kupowania punktów.",
+        "Cost": {
+          "Caption": "Koszt punktowy",
+          "Cost": "Koszt",
+          "Point[one]": "{number} punkt",
+          "Point[other]": "{number} punktów",
+          "Remaining": "{remaining} / {max} punktów",
+          "Score": "Wartość"
+        }
+      },
+      "StandardArray": {
+        "Label": "Standardowa tablica",
+        "Hint": "Aby szybciej rozpocząć grę, użyj standardowej tablicy."
+      }
+    }
+  },
+  "BF.AccentColor": {
+    "Label": "Kolor akcentujący"
+  },
+  "BF.Action": {
+    "Add": {
+      "Generic": "Dodaj",
+      "Specific": "Dodaj {type}"
+    },
+    "Choose": {
+      "Generic": "Wybierz",
+      "Specific": "Wybierz {option}"
+    },
+    "Configure": {
+      "Generic": "Skonfiguruj",
+      "Specific": "Skonfiguruj {type}"
+    },
+    "Remove": {
+      "Specific": "Usuń {type}"
+    },
+    "SaveChanges": "Zapisz zmiany"
+  },
+  "BF.ACTIVATION": {
+    "Label": "Aktywacja",
+    "FIELDS": {
+      "activation": {
+        "label": "Aktywacja",
+        "condition": {
+          "label": "Warunki aktywacji"
+        },
+        "override": {
+          "label": "Nadpisz aktywację"
+        },
+        "primary": {
+          "label": "Podstawowa aktywacja",
+          "hint": "Czy ta aktywacja jest częścią rzucania zaklęcia, czy też jest to późniejsza akcja, którą można wykonać? Tylko akcje podstawowe zużywają komórkę na zaklęcie podczas wykonania."
+        },
+        "type": {
+          "label": "Rodzaj aktywacji"
+        },
+        "value": {
+          "label": "Koszt aktywacji"
+        }
+      }
+    },
+    "SECTION": {
+      "Consumption": "Zużycie",
+      "Creation": "Tworzenie",
+      "Scaling": "Skalowany"
+    },
+    "Category": {
+      "Combat": "Walka",
+      "Monster": "Akcje potworów",
+      "Rest": "Odpoczywanie",
+      "Standard": "Standardowe akcje"
+    },
+    "Formatted": {
+      "Condition": "{activation}, {condition}",
+      "Scalar": "{number} {typeLowercase}"
+    },
+    "Time": "Czas aktywacji",
+    "Type": {
+      "Action[one]": "Akcja",
+      "Action[other]": "Akcje",
+      "BonusAction[one]": "Akcja Dodatkowa",
+      "BonusAction[other]": "Akcje dodatkowe",
+      "Encounter": "Początek spotkania",
+      "FreeAction[one]": "Darmowa akcja",
+      "FreeAction[other]": "Darmowe akcje",
+      "Lair[one]": "Akcja leża",
+      "Lair[other]": "Akcje leża",
+      "Legendary[one]": "Akcja Legendarna",
+      "Legendary[other]": "Akcje legendarne",
+      "LongRest": "Po długim odpoczynku",
+      "Other": "Inne",
+      "Reaction[one]": "Reakcja",
+      "Reaction[other]": "Reakcje",
+      "RoundEnd": "Koniec tury",
+      "RoundStart": "Początek tury",
+      "ShortRest": "Po krótkim odpoczynku"
+    },
+    "Warning": {
+      "NoActions": "Brak dostępnych {type}, ale aktywacja wymaga co najmniej {required}.",
+      "NoSlotsLeft": "Nie ma już wolnych komórek na rzucenie tego zaklęcia.",
+      "NotEnoughActions": "Za mało {type} do aktywacji, {required} wymagane, ale dostępne jest tylko {available}."
+    }
+  },
+  "BF.ACTIVITY": {
+    "Label[one]": "Aktywność",
+    "Label[other]": "Aktywności",
+    "FIELDS": {
+      "description": {
+        "label": "Opis"
+      },
+      "effects": {
+        "element": {
+          "level": {
+            "label": "Limit poziomu",
+            "hint": "Zakres poziomów wymaganych do zastosowania tego efektu",
+            "max": {
+              "label": "Poziom maksymalny"
+            },
+            "min": {
+              "label": "Poziom minimalny"
+            }
+          }
+        },
+        "label": "Zastosowane efekty"
+      },
+      "img": {
+        "label": "Ikona aktywności"
+      },
+      "magical": {
+        "label": "Magiczny",
+        "hint": "Czy ta aktywność i jej skutki są uważane za magiczne?"
+      },
+      "name": {
+        "label": "Nazwa aktywności"
+      },
+      "visibility": {
+        "identifier": {
+          "hint": "Identyfikator służący do określenia, czy do ustalenia ograniczeń poziomu widoczności należy zastosować postać, czy konkretny poziom klasy.",
+          "label": "Identyfikator klasy"
+        },
+        "label": "Widoczność",
+        "level": {
+          "hint": "Zakres poziomów wymaganych do użycia tej aktywności.",
+          "label": "Limit poziomu",
+          "max": {
+            "label": "Poziom maksymalny"
+          },
+          "min": {
+            "label": "Poziom minimalny"
+          }
+        },
+        "requireAttunement": {
+          "hint": "Aktywności nie można użyć jeśli przedmiot wymaga zestrojenia, ale nie jest zestrojony.",
+          "label": "Wymaga zestrojenia"
+        },
+        "requireIdentification": {
+          "hint": "Aktywności nie można użyć jeśli przedmiot, ale nie jest zidentyfikowany.",
+          "label": "Wymaga identyfikacji"
+        },
+        "requireMagic": {
+          "hint": "Aktywności nie można użyć jeśli magia jest niedostępna.",
+          "label": "Wymaga magii"
+        }
+      }
+    },
+    "SECTION": {
+      "Activation": "Aktywacja",
+      "Behavior": "Zachowanie",
+      "Consumption": "Zużycie",
+      "Effect": "Efekt",
+      "Identity": "Tożsamość",
+      "Target": "Cel",
+      "Time": "Czas"
+    },
+    "Activation": {
+      "Title": "Konfiguracja aktywności"
+    },
+    "Core": {
+      "Action": {
+        "Activate": "Aktywuj",
+        "Cast": "Rzuć",
+        "Create": "Utwórz aktywność",
+        "Delete": "Usuń aktywność",
+        "Duplicate": "Zduplikuj aktywność",
+        "Edit": "Edytuj aktywność",
+        "Use": "Użycie",
+        "View": "Zobacz aktywność"
+      },
+      "Warning": {
+        "NoTargets": "Musisz posiadać co najmniej jeden token pod swoją kontrolą lub przypisaną postać."
+      }
+    },
+    "Config": {
+      "Title": "Skonfiguruj aktywność dla {item}"
+    },
+    "Selection": {
+      "Title": "Wybierz aktywność",
+      "Error": "Aby utworzyć aktywność, należy wybrać jej typ."
+    }
+  },
+  "BF.Actor": {
+    "Artwork": {
+      "Portrait": "Portret",
+      "Token": "Token"
+    },
+    "Category": {
+      "Person": "Osoba",
+      "Place": "Miejsce",
+      "Thing": "Rzecz"
+    },
+    "Type": {
+      "Lair[one]": "Leże",
+      "Lair[other]": "Leża",
+      "NPC[one]": "Postać NPC",
+      "NPC[other]": "Postacie NPC",
+      "PC[one]": "Postać gracza",
+      "PC[other]": "Postacie graczy",
+      "SiegeWeapon[one]": "Broń oblężnicza",
+      "SiegeWeapon[other]": "Bronie oblężnicze",
+      "Vehicle[one]": "Pojazd",
+      "Vehicle[other]": "Pojazdy"
+    }
+  },
+  "BF.AdditionalControls": "Dodatkowe sterowanie",
+  "BF.Advancement": {
+    "Label": "Awans",
+    "Core": {
+      "Action": {
+        "Create": "Utwórz awans",
+        "Delete": "Usuń awans",
+        "Disable": "Wyłącz konfigurację",
+        "Duplicate": "Klonuj awans",
+        "Edit": "Edytuj awans",
+        "Revert": "Cofnij awans",
+        "View": "Zobacz awans"
+      },
+      "ClassRestriction": {
+        "Multiclass": "Tylko wieloklasowość",
+        "None": "Brak ograniczeń",
+        "Original": "Tylko oryginalna klasa"
+      },
+      "Level": {
+        "Any": {
+          "Short": "Dowolny",
+          "Long": "Dowolny poziom"
+        },
+        "None": "Bez poziomu"
+      },
+      "Warning": {
+        "CantBeAdded": "Tego ulepszenia nie można dodać do tego przedmiotu."
+      }
+    },
+    "ChooseFeatures": {
+      "Action": {
+        "Choose": "Dokonaj wyboru",
+        "Replace": "Zastąp poprzedni wybór",
+        "Revert": "Cofnij wybór"
+      },
+      "Choose": "Wybierz {number}",
+      "Details": "Szczegóły wyboru",
+      "Drop": "Przeciągnij tutaj element typu {type}, aby go zaznaczyć",
+      "FIELDS": {
+        "allowDrops": {
+          "label": "Zezwalaj na upuszczanie"
+        },
+        "choices": {
+          "hint": "Określ ilu wyborów można dokonać na poziom postaci.",
+          "label": "Wybory"
+        },
+        "pool": {
+          "label": "Zdolności"
+        },
+        "restriction": {
+          "label": "Ograniczenia wyboru",
+          "source": {
+            "label": "Źródło zdolności"
+          }
+        },
+        "type": {
+          "label": "Rodzaj przedmiotu"
+        }
+      },
+      "Hint": "Zaproponuj graczowi wybór cech lub talentów, które może przypisać swojej postaci na jednym lub kilku poziomach.",
+      "Notification[one]": "{title} należy wybrać",
+      "Notification[other]": "{number} {title} należy wybrać",
+      "Replacement": {
+        "Allow": "Zezwalaj na wymianę",
+        "Label": "Zastąp",
+        "Title": "zastąp"
+      },
+      "Source": {
+        "Automatic": "Ustal automatycznie"
+      },
+      "Title": "Wybierz zdolności",
+      "Warning": {
+        "PreviouslyChosen": "Ta zdolność została już wybrana na poprzednim poziomie.",
+        "Source": "Aby można było wybrać daną zdolność, musi ona być powiązana z {source}.",
+        "Type": "W tej opcji można wybrać wyłącznie {type}."
+      }
+    },
+    "ChooseSpells": {
+      "FIELDS": {
+        "allowDrops": {
+          "label": "Zezwalaj na upuszczanie"
+        },
+        "restriction": {
+          "allowCantrips": {
+            "label": "Zezwól na sztuczki",
+            "hint": "Czy można wybierać sztuczki, gdy zaznaczono opcję „Dowolny dostępny krąg”?"
+          },
+          "allowRituals": {
+            "label": "Rytuały",
+            "hint": "Ograniczenia dotyczące wyboru rytuałów.",
+            "Allow": "Zezwól na rytuały",
+            "None": "Bez rytuałów",
+            "Only": "Tylko rytuały"
+          },
+          "circle": {
+            "label": "Krąg zaklęć",
+            "Available": "Dowolny dostępny krąg"
+          },
+          "exactCircle": {
+            "label": "Dokładny krąg",
+            "hint": "Czy krąg musi być dokładnie tym kręgiem, czy też dopuszczalne są zaklęcia z niższych kręgów?"
+          },
+          "source": {
+            "label": "Źródło magii"
+          }
+        }
+      },
+      "Hint": "Zaproponuj graczowi wybór zaklęć, które może wybrać na jednym lub kilku poziomach.",
+      "Title": "Wybierz zaklęcia",
+      "Warning": {
+        "NoCantrips": "Dla tej opcji nie można wybrać żadnych sztuczek.",
+        "NoRituals": "Dla tej opcji nie można wybrać żadnych rytuałów.",
+        "OnlyCantrips": "Dla tej opcji można wybrać wyłącznie sztuczki.",
+        "OnlyRituals": "Dla tej opcji można wybrać wyłącznie rytuały.",
+        "Source": "Dla tej opcji można wybierać wyłącznie zaklęcia {source}.",
+        "CircleMaximum": "Dla tej opcji można wybrać wyłącznie zaklęcia o kręgu {circle} lub niższym.",
+        "CircleSpecific": "Dla tej opcji można wybierać wyłącznie zaklęcia {circle}."
+      }
+    },
+    "Config": {
+      "Title": "Skonfiguruj awans: {item}",
+      "Details": "Szczegóły awansu",
+      "DropHint": "Przeciągnij przedmioty tutaj, aby dodać je do tego awansu.",
+      "AllowDrops": {
+        "Label": "Zezwól na upuszczanie",
+        "Hint": "Czy gracze powinni mieć możliwość uwzględnienia własnych wyborów w tym awansie?"
+      },
+      "Warning": {
+        "Duplicate": "Ten przedmiot już jest przypisany do tego awansu.",
+        "Invalid": "Nie można dodać przedmiotów rodzaju {type} do tego awansu.",
+        "Recursive": "Nie możesz przyznać przedmiotu w ramach jego własnego awansu."
+      }
+    },
+    "ExpandedTalentList": {
+      "Title": "Rozszerzona lista talentów",
+      "Hint": "Zapewnij graczom dostęp do drugiej listy talentów podczas wybierania talentów w ramach ulepszeń.",
+      "JournalDescription": "Po zdobyciu nowego talentu możesz go wybrać z listy talentów {talentLists}."
+    },
+    "Equipment": {
+      "Title": "Wyposażenie",
+      "Hint": "Pozwól graczom wybrać swoje wyposażenie.",
+      "Action": {
+        "AddEntry": "Dodaj pozycję",
+        "RemoveEntry": "Usuń pozycję",
+        "Select": "Wybierz wyposażenie"
+      },
+      "Choice": {
+        "Armor": "Wybierz pancerz",
+        "Tool": "Wybierz narzędzie",
+        "Weapon": "Wybierz broń"
+      },
+      "Currency": "Waluta",
+      "DropHint": "Upuść przedmiot tutaj, aby połączyć",
+      "Mode": {
+        "Equipment": "Wyposażenie początkowe",
+        "Wealth": "Majątek początkowy ({formula})"
+      },
+      "NeedsBoth": "Aby wybrać wyposażenie początkowe, postać musi posiadać zarówno klasę, jak i przeszłość.",
+      "Notification": "Wybierz wyposażenie początkowe",
+      "Operator": {
+        "AND": "Wszystkie...",
+        "OR": "Jeden z..."
+      },
+      "Prefixes": {
+        "1": "abcdefghijklmnopqrstuvwxyz",
+        "2": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      },
+      "Proficiency": {
+        "IfProficient": "Jeśli biegły",
+        "Require": "Wymaga biegłości",
+        "Required": "Wymagana biegłość"
+      },
+      "Selection": {
+        "Title": "Wybór wyposażenia początkowego"
+      },
+      "SpecificItem": "Określony przedmiot",
+      "Warning": {
+        "ChoiceRequired": "Należy dokonać wyboru dla każdego elementu wyposażenia.",
+        "Depth": "W wyposażeniu dopuszczalne są tylko trzy poziomy głębokości.",
+        "ItemTypeInvalid": "Przedmiotów typu {type} nie można dodać do wyposażenia.",
+        "NoAdvancement": "Nie podano żadnych opcji wyposażenia.",
+        "NoClass": "Postać musi należeć do jakiejś klasy, zanim będzie mogła skorzystać z opcji początkowego majątku.",
+        "NoDocument": "Nie ma jeszcze postaci typu {type}, dla której można by wybrać wyposażenie."
+      },
+      "WealthRoll": "Rzut na majątek"
+    },
+    "FIELDS": {
+      "hint": {
+        "hint": "Dodatkowy opis tego awansu.",
+        "label": "Wskazówka"
+      },
+      "icon": {
+        "label": "Niestandardowa ikona"
+      },
+      "identifier": {
+        "label": "Identyfikator"
+      },
+      "level": {
+        "classIdentifier": {
+          "hint": "Czy ten awans zależy od ogólnego poziomu postaci, czy od poziomu konkretnej klasy?",
+          "label": "Odniesienie do poziomu"
+        },
+        "classRestriction": {
+          "hint": "Czy ten awans powinien mieć zastosowanie wyłącznie do pierwszej klasy wybranej przez postać, czy też tylko w przypadku wyboru tej klasy w ramach wieloklasowości?",
+          "label": "Ograniczenia klasowe"
+        },
+        "value": {
+          "label": "Poziom"
+        }
+      },
+      "title": {
+        "label": "Niestandardowy tytuł"
+      }
+    },
+    "GrantFeatures": {
+      "FIELDS": {
+        "enabled": {
+          "hint": "Czy zdolności powinny być domyślnie włączone po dodaniu ich do postaci?",
+          "label": "Włączony"
+        },
+        "pool": {
+          "label": "Zdolności"
+        }
+      },
+      "Hint": "Przyznaj postaci zdolności, gdy osiągnie określony poziom.",
+      "Title": "Zdolności"
+    },
+    "GrantSpells": {
+      "Action": {
+        "Reselect": "Ponowny wybór cechy bazowej rzucania zaklęć"
+      },
+      "FIELDS": {
+        "pool": {
+          "label": "Zaklęcia"
+        }
+      },
+      "Hint": "Przyznaj postaci konkretne zaklęcia i nadaj im odpowiednie parametry.",
+      "Notification": {
+        "Ability": "Wybór cechy bazowej rzucania zaklęć"
+      },
+      "Title": "Zaklęcia"
+    },
+    "HitPoints": {
+      "Action": {
+        "TakeAverage": "Weź średnią",
+        "or": "lub"
+      },
+      "Average": "Średnia",
+      "FIELDS": {
+        "denomination": {
+          "label": "Kość wytrzymałości"
+        }
+      },
+      "Hint": "Ustal wielkość kości wytrzymałości dla klasy i śledź punkty wytrzymałości gracza w miarę zdobywania przez niego kolejnych poziomów.",
+      "Notification": "Należy zwiększyć liczbę punktów wytrzymałości",
+      "Starting": "Punkty wytrzymałości na 1. poziomie",
+      "Title": "Punkty wytrzymałości"
+    },
+    "Improvement": {
+      "Action": {
+        "Choose": "Dokonaj wyboru talentu",
+        "Revert": "Cofnij wybór"
+      },
+      "FIELDS": {
+        "talentList": {
+          "label": "Lista talentów"
+        }
+      },
+      "Hint": "Pozwól graczowi podnieść jedną cechę i wybrać talent z określonej listy talentów.",
+      "Notification": {
+        "Ability": "Wybierz cechę, którą chcesz rozwinąć",
+        "Talent": "Wybierz talent do zdobycia"
+      },
+      "Journal": {
+        "Description": "<p>Wybierz jedno z poniższych ulepszeń (dzięki tej zdolności nie można podnieść wartości cech powyżej 20):</p><ul><li>Zwiększ wartość jednej cechy o 2.</li><li>Zwiększ wartość dwóch różnych cech o 1 dla każdej z nich.</li><li>{talentList}</li></ul>",
+        "TalentList[one]": "Zwiększ jedną cechę o 1 i wybierz talent z listy talentów {lists}.",
+        "TalentList[other]": "Zwiększ jedną cechę o 1 i wybierz talent z jednej z list talentów {lists}."
+      },
+      "Title": "Ulepszenie"
+    },
+    "KeyAbility": {
+      "Hint": "Określ kluczową cechę lub cechy dla danej klasy.",
+      "FIELDS": {
+        "options": {
+          "label": "Cechy kluczowe"
+        }
+      },
+      "Title": "Cecha kluczowa"
+    },
+    "Property": {
+      "FIELDS": {
+        "changes": {
+          "element": {
+            "key": {
+              "label": "Atrybut kluczowy"
+            },
+            "type": {
+              "label": "Typ"
+            },
+            "value": {
+              "label": "Wartość"
+            }
+          },
+          "label": "Zmiany"
+        }
+      },
+      "Hint": "Zmień jedną lub więcej właściwości postaci, korzystając z mechanizmu podobnego do efektów aktywnych.",
+      "Title": "Ustaw właściwość"
+    },
+    "ScaleValue": {
+      "FIELDS": {
+        "scale": {
+          "label": "Skala"
+        },
+        "type": {
+          "label": "Typ danych"
+        }
+      },
+      "Hint": "Pojedyncza wartość, która zmienia się wraz z poziomem i jest dostępna w formułach rzutów (np. kość sztuk walki mnicha).",
+      "Identifier": {
+        "Hint": "Wartość skali dla bieżącego poziomu będzie dostępna poprzez użycie w formule <blackFlag-copyable>@scale.<wbr>{parentIdentifier}.<wbr>{identifier}</blackflag-copyable>.",
+        "DiceHint": "Dostępne są również poszczególne elementy kości. W przypadku liczby kości (np. 4 z 4k6) należy użyć <blackFlag-copyable>@scale.<wbr>{parentIdentifier}.<wbr>{identifier}.<wbr>number</blackFlag-copyable>, a w przypadku wartości nominalnej (np. 6 z 4k6) należy użyć <blackFlag-copyable>@scale. <wbr>{parentIdentifier}.<wbr>{identifier}.<wbr>denomination</blackFlag-copyable>, a dla konkretnej kostki (np. k6 z zestawu 4k6) należy użyć <blackFlag-copyable>@scale.<wbr>{parentIdentifier}.<wbr>{identifier}.<wbr>die</blackFlag-copyable>."
+      },
+      "Item": {
+        "Label": "Powiązany element",
+        "Hint": "Ta wartość skali będzie wyświetlana obok tej pozycji w tabeli dziennika. Jeśli nie zostanie podana, wartość ta będzie wyświetlana w osobnej kolumnie."
+      },
+      "Title": "Wartość skali",
+      "Type": {
+        "CR": {
+          "Label": "Stopień Wyzwania",
+          "Hint": "Służy do reprezentowania stopnia wyzwania stworzenia wykorzystywanych w zdolnościach takich jak Dzika Postać."
+        },
+        "Dice": {
+          "Label": "Kość",
+          "Hint": "Użyj tych wartości do kości, takich jak kość Bardowskiej Inspiracji lub Ataku Ukradkowego."
+        },
+        "Distance": {
+          "Label": "Odległość",
+          "Hint": "Użyj dla wartości liczbowych przedstawiających dystans, takich jak prędkość ruchu bez zbroi, czy promień aury ochrony."
+        },
+        "Number": {
+          "Label": "Liczba",
+          "Hint": "Użyj tego dla wartości czysto liczbowych, takich jak obrażenia w szale."
+        },
+        "String": {
+          "Label": "Dowolny",
+          "Hint": "Użyj tej opcji jeśli nie jesteś pewny typu skali, lub gdy rodzaj nie ma znaczenia."
+        },
+        "Usage": {
+          "Label": "Użycia",
+          "Hint": "Użyj tego, aby określić zastosowania danego przedmiotu."
+        }
+      }
+    },
+    "Selection": {
+      "Title": "Wybierz rodzaj awansu",
+      "Error": "Aby utworzyć, należy wybrać typ awansu."
+    },
+    "Size": {
+      "FIELDS": {
+        "options": {
+          "hint": "Gracz może wybrać dowolny z dostępnych rozmiarów. Jeśli wybierze tylko jeden, jego postać automatycznie przyjmie ten rozmiar.",
+          "label": "Opcje rozmiarów"
+        }
+      },
+      "Hint": "Ustal rozmiar postaci lub daj graczowi możliwość wyboru rozmiaru.",
+      "Notification": "Wybierz rozmiar stworzenia",
+      "Title": "Rozmiar"
+    },
+    "Spellcasting": {
+      "Action": {
+        "LearnSpells": "Nauka zaklęć",
+        "ReplaceSpell": "Zastąp poprzednie zaklęcie"
+      },
+      "CircleSpells": "{circle} zaklęć",
+      "GainingSpells": "Zdobywanie zaklęć",
+      "Hint": "Przyznaj postaci możliwość nauki i rzucania zaklęć.",
+      "Replacement": {
+        "Label": "Zaklęcie do zastąpienia",
+        "None": "Bez wymiany",
+        "Slot": "Zastąpienie zaklęcia"
+      },
+      "Title": "Rzucanie zaklęć"
+    },
+    "SpellcastingScale": {
+      "Title": "Skala rzucania zaklęć"
+    },
+    "SpellConfig": {
+      "FIELDS": {
+        "spell": {
+          "label": "Ustawienia zaklęć",
+          "ability": {
+            "label": "Cecha bazowa rzucania zaklęć"
+          },
+          "alwaysPrepared": {
+            "label": "Zawsze przygotowany"
+          },
+          "mode": {
+            "label": "Tryb przygotowania"
+          },
+          "origin": {
+            "hint": "Klasa lub podklasa, z którą będą powiązane te zaklęcia. Jeśli określona klasa opanowuje ograniczoną liczbę zaklęć, zaklęcia te zostaną wliczone do tej liczby.",
+            "label": "Pochodzenie"
+          },
+          "source": {
+            "hint": "Zaklęcia dodane będą traktowane jako pochodzące z tego źródła magii, niezależnie od ich pierwotnego źródła.",
+            "label": "Źródło magii"
+          },
+          "uses": {
+            "label": "Ograniczone ładunki użyć",
+            "max": {
+              "label": "Maks. ilość użyć"
+            },
+            "period": {
+              "label": "Czas odzyskiwania"
+            },
+            "requireSlot": {
+              "hint": "Wymagane jest użycie komórki na zaklęcie nawet w przypadku zaklęć o ograniczonej liczbie użyć.",
+              "label": "Wymaga komórki"
+            }
+          }
+        }
+      },
+      "FreeCasting": "Darmowe rzucanie"
+    },
+    "Trait": {
+      "Action": {
+        "AddChoiceGroup": "Dodaj zestaw opcji",
+        "RemoveChoiceGroup": "Usuń zestaw opcji",
+        "RevertChoice": "Cofnij wybór"
+      },
+      "Choice": {
+        "AnyCounted": "dowolny {count} {type}",
+        "AnyUncounted": "dowolny {type}",
+        "Wrapper": "Wybierz {choices}",
+        "List": "{count} z {list}",
+        "Other": "{count} innych {type}",
+        "Mode": {
+          "Exclusive": {
+            "Label": "Wyłącznie",
+            "Hint": "Gracz może wybrać tylko jedną z dostępnych opcji."
+          },
+          "Inclusive": {
+            "Label": "Włącznie",
+            "Hint": "Gracz będzie mógł wybierać spośród wszystkich dostępnych opcji."
+          }
+        }
+      },
+      "FIELDS": {
+        "choiceMode": {
+          "hint": "Metoda, dzięki której gracz może dokonywać wyboru spośród dostępnych zestawów opcji.",
+          "label": "Tryb wyboru"
+        },
+        "choices": {
+          "element": {
+            "count": {
+              "label": "Ilość"
+            },
+            "pool": {
+              "label": "Zbiór zdolności"
+            }
+          },
+          "hint": "Zdolności, które zostaną przedstawione graczowi jako opcje do wyboru.",
+          "label": "Wybory"
+        },
+        "grants": {
+          "hint": "Zdolności, które zostaną przyznane postaci.",
+          "label": "Gwarantowany"
+        },
+        "mode": {
+          "label": "Tryb"
+        }
+      },
+      "Hint": "Przyznaj postaci określone zdolności lub umiejętności albo daj jej możliwość wyboru.",
+      "Mode": {
+        "Default": {
+          "Label": "Domyślne",
+          "Hint": "Zyskaj zdolność lub biegłość."
+        },
+        "Expertise": {
+          "Label": "Znawstwo",
+          "Hint": "Zyskaj podwójną biegłość w zdolności, w której już masz zwykłą biegłość."
+        },
+        "Force": {
+          "Label": "Wymuszone Znawstwo",
+          "Hint": "Zyskaj podwójną biegłość w zdolności, niezależnie od wcześniejszego poziomu biegłości."
+        },
+        "Upgrade": {
+          "Label": "Ulepszenie",
+          "Hint": "Zyskaj biegłość w umiejętności, chyba że już ją masz. W takim wypadku zyskaj podwójną biegłość."
+        }
+      },
+      "Notification": "Wybierz {count} więcej {type}",
+      "NotificationSimple": "Wybierz jeszcze kilka {type}",
+      "Title": "Zdolności"
+    }
+  },
+  "BF.AMMUNITION": {
+    "FIELDS": {
+      "damage": {
+        "label": "Obrażenia amunicji",
+        "replace": {
+          "label": "Zastąp obrażenia od broni",
+          "hint": "Zastąp podstawowe obrażenia broni obrażeniami amunicji, zamiast ich modyfikować."
+        }
+      },
+      "magicalBonus": {
+        "label": "Premia magiczna",
+        "hint": "Do ataku i obrażeń zadawanych przez broń wykorzystującą tę amunicję dodawany jest bonus magiczny."
+      }
+    },
+    "Details": "Szczegóły amunicji",
+    "Type": {
+      "Label": "Rodzaj amunicji",
+      "Arrow[one]": "Strzała",
+      "Arrow[other]": "Strzały",
+      "BlowgunNeedle[one]": "Strzałka do dmuchawki",
+      "BlowgunNeedle[other]": "Strzałki do dmuchawki",
+      "CrossbowBolt[one]": "Bełt do kuszy",
+      "CrossbowBolt[other]": "Bełty do kuszy",
+      "PaperCartridge[one]": "Wkład papierowy",
+      "PaperCartridge[other]": "Wkłady papierowe",
+      "SlingBullet[one]": "Pocisk do procy",
+      "SlingBullet[other]": "Pociski do procy"
+    }
+  },
+  "BF.AreaOfEffect": {
+    "Label": "Obszar działania",
+    "Counted": "{count} {sizedShape}",
+    "Described": "{size} {shapeLowercase}",
+    "Size": {
+      "Label": "Rozmiar",
+      "Height": "Wzrost",
+      "Length": "Długość",
+      "Radius": "Promień",
+      "Thickness": "Grubość",
+      "Width": "Szerokość"
+    },
+    "Type": {
+      "Circle": {
+        "Label[one]": "Okrąg",
+        "Label[other]": "Okręgi"
+      },
+      "Cone": {
+        "Label[one]": "Stożek",
+        "Label[other]": "Stożki"
+      },
+      "Cube": {
+        "Label[one]": "Sześcian",
+        "Label[other]": "Sześciany"
+      },
+      "Cylinder": {
+        "Label[one]": "Walec",
+        "Label[other]": "Walce"
+      },
+      "Individual": {
+        "Label": "Jednostka"
+      },
+      "Line": {
+        "Label[one]": "Linia",
+        "Label[other]": "Linie"
+      },
+      "Radius": {
+        "Label[one]": "Promień",
+        "Label[other]": "Promienie"
+      },
+      "Ring": {
+        "Label[one]": "Ściana (pierścień)",
+        "Label[other]": "Ściany (pierścień)"
+      },
+      "Sphere": {
+        "Label[one]": "Sfera",
+        "Label[other]": "Sfery"
+      },
+      "Square": {
+        "Label[one]": "Kwadrat",
+        "Label[other]": "Kwadraty"
+      },
+      "Wall": {
+        "Label[one]": "Ściana (prosta)",
+        "Label[other]": "Ściany (proste)"
+      }
+    }
+  },
+  "BF.ARMOR": {
+    "Label[one]": "Pancerz",
+    "Label[other]": "Pancerze",
+    "Category": {
+      "Heavy[one]": "Ciężki Pancerz",
+      "Heavy[other]": "Ciężkie Pancerze",
+      "Light[one]": "Lekki Pancerz",
+      "Light[other]": "Lekkie Pancerze",
+      "Medium[one]": "Średni Pancerz",
+      "Medium[other]": "Średnie Pancerze",
+      "Shield[one]": "Tarcza",
+      "Shield[other]": "Tarcze"
+    },
+    "Details": "Szczegóły pancerza",
+    "Equipped": "Wyposażony pancerz",
+    "FIELDS": {
+      "armor": {
+        "requiredStrength": {
+          "label": "Wymagana Siła"
+        },
+        "value": {
+          "label": "Wartość Pancerza"
+        }
+      },
+      "magicalBonus": {
+        "label": "Premia magiczna",
+        "hint": "Do klasy pancerza dodano magiczną premię."
+      },
+      "modifier": {
+        "label": "Modyfikator",
+        "max": {
+          "label": "Maksymalny modyfikator"
+        },
+        "min": {
+          "label": "Minimalny modyfikator"
+        }
+      }
+    },
+    "Modifier": {
+      "Description": {
+        "Long": "+ {ability} mod.",
+        "Max": "{hint} (maks. {max})",
+        "Short": "+ {ability}"
+      }
+    },
+    "Notification": {
+      "Noisy": "Hałaśliwy pancerz utrudnia poruszanie się w ukryciu.",
+      "NotProficient": "Użycie {type} bez odpowiedniej biegłości powoduje utrudnienie w wykonywaniu testów SIŁ i ZRC.",
+      "NotProficientNote": "Walka bronią {name}, mimo braku biegłości w jej posługiwaniu się.",
+      "TooMany": "Wyposażono w więcej niż jeden typ {type}."
+    },
+    "Property": {
+      "Cumbersome": "Niewygodny",
+      "NaturalMaterials": "Naturalne materiały",
+      "Noisy": "Hałaśliwy"
+    },
+    "StealthReduction": "{reduced} ({full} bez ciężkiej zbroi)",
+    "Type": {
+      "Breastplate": "Napierśnik",
+      "Brigandine": "Brygantyna",
+      "ChainMail": "Kolczuga",
+      "ChainShirt": "Koszula kolcza",
+      "HalfPlate": "Zbroja półpłytowa",
+      "Hide": "Zbroja skórzana",
+      "Leather": "Skórznia",
+      "Padded": "Przeszywanica",
+      "Plate": "Zbroja płytowa",
+      "RingMail": "Zbroja pierścieniowa",
+      "ScaleMail": "Zbroja łuskowa",
+      "Splint": "Zbroja płytkowa",
+      "StuddedLeather": "Ćwiekowana skóra"
+    }
+  },
+  "BF.ARMORCLASS": {
+    "Abbreviation": "KP",
+    "Action": {
+      "Configure": "Skonfiguruj klasę pancerza"
+    },
+    "FIELDS": {
+      "attributes": {
+        "ac": {
+          "baseFormulas": {
+            "label": "Domyślne formuły na KP"
+          },
+          "cover": {
+            "label": "Premia za osłonę"
+          },
+          "customLabel": {
+            "label": "Niestandardowa etykieta"
+          },
+          "formulas": {
+            "element": {
+              "armored": {
+                "label": "Wyposażony w pancerz"
+              },
+              "formula": {
+                "label": "Formuła"
+              },
+              "label": {
+                "label": "Etykieta"
+              },
+              "shielded": {
+                "label": "Wyposażony w tarczę"
+              }
+            },
+            "label": "Formuły na KP"
+          },
+          "flat": {
+            "hint": "Wartość dowolna udostępniana w formułach KP, takich jak Naturalny pancerz.",
+            "label": "Wartość płaska"
+          },
+          "override": {
+            "hint": "Wartość, która zastąpi obliczoną wartość KP, uniemożliwiając zastosowanie jakichkolwiek innych premii.",
+            "label": "Nadpisz"
+          }
+        }
+      }
+    },
+    "Formula": {
+      "Armored": "Opancerzony",
+      "Natural": "Naturalny pancerz",
+      "Unarmored": "Bez pancerza"
+    },
+    "Label": "Klasa Pancerza",
+    "Warning": {
+      "InvalidFormula": "Nie udało się obliczyć formuły KP: {formula} ({error})"
+    }
+  },
+  "BF.ATTACK": {
+    "Label": "Atak",
+    "Hint": "Wykonaj Test Ataku i rzuć na obrażenia.",
+    "FIELDS": {
+      "attack": {
+        "label": "Szczegóły ataku",
+        "ability": {
+          "label": "Cecha bazowa ataku",
+          "hint": "Cecha używana do wykonania ataku i określenia obrażeń. Dostępna przy użyciu @mod we wzorach."
+        },
+        "bonus": {
+          "label": "Premia do trafienia",
+          "hint": "Premia dodana do rzutu na trafienie w ataku."
+        },
+        "critical": {
+          "threshold": {
+            "label": "Próg Trafienia Krytycznego",
+            "hint": "Minimalna wartość na kości ataku wymagana do wykonania rzutu na trafienie krytyczne."
+          }
+        },
+        "flat": {
+          "label": "Stały Bonus do Trafienia",
+          "hint": "Nie dodawaj wartości biegłości ani atrybutu do rzutu na atak."
+        },
+        "type": {
+          "classification": {
+            "label": "Klasyfikacja ataku",
+            "hint": "Czy jest to atak wręcz czy atak z dystansu?"
+          },
+          "value": {
+            "label": "Typ ataku",
+            "hint": "Czy ten atak pochodzi z broni, czy z zaklęcia?"
+          }
+        }
+      },
+      "damage": {
+        "label": "Obrażenia od Ataku",
+        "critical": {
+          "bonus": {
+            "label": "Dodatkowe obrażenia trafienia krytycznego",
+            "hint": "Dodatkowe obrażenia zadawane jak wypadnie trafienie krytyczne, dodawane do obrażeń bazowych lub pierwszego składnika obrażeń."
+          }
+        },
+        "includeBase": {
+          "label": "Uwzględnij obrażenia podstawowe",
+          "hint": "Uwzględnij podstawowe obrażenia przedmiotu wraz z wszelkimi dodatkowymi składnikami obrażeń zdefiniowanymi w aktywności."
+        },
+        "parts": {
+          "label": "Składniki obrażeń",
+          "hint": "Indywidualne składniki obrażeń do wliczenia w rzut."
+        }
+      }
+    },
+    "Formatted": "Atak {type} {classification}",
+    "Mode": {
+      "Label": "Tryb ataku",
+      "Offhand": "Druga ręka",
+      "OneHanded": "Jednoręczna",
+      "Thrown": "Rzucana",
+      "ThrownOffhand": "Rzut drugą ręką",
+      "TwoHanded": "Dwuręczna"
+    }
+  },
+  "BF.Attunement": {
+    "Label": "Zestrojenie",
+    "Attuned": "Zestrojony",
+    "Max": {
+      "Label": "Maksymalna liczba zestrojonych przedmiotów"
+    },
+    "NotAttuned": "Nie zestrojony",
+    "Requirement": "Wymagania zestrojenia",
+    "Type": {
+      "Label": "Typ zestrojenia",
+      "None": "Bez zestrojenia",
+      "Optional": "Zestrojenie opcjonalne",
+      "Required": "Wymaga zestrojenia"
+    },
+    "Warning": "Zestrojono zbyt wiele przedmiotów."
+  },
+  "BF.Biography": {
+    "Age": "Wiek",
+    "AlliesOrganizations": "Sojusznicy i organizacje",
+    "Backstory": "Historia",
+    "Eyes": "Oczy",
+    "Hair": "Włosy",
+    "Height": "Wzrost",
+    "Motivation": "Motywacja do przygód",
+    "Skin": "Skóra",
+    "Weight": "Waga"
+  },
+  "BF.Bonus": {
+    "Label[one]": "Premia",
+    "Label[other]": "Premie"
+  },
+  "BF.CAST": {
+    "Title": "Rzuć",
+    "Hint": "Rzuć spersonalizowaną wersję zaklęcia.",
+    "FIELDS": {
+      "spell": {
+        "label": "Szczegóły rzucania",
+        "ability": {
+          "label": "Cecha bazowa rzucania czarów",
+          "hint": "Zastąp domyślną zdolność rzucania zaklęcia."
+        },
+        "challenge": {
+          "attack": {
+            "label": "Premia do ataku",
+            "hint": "Stała premia do trafienia zaklęciem, zamiast standardowej premii do ataku tego zaklęcia."
+          },
+          "save": {
+            "label": "ST rzutu obronnego",
+            "hint": "Stały ST, zamiast standardowego ST zaklęcia."
+          },
+          "override": {
+            "label": "Nadpisz wartości",
+            "hint": "Zastąp normalny bonus do ataku zaklęciem i ST podczas rzucania."
+          }
+        },
+        "circle": {
+          "label": "Krąg rzucania zaklęć",
+          "hint": "Krąg bazowy do rzucenia zaklęcia, jeśli różni się od kręgu zaklęcia."
+        },
+        "properties": {
+          "label": "Zignorowane właściwości",
+          "hint": "Komponenty zaklęcia i tagi, do pominięcia podczas rzucania zaklęcia."
+        },
+        "spellbook": {
+          "label": "Wyświetl w księdze zaklęć",
+          "hint": "Wyświetl zaklęcie w zakładce Zaklęcia na karcie postaci."
+        },
+        "uuid": {
+          "label": "Zaklęcie do rzucenia"
+        }
+      }
+    },
+    "SECTION": {
+      "Spell": "Zaklęcie",
+      "Spellbook": "Dodatkowe Zaklęcia"
+    },
+    "Action": {
+      "RemoveSpell": "Usuń zaklęcie"
+    },
+    "Enchantment": {
+      "Name": "Zmiany zaklęcia"
+    }
+  },
+  "BF.CHATMESSAGE": {
+    "Activities": "Aktywności",
+    "Deltas": {
+      "Recovery": "Odzyskiwanie"
+    },
+    "TURN": {
+      "NoCombatant": "Walczący już nie istnieje!"
+    }
+  },
+  "BF.CHECK": {
+    "Title": "Test",
+    "Hint": "Wykonaj jedną lub więcej testów atrybutów, korzystając z opcjonalnej biegłości.",
+    "Label[one]": "Test",
+    "Label[other]": "Testy",
+    "FIELDS": {
+      "check": {
+        "label": "Szczegóły testu",
+        "ability": {
+          "hint": "Cecha, której modyfikator zostanie użyty w tym teście.",
+          "label": "Cecha bazowa testu"
+        },
+        "associated": {
+          "hint": "Przedstaw testy atrybutów z uwzględnieniem biegłości i premii związanych z tymi atrybutami, narzędziami lub pojazdami.",
+          "label": "Powiązane biegłości"
+        },
+        "bonus": {
+          "hint": "Do wszystkich rzutów testów wykonanych w ramach tej aktywności dodawana jest premia.",
+          "label": "Premia do testu"
+        },
+        "dc": {
+          "label": "Stopień Trudności",
+          "calculation": {
+            "hint": "Metoda lub zdolność używana do obliczania stopnia trudności.",
+            "label": "Obliczanie ST"
+          },
+          "formula": {
+            "hint": "Niestandardowa formuła lub stała wartość ST.",
+            "label": "Formuła rzutu na ST"
+          }
+        },
+        "visible": {
+          "hint": "Wyświetl przycisk rzutu na czacie dla wszystkich graczy.",
+          "label": "Widoczny dla wszystkich"
+        }
+      }
+    }
+  },
+  "BF.ChallengeRating": {
+    "Label": "Stopień Wyzwania",
+    "Abbreviation": "SW",
+    "Specific": "SW {value}"
+  },
+  "BF.ConceptSelection": {
+    "Title": "Wybierz {type}",
+    "NoOptions": "Nie znaleziono żadnego {typePlural} — utwórz {type} w świecie lub włącz kompendium zawierające {typePlural}.",
+    "ReplaceTitle": "Zastąp {type}",
+    "Warning": {
+      "Duplicate": "Typ {type} już istnieje dla aktora {name}.",
+      "InvalidType": "Dokumentów typu {type} nie można ustawić za pomocą metody setConcept."
+    }
+  },
+  "BF.Condition": {
+    "Label[one]": "Stan",
+    "Label[other]": "Stany",
+    "Blinded": {
+      "Label": "Oślepiony",
+      "NoteAbilityChecks": "Stworzenie, które nic nie widzi, automatycznie nie zalicza żadnego testu atrybutu wymagającego wzroku.",
+      "NoteAttackRolls": "Rzuty na atak oślepionego stworzenia mają utrudnienie."
+    },
+    "Charmed": {
+      "Label": "Zauroczony"
+    },
+    "Deafened": {
+      "Label": "Ogłuchły",
+      "Note": "Stworzenie, które straciło słuch, automatycznie nie zalicza żadnego testu atrybutu wymagającego słuchu."
+    },
+    "Exhaustion": {
+      "Label": "Wyczerpanie",
+      "Level": "Poziom wyczerpania",
+      "Numbered": "Poziom wyczerpania {level}",
+      "NoteAbilityChecks": "Stworzenie z jednym poziomem wyczerpania ma utrudnienie przy testach cech.",
+      "NoteAttackRollsSaves": "Stworzenie z trzema stopniami wyczerpania ma utrudnienie przy rzutach ataku i rzutach obronnych."
+    },
+    "Frightened": {
+      "Label": "Przerażony",
+      "Note": "Przestraszone stworzenie ma utrudnienie przy testach cech i rzutach na atak, dopóki źródło jego strachu znajduje się w zasięgu wzroku."
+    },
+    "Grappled": {
+      "Label": "Pochwycony"
+    },
+    "Incapacitated": {
+      "Label": "Obezwładniony"
+    },
+    "Invisible": {
+      "Label": "Niewidzialny",
+      "Note": "Niewidzialne stworzenie ma ułatwienie przy testach Zręczności (Skradanie) wykonywanych w celu ukrycia się."
+    },
+    "Paralyzed": {
+      "Label": "Sparaliżowany",
+      "Note": "Sparaliżowanemu stworzeniu automatycznie nie udają się rzuty obronne na SIŁ i ZRC."
+    },
+    "Petrified": {
+      "Label": "Skamieniały",
+      "Note": "Skamieniałemu stworzeniu automatycznie nie udaje się wykonać rzutów obronnych na SIŁ i ZRC."
+    },
+    "Poisoned": {
+      "Label": "Zatruty",
+      "Note": "Zatrute stworzenie ma utrudnienie przy rzutach na atak i testach cech."
+    },
+    "Prone": {
+      "Label": "Powalony",
+      "Note": "Stworzenie powalone ma utrudnienie przy rzutach na atak."
+    },
+    "Restrained": {
+      "Label": "Unieruchomiony",
+      "Note": "Obezwładnione stworzenie ma utrudnienie przy rzutach obronnych na ZRC i rzutach ataku."
+    },
+    "Stunned": {
+      "Label": "Ogłuszony",
+      "Note": "Oszołomionemu stworzeniu automatycznie nie udają się rzuty obronne na SIŁ i ZRC."
+    },
+    "Surprised": {
+      "Label": "Zaskoczony"
+    },
+    "Unconscious": {
+      "Label": "Nieprzytomny",
+      "Note": "Stworzeniu nieprzytomnemu automatycznie nie udają się rzuty obronne na SIŁ i ZRC."
+    }
+  },
+  "BF.Configuration": {
+    "Title": "Konfiguracja {type}"
+  },
+  "BF.CONSUMPTION": {
+    "Action": {
+      "Add": "Dodaj cel zużycia",
+      "Delete": "Usuń cel zużycia"
+    },
+    "FIELDS": {
+      "consumption": {
+        "label": "Zużycie zasobów",
+        "scale": {
+          "allowed": {
+            "hint": "Czy można wykorzystać dodatkowe zasoby, aby zwiększyć skalę tego działania powyżej poziomu bazowego?",
+            "label": "Zezwalaj na skalowanie"
+          },
+          "max": {
+            "hint": "Łączna liczba etapów skalowania, w tym podstawowy poziom aktywacji.",
+            "label": "Maksymalne skalowanie"
+          }
+        },
+        "targets": {
+          "element": {
+            "scaling": {
+              "formula": {
+                "label": "Formuła skalowania"
+              },
+              "label": "Skalowany",
+              "mode": {
+                "label": "Rodzaj skalowania"
+              }
+            },
+            "target": {
+              "label": "Cel"
+            },
+            "type": {
+              "label": "Typ"
+            },
+            "value": {
+              "label": "Ilość"
+            }
+          },
+          "label": "Cele zużycia"
+        }
+      }
+    },
+    "Scaling": {
+      "Automatic": "Automatyczne skalowanie",
+      "Label": "Skalowany",
+      "Mode": {
+        "Amount": "Ilość skali",
+        "Circle": "Skala kręgu zaklęć",
+        "None": "Bez skalowania"
+      },
+      "Value": "Wartość skalowania"
+    },
+    "Type": {
+      "Label": "Typ",
+      "PromptGeneric": "Zużyj {type}",
+      "ActivityUses": {
+        "Label": "Użycia aktywności",
+        "PromptDecrease": "Wykorzystać użycie aktywności?",
+        "PromptIncrease": "Przywrócić użycie aktywności?",
+        "PromptHintDecrease": "Wydaj <strong>{cost}</strong> {use} z tej aktywności ({available} {availableUse} dostępne).",
+        "PromptHintIncrease": "Odzyskaj <strong>{cost}</strong> {use} tej aktywności.",
+        "Warning": "użycia aktywności {activityName} na przedmiocie {itemName}"
+      },
+      "Attribute": {
+        "Label": "Atrybut",
+        "NonEmbeddedHint": "Ścieżka do atrybutu, który ma zostać wykorzystany (np. attributes.exhaustion, attributes.luck.value).",
+        "PromptDecrease": "Zużyć atrybut?",
+        "PromptIncrease": "Przywrócić atrybut?",
+        "PromptHintDecrease": "Zmniejsz <code>{attribute}</code> o <strong>{cost}</strong> (obecnie {current}).",
+        "PromptHintIncrease": "Zwiększ <code>{attribute}</code> o <strong>{cost}</strong> (obecnie {current}).",
+        "Warning": "ilość {attribute}"
+      },
+      "ItemUses": {
+        "Label": "Użycia przedmiotu",
+        "NonEmbeddedHint": "Identyfikator lub UUID przedmiotu w kompendium, który automatycznie zostanie sparowany z pasującym przedmiotem na karcie.",
+        "PromptDecrease": "Zużyć ładunek przedmiotu?",
+        "PromptIncrease": "Przywrócić użycie przedmiotu?",
+        "PromptHintDecrease": "Wydaj <strong>{cost}</strong> {use} z {item}. ({available} {availableUse} dostępne).",
+        "PromptHintIncrease": "Odzyskaj <strong>{cost}</strong> {use} tego {item}.",
+        "ThisItem": "Ten przedmiot",
+        "Warning": "użycia na {name}"
+      },
+      "HitDice": {
+        "Label": "Kości wytrzymałości",
+        "Largest": "Największa dostępna",
+        "PromptDecrease": "Zużyć Kość wytrzymałości?",
+        "PromptIncrease": "Przywrócić Kość wytrzymałości?",
+        "PromptHintDecrease": "Wydaj <strong>{cost}</strong> {denomination} {die} (pozostało {available}).",
+        "PromptHintIncrease": "Odzyskaj <strong>{cost}</strong> {denomination} {die}.",
+        "Smallest": "Najmniejsza dostępna",
+        "Warning": "Kości wytrzymałości {denomination}"
+      },
+      "HitDie": {
+        "one": "Kość wytrzymałości",
+        "other": "kości wytrzymałości",
+        "few": "kości wytrzymałości",
+        "many": "kości wytrzymałości"
+      },
+      "SpellSlot": {
+        "one": "komórka {level} poziomu",
+        "other": "komórki {level} poziomu",
+        "few": "komórki {level} poziomu",
+        "many": "komórki {level} poziomu"
+      },
+      "SpellSlots": {
+        "Label": "Komórki zaklęć",
+        "Available": "{slot} ({available} dostępne)",
+        "PromptDecrease": "Zużyć komórkę zaklęć?",
+        "PromptIncrease": "Przywrócić komórkę zaklęć?",
+        "PromptHintDecrease": "Wydaj <strong>{cost}</strong> {slot} (pozostało {available}).",
+        "PromptHintIncrease": "Odzyskaj <strong>{cost}</strong> {slot}.",
+        "Warning": "komórki {circle} poziomu"
+      },
+      "Use": {
+        "one": "użycie",
+        "other": "użycia",
+        "few": "użycia",
+        "many": "użycia"
+      }
+    },
+    "Warning": {
+      "MissingAttribute": "Nie można znaleźć atrybutu {attribute} skonfigurowanego do zużycia przez aktywność {activity} na {item}.",
+      "MissingHitDice": "Aktor nie ma klasy z Kością wytrzymałości {denomination}.",
+      "MissingItem": "Nie znaleziono przedmiotu skonfigurowanego do wykorzystania w ramach aktywności {activity}.",
+      "MissingSpellCircle": "Brak dostępnych komórek {circle} poziomu.",
+      "None": "Brak dostępnych {type} do wydania, {cost} jest wymaganych.",
+      "NotEnough": "Za mało {type} dostępnych do wydania, {cost} jest wymaganych wymagane, a dostępnych tylko {available}."
+    },
+    "Uses": {
+      "Available": {
+        "Charges[one]": "Ładuj",
+        "Charges[other]": "Ładunki",
+        "Limited": "{value} {type}",
+        "Period": "{value} na {period}"
+      }
+    }
+  },
+  "BF.Container": {
+    "Capacity": {
+      "Label": "Pojemność",
+      "Number": {
+        "Label": "Liczba przedmiotów"
+      },
+      "Unlimited": "Bez ograniczeń",
+      "Volume": {
+        "Label": "Objętość zawartości"
+      },
+      "Weight": {
+        "Label": "Waga zawartości"
+      }
+    },
+    "Delete": {
+      "Contents": "Usuń również wszystkie przedmioty w pojemniku.",
+      "Message": "Ten pojemnik zostanie trwale usunięty i nie będzie można go odzyskać, a {count} przedmiotów w nim zawartych zostanie przeniesionych do ekwipunku."
+    },
+    "Property": {
+      "WeightlessContents": {
+        "Label": "Zawartość bez wagi"
+      }
+    },
+    "Warning": {
+      "MaxDepth": "Pojemniki nie mogą być zagnieżdżone na głębiej niż {depth} poziomów.",
+      "Recursive": "Pojemniki nie mogą zawierać samych siebie."
+    }
+  },
+  "BF.Copy": {
+    "Action": "Kopiuj",
+    "Complete": "Skopiowano \"{value}\""
+  },
+  "BF.CreatureType": {
+    "Label": "Rodzaj stworzenia",
+    "Custom": {
+      "Label": "Niestandardowe tagi",
+      "Add": "Dodaj niestandardowy tag",
+      "Delete": "Usuń niestandardowy tag"
+    },
+    "Swarm": {
+      "Label": "Rozmiar roju",
+      "Hint": "Wielkość poszczególnych stworzeń w roju.",
+      "Phrase": "Rój {size} {type}"
+    },
+    "Tag": {
+      "Label": "Rodzaje tagów",
+      "RuleLabel": "Tag stworzenia",
+      "Angel[one]": "Anioł",
+      "Angel[other]": "Anioły",
+      "Animal[one]": "Zwierzę",
+      "Animal[other]": "Zwierzęta",
+      "AnyLineage": "Dowolne pochodzenie",
+      "Demon[one]": "Demon",
+      "Demon[other]": "Demony",
+      "Devil[one]": "Diabeł",
+      "Devil[other]": "Diabły",
+      "Golem[one]": "Golem",
+      "Golem[other]": "Golemy",
+      "Lycanthrope[one]": "Likantrop",
+      "Lycanthrope[other]": "Likantropi",
+      "Outsider[one]": "Zewnętrzny",
+      "Outsider[other]": "Zewnętrzni",
+      "Shapechanger[one]": "Zmiennokształtny",
+      "Shapechanger[other]": "Zmiennokształtni"
+    },
+    "Type": {
+      "Label": "Typ",
+      "Aberration[one]": "Wynaturzenie",
+      "Aberration[other]": "Wynaturzenia",
+      "Beast[one]": "Bestia",
+      "Beast[other]": "Bestie",
+      "Celestial[one]": "Niebianin",
+      "Celestial[other]": "Niebianie",
+      "Construct[one]": "Konstrukt",
+      "Construct[other]": "Konstrukty",
+      "Dragon[one]": "Smok",
+      "Dragon[other]": "Smoki",
+      "Elemental[one]": "Żywiołak",
+      "Elemental[other]": "Żywiołaki",
+      "Fey[one]": "Fey",
+      "Fey[other]": "Fey",
+      "Fiend[one]": "Czart",
+      "Fiend[other]": "Czarty",
+      "Giant[one]": "Gigant",
+      "Giant[other]": "Giganci",
+      "Humanoid[one]": "Humanoid",
+      "Humanoid[other]": "Humanoidy",
+      "Monstrosity[one]": "Potworność",
+      "Monstrosity[other]": "Potworności",
+      "Ooze[one]": "Szlam",
+      "Ooze[other]": "Szlamy",
+      "Plant[one]": "Roślina",
+      "Plant[other]": "Rośliny",
+      "Undead[one]": "Nieumarły",
+      "Undead[other]": "Nieumarły"
+    }
+  },
+  "BF.CreatureSizeAndType": {
+    "Label": "Rozmiar i rodzaj stworzenia"
+  },
+  "BF.Currency": {
+    "Abbreviation": {
+      "Label": "Skrót",
+      "Hint": "Unikalny skrót tej waluty."
+    },
+    "Action": {
+      "Add": "Dodaj walutę",
+      "Edit": "Edytuj walutę",
+      "Delete": "Usuń walutę",
+      "Split": "Rozdziel walutę"
+    },
+    "ConversionRatio": {
+      "Label": "Współczynnik konwersji",
+      "Hint": "Współczynnik, przez który ta waluta zostanie pomnożona w celu przeliczenia między walutami (np. 10 sztuk srebra równa się 1 sztuce złota, więc współczynnik srebra wynosiłby 0.1)."
+    },
+    "Denomination": {
+      "Label": "Wartość",
+      "Copper": {
+        "Label": "Miedź",
+        "Copper.Abbreviation": "sm"
+      },
+      "Gold": {
+        "Label": "Złoto",
+        "Gold.Abbreviation": "sz"
+      },
+      "Platinum": {
+        "Label": "Platyna",
+        "Platinum.Abbreviation": "sp"
+      },
+      "Silver": {
+        "Label": "Srebro",
+        "Silver.Abbreviation": "ss"
+      }
+    },
+    "Display": "{value} {denomination}"
+  },
+  "BF.DAMAGE": {
+    "Label": "Obrażenia",
+    "Hint": "Zadaj obrażenia bezpośrednio.",
+    "FIELDS": {
+      "damage": {
+        "label": "Obrażenia",
+        "critical": {
+          "allow": {
+            "label": "Zezwalaj na krytyki",
+            "hint": "Czy stworzenie powinno być w stanie zadawać krytyczne obrażenia?"
+          },
+          "bonus": {
+            "label": "Dodatkowe obrażenia trafienia krytycznego",
+            "hint": "Dodatkowe obrażenia stosowane do pierwszej partii obrażeń, gdy wypadnie trafienie krytyczne."
+          }
+        }
+      }
+    },
+    "Action": {
+      "Add": "Dodaj rodzaj obrażeń",
+      "Delete": "Usuń rodzaj obrażeń"
+    },
+    "AdditionalTypes": {
+      "Label": "Rodzaje obrażeń",
+      "Hint": "Rodzaje obrażeń, które można wybrać podczas rzutu na obrażenia."
+    },
+    "Application": {
+      "Label": "Zastosuj",
+      "Action": {
+        "Apply": "Zastosuj"
+      },
+      "Change": {
+        "Modification": "Modyfikator {type}",
+        "Immunity": "Niepodatność na obrażenia {type}",
+        "Resistance": "Odporność na obrażenia {type}",
+        "Vulnerability": "Podatność na obrażenia {type}"
+      },
+      "Downgrading": "Obniżenie {source} do odporności",
+      "Ignoring": "Ignorowanie {source}"
+    },
+    "Bonus": {
+      "Label": "Premia"
+    },
+    "Critical": {
+      "Maximize": "Maksymalizacja krytyku"
+    },
+    "Scaling": {
+      "Dice": {
+        "Label": "Skala liczby kości"
+      },
+      "Formula": {
+        "Label": "Niestandardowa formuła skalowania"
+      },
+      "Mode": {
+        "Label": "Rodzaj skalowania",
+        "None": "Bez skalowania",
+        "Whole": "Co każdy poziom",
+        "Half": "Co drugi poziom"
+      }
+    },
+    "Source": {
+      "All": "Wszystkie źródła",
+      "Nonmagical": "Niemagiczne źródła"
+    },
+    "Threshold": "Próg obrażeń",
+    "Type": {
+      "Label": "Rodzaj obrażeń",
+      "Acid": "Od kwasu",
+      "Bludgeoning": "Obuchowe",
+      "Cold": "Od zimna",
+      "Fire": "Od ognia",
+      "Force": "Od mocy",
+      "Lightning": "Od elektryczności",
+      "Max": "Maksymalne PW",
+      "Necrotic": "Nekrotyczne",
+      "Piercing": "Kłute",
+      "Poison": "Trucizna",
+      "Psychic": "Psychiczne",
+      "Radiant": "Od światłości",
+      "Slashing": "Cięte",
+      "Thunder": "Od dźwięku",
+      "Variable": "Różnorodne"
+    }
+  },
+  "BF.Death": {
+    "Label[one]": "Rzut przeciw śmierci",
+    "Label[other]": "Rzuty przeciw śmierci",
+    "Failure": {
+      "Label": "Porażki w rzucie przeciw śmierci",
+      "Count": "{count} porażek w rzucie przeciw śmierci"
+    },
+    "Success": {
+      "Label": "Sukcesy w rzucie przeciw śmierci",
+      "Count": "{count} sukcesy w rzucie przeciw śmierci"
+    },
+    "Message": {
+      "Label[one]": "rzut przeciw śmierci",
+      "Label[other]": "rzuty przeciw śmierci",
+      "Counted": "{count} {label}",
+      "CriticalSuccess": "{name} odniósł(a) krytyczny sukces w rzucie obronnym przeciw śmierci i odzyskał(a) 1 Punkt Wytrzymałości!",
+      "Failure": "{name} zmarł po nieudanej próbie {counted}…",
+      "Success": "{name} osiągnął sukces w {counted} i obecnie jest stabilny."
+    },
+    "Override": {
+      "Failure": {
+        "Label": "Wymagane porażki",
+        "Hint": "Liczba wymaganych porażek, zanim postać zginie."
+      },
+      "Success": {
+        "Label": "Wymagane sukcesy",
+        "Hint": "Liczba udanych prób wymagana do osiągnięcia stabilizacji przez aktora."
+      },
+      "Target": {
+        "Label": "Wartość docelowa",
+        "Hint": "Wartość, którą należy rzucić, aby uznać rzut za udany."
+      }
+    },
+    "Status": {
+      "Label": "Status",
+      "Alive": "Żywy",
+      "Dead": "Martwy",
+      "Dying": "Umierający",
+      "Stable": "Stabilny"
+    }
+  },
+  "BF.Default": {
+    "Generic": "Domyślne",
+    "Specific": "Domyślny ({default})"
+  },
+  "BF.Die": {
+    "Denomination": {
+      "Label": "Wartość"
+    },
+    "Number": {
+      "Label": "Liczba kości"
+    }
+  },
+  "BF.Distance": {
+    "Label": "Odległość",
+    "Unit": {
+      "Foot": {
+        "Label[one]": "Stopa",
+        "Label[other]": "Stopy"
+      },
+      "Mile": {
+        "Label[one]": "Mila",
+        "Label[other]": "Mile"
+      }
+    }
+  },
+  "BF.DURATION": {
+    "Label": "Czas trwania",
+    "FIELDS": {
+      "duration": {
+        "concentration": {
+          "label": "Koncentracja",
+          "hint": "Stworzenie musi utrzymać koncentrację, by efekt był aktywny."
+        },
+        "override": {
+          "label": "Nadpisz czas trwania"
+        },
+        "special": {
+          "label": "Specjalny czas trwania"
+        },
+        "unit": {
+          "label": "Rodzaj czasu trwania"
+        },
+        "value": {
+          "label": "Wartość czasu trwania"
+        }
+      }
+    },
+    "Type": {
+      "Label": "Rodzaj czasu trwania",
+      "Permanent": "Na stałe",
+      "Special": "Specjalna"
+    },
+    "Value": {
+      "Instantaneous": "Natychmiastowy",
+      "Permanent": "Na stałe",
+      "Special": "Specjalna",
+      "UntilDestroyedDispelled": "Do momentu zniszczenia albo rozproszenia",
+      "UntilDispelled": "Do momentu rozproszenia",
+      "UntilDispelledTriggered": "Do momentu rozproszenia lub wyzwolenia"
+    }
+  },
+  "BF.EditingMode": {
+    "Editable": "Edytowalne",
+    "Locked": "Zablokowane"
+  },
+  "BF.EFFECT": {
+    "Label[one]": "Efekt aktywny",
+    "Label[other]": "Efekty aktywne",
+    "Action": {
+      "Add": "Dodaj efekt",
+      "ApplyTokens": "Zastosuj efekt do tokenów",
+      "Delete": "Usuń efekt",
+      "Disable": "Wyłącz efekt",
+      "Dissociate": "Odłącz efekt",
+      "Duplicate": "Duplikuj efekt",
+      "Edit": "Edytuj efekt",
+      "Enable": "Włącz efekt",
+      "Transfer": "Przenieś efekt",
+      "DontTransfer": "Nie przenoś efektu",
+      "View": "Zobacz efekt"
+    },
+    "Application": {
+      "Label": "Efekty",
+      "Warning": {
+        "NotOwner": "Efektów nie można zastosować do tokenów, które nie należą do ciebie."
+      }
+    },
+    "Category": {
+      "ActiveEnchantment": "Aktywne zaklinanie",
+      "Inactive": "Nieaktywny",
+      "Passive": "Pasywny",
+      "Suppressed": "Stłumiony",
+      "TemplateEnchantment": "Szablon zaklinania",
+      "Temporary": "Tymczasowy"
+    },
+    "Duration": "Czas trwania",
+    "Enabled": "Włączony",
+    "New": "Nowy efekt",
+    "RIDER": {
+      "Activity": "Aktywność jeźdźca zaklinania",
+      "Effect": "Efekt jeźdźca zaklinania",
+      "FIELDS": {
+        "rider": {
+          "activities": {
+            "hint": "Dodatkowe zdolności, które zostaną dodane do zaklętego przedmiotu po nałożeniu tego zaklęcia i usunięte po jego usunięciu.",
+            "label": "Dodatkowe aktywności"
+          },
+          "effects": {
+            "hint": "Dodatkowe efekty, które zostaną dodane do zaklętego przedmiotu po nałożeniu tego zaklęcia i usunięte po jego usunięciu.",
+            "label": "Dodatkowe efekty"
+          },
+          "label": "Załączony",
+          "statuses": {
+            "hint": "Gdy ten Aktywny Efekt zostanie zastosowany, te dodatkowe stany będą stosowane oddzielnie.",
+            "label": "Oddziel stany"
+          }
+        }
+      }
+    },
+    "STANDARD": {
+      "FIELDS": {
+        "magical": {
+          "hint": "Ten efekt ma pochodzenie magiczne i powinien zostać wyłączony, gdy magia nie jest dostępna.",
+          "label": "Magiczny"
+        }
+      }
+    },
+    "Status": {
+      "Active": "Aktywne",
+      "Disabled": "Wyłączone",
+      "Expired": "Wygasło",
+      "Passive": "Pasywny",
+      "Unavailable": "Niedostępny"
+    },
+    "Source": "Źródło",
+    "SuppressionReason": {
+      "Description": "Efekt został przytłumiony, ponieważ „{item}” jest {reasons}.",
+      "Disabled": "wyłączone",
+      "NotAttuned": "nie zestrojony",
+      "NotEquipped": "niewyposażony"
+    },
+    "Transferred": "Przeniesiony",
+    "Type": {
+      "Enchantment[one]": "Zaklinanie",
+      "Enchantment[other]": "Zaklinania",
+      "Standard[one]": "Efekt",
+      "Standard[other]": "Efekty"
+    }
+  },
+  "BF.ENCHANT": {
+    "FIELDS": {
+      "autoSelf": {
+        "label": "Automatyczne zaklinanie siebie",
+        "hint": "Automatycznie zastosuj wybrane zaklinanie do przedmiotu zawierającego tę aktywność, kiedy ta zostaje użyta oraz usuń jego efekt, gdy aktywność ponownie zostanie użyta."
+      },
+      "restrictions": {
+        "allowMagical": {
+          "hint": "Pozwól zakląć przedmioty fizyczne, które już są magiczne.",
+          "label": "Zezwalaj na magiczne przedmioty"
+        },
+        "categories": {
+          "hint": "Konkretne kategorie przedmiotów, na które można zastosować to zaklinanie.",
+          "label": "Dopuszczalne kategorie"
+        },
+        "hint": "Ograniczenia dotyczące rodzaju przedmiotu, na który można zastosować to zaklinanie.",
+        "label": "Ograniczenia",
+        "properties": {
+          "hint": "Konkretne właściwości przedmiotu, które muszą być obecne, aby można było zastosować to zaklinanie.",
+          "label": "Dopuszczalne właściwości"
+        },
+        "type": {
+          "Any": "Dowolny rodzaj pozwalający na zaklinanie",
+          "hint": "Rodzaj przedmiotu, na który można zastosować to zaklinanie.",
+          "label": "Rodzaj przedmiotu"
+        },
+        "types": {
+          "hint": "Konkretne podtypy, do których można zastosować to zaklinanie.",
+          "label": "Dopuszczalne typy"
+        }
+      }
+    },
+    "DropArea": "Umieść przedmiot tutaj, aby zastosować zaklinanie…",
+    "Enchanted": "{Current} &sol; {max} zaklętych",
+    "Enchantment": {
+      "Action": {
+        "Add": "Dodaj zaklinanie",
+        "Delete": "Usuń zaklinanie",
+        "Dissociate": "Rozłączenie zaklinania"
+      },
+      "Active": "{name} (aktywny)",
+      "Config": "Konfiguracja zaklinania"
+    },
+    "Hint": "Zastosuj zaklinanie przedmiotu, które modyfikuje jego statystyki lub funkcjonalność.",
+    "SECTIONS": {
+      "Enchanting": "Zaklinanie",
+      "Enchantments": "Zaklinania",
+      "Restrictions": "Ograniczenia"
+    },
+    "Title": "Zaklinanie",
+    "Warning": {
+      "MissingProperty": "Aby zakląć przedmiot, musi on mieć jedną z następujących właściwości: {validProperties}.",
+      "NoMagicalItems": "Nie można zakląć przedmiotów, które już są magiczne.",
+      "NoTargetActor": "Zaklinanie z kompendium wymaga przydzielonej postaci lub wybrania tokenu.",
+      "NotEnchantable": "Przedmioty typu {type} nie mogą zostać zaklęte.",
+      "NoSubtype": "Tylko przedmioty rodzaju {allowedType} mogą być zaklinane tym zaklęciem, ale ten przedmiot nie ma podtypu.",
+      "WrongType": "{incorrectType} nie można zaczarować tym zaklęciem, dozwolone są tylko {allowedType}."
+    }
+  },
+  "BF.ENCHANTMENT": {
+    "Action": {
+      "Apply": "Przekształć w aktywne zaklinanie",
+      "Remove": "Usuń zaklinanie",
+      "Unapply": "Przekształć w szablon zaklinania"
+    },
+    "Applied": "Zastosowano",
+    "FIELDS": {
+      "dependent": {
+        "activities": {
+          "label": "Dodano aktywności"
+        },
+        "effects": {
+          "label": "Dodano efekty"
+        }
+      },
+      "magical": {
+        "hint": "To zaklinanie ma charakter magiczny i należy je wyłączyć, gdy magia nie jest dostępna.",
+        "label": "Magiczny"
+      }
+    },
+    "Warning": {
+      "NotOnActor": "Zaklinania można dodawać tylko do przedmiotów, a nie do aktorów."
+    }
+  },
+  "BF.Enricher": {
+    "Apply": {
+      "Label": "Zastosuj efekt stanu"
+    },
+    "Attack": {
+      "Extended": "<em>{type}</em>: {parts}",
+      "Long": "{formula} do trafienia",
+      "Short": "{formula}"
+    },
+    "Check": {
+      "Long": "Test: {check}",
+      "Short": "{check}",
+      "Specific": "{ability} ({type})"
+    },
+    "Damage": {
+      "Double": "{first} plus {second}",
+      "Extended": "<em>Trafienie:</em> {damage} obrażeń",
+      "Long": "{average} ({formula}) {type}",
+      "Short": "{formula} {type}"
+    },
+    "DC": {
+      "Phrase": "ST {dc} {check}",
+      "Passive": {
+        "Long": "pasywny {check} wynik {dc} lub wyższy",
+        "Short": "ST {dc} pasywnego {check}"
+      }
+    },
+    "Passive": {
+      "Long": "wynik pasywny {check}",
+      "Short": "pasywny {check}"
+    },
+    "Request": {
+      "Action": "Żądaj rzutu",
+      "Title": "Żądanie rzutu"
+    },
+    "Save": {
+      "Long": "Rzut obronny: {save}",
+      "Short": "{save}"
+    },
+    "Warning": {
+      "NoActor": "Nie znaleziono wybranego ani przypisanego Aktora do wykonania tego rzutu."
+    }
+  },
+  "BF.Equipment": {
+    "Base": {
+      "Label": "Podstawowy"
+    },
+    "Category": {
+      "Label": "Kategoria"
+    },
+    "Type": {
+      "Label": "Typ"
+    }
+  },
+  "BF.ExperiencePoints": {
+    "Label": "Punkty Doświadczenia",
+    "LabelSpecific": "{value} PD",
+    "Abbreviation": "PD",
+    "Action": {
+      "Add": "PD do dodania"
+    },
+    "Current": {
+      "Label": "Aktualne PD"
+    },
+    "Required": {
+      "Label": "Liczba PD potrzebnych do przejścia na następny poziom"
+    }
+  },
+  "BF.Feature": {
+    "Action": {
+      "Add": "Dodaj zdolność",
+      "Edit": "Edytuj zdolność",
+      "Enable": "Włącz zdolność",
+      "Delete": "Usuń zdolność",
+      "Disable": "Wyłącz zdolność",
+      "Duplicate": "Duplikuj zdolność",
+      "View": "Zobacz zdolność"
+    },
+    "Category": {
+      "Label": "Kategoria zdolności",
+      "Background[one]": "Korzyść z przeszłości",
+      "Background[other]": "Korzyści z przeszłości",
+      "BackgroundSpecific[one]": "Korzyść z przeszłości: {background}",
+      "BackgroundSpecific[other]": "Korzyści z przeszłości: {background}",
+      "Class[one]": "Zdolność klasy",
+      "Class[other]": "Zdolność klasy",
+      "ClassSpecific[one]": "Zdolność: {class}",
+      "ClassSpecific[other]": "Zdolności: {class}",
+      "EpicLevelBoon[one]": "Epicki poziom dobrodziejstwa",
+      "EpicLevelBoon[other]": "Epickie poziomy dobrodziejstwa",
+      "Heritage[one]": "Cecha dziedzictwa",
+      "Heritage[other]": "Cechy dziedzictwa",
+      "HeritageSpecific[one]": "Cecha dziedzictwa: {heritage}",
+      "HeritageSpecific[other]": "Cechy dziedzictwa: {heritage}",
+      "Lineage[one]": "Cecha pochodzenia",
+      "Lineage[other]": "Cechy pochodzenia",
+      "LineageSpecific[one]": "Cecha pochodzenia: {lineage}",
+      "LineageSpecific[other]": "Cechy pochodzenia: {lineage}",
+      "Monster[one]": "Zdolność potwora",
+      "Monster[other]": "Zdolności potwora",
+      "Subclass[one]": "Zdolność podklasy",
+      "Subclass[other]": "Zdolności podklasy",
+      "Talent[one]": "Opcja talentu",
+      "Talent[other]": "Opcje talentu",
+      "Vehicle[one]": "Właściwość pojazdu",
+      "Vehicle[other]": "Właściwości pojazdu"
+    },
+    "Enabled": "Włączony",
+    "Details": "Szczegóły zdolności",
+    "Disabled": "Wyłączone",
+    "Source": "Źródło zdolności",
+    "Tag": "{level}-Poziom {owner} {type}",
+    "Talent": {
+      "Category": {
+        "Label": "Kategoria talentu",
+        "Magic[one]": "Talent magiczny",
+        "Magic[other]": "Talenty magiczne",
+        "MagicDescription": "magiczny",
+        "Martial[one]": "Talent bojowy",
+        "Martial[other]": "Talenty bojowe",
+        "MartialDescription": "bojowy",
+        "Technical[one]": "Talent techniczny",
+        "Technical[other]": "Talenty techniczne",
+        "TechnicalDescription": "techniczny"
+      }
+    },
+    "Type": {
+      "Label": "Rodzaj zdolności",
+      "LabelSpecific": "Typy: {type}",
+      "AnimalFocus[one]": "Zwierzęcy fetysz",
+      "AnimalFocus[other]": "Zwierzęce fetysze",
+      "AugmentEffect[one]": "Efekt wzmocnienia",
+      "AugmentEffect[other]": "Efekty wzmocnienia",
+      "BardicPerformance[one]": "Bardowskie występy",
+      "BardicPerformance[other]": "Bardowskie występy",
+      "ChannelDivinity[one]": "Efekt aktu wiary",
+      "ChannelDivinity[other]": "Efekty aktu wiary",
+      "DragonAncestor[one]": "Smoczy przodek",
+      "DragonAncestor[other]": "Smoczy przodkowie",
+      "EmpoweredRage[one]": "Wzmocniony szał",
+      "EmpoweredRage[other]": "Wzmocnione szały",
+      "EnhancedBoon[one]": "Wzmocnione dobrodziejstwo",
+      "EnhancedBoon[other]": "Wzmocnione dobrodziejstwa",
+      "EldritchInvocation[one]": "Mistyczna inwokacja",
+      "EldritchInvocation[other]": "Mistyczne inwokacje",
+      "ElementalInfusion[one]": "Infuzja żywiołów",
+      "ElementalInfusion[other]": "Infuzje żywiołów",
+      "EpicBoon[one]": "Epickie Dobrodziejstwo",
+      "EpicBoon[other]": "Epickie Dobrodziejstwa",
+      "HeroicBoon[one]": "Heroiczne Dobrodziejstwo",
+      "HeroicBoon[other]": "Heroiczne Dobrodziejstwa",
+      "LairAction[one]": "Akcja leża",
+      "LairAction[other]": "Akcje leża",
+      "MartialAction[one]": "Akcja bojowa",
+      "MartialAction[other]": "Akcje bojowe",
+      "MetamagicOption[one]": "Opcja metamagiczna",
+      "MetamagicOption[other]": "Opcje metamagiczne",
+      "NaturalAdaptation[one]": "Naturalna adaptacja",
+      "NaturalAdaptation[other]": "Naturalne adaptacje",
+      "PactBoon[one]": "Dobrodziejstwo paktu",
+      "PactBoon[other]": "Dobrodziejstwa paktu",
+      "PrimalAspect[one]": "Pierwotny aspekt",
+      "PrimalAspect[other]": "Pierwotne aspekty",
+      "RegionalEffect[one]": "Efekt regionalny",
+      "RegionalEffect[other]": "Efekty regionalne",
+      "Stunt[one]": "Wyczyn",
+      "Stunt[other]": "Wyczyny",
+      "Technique[one]": "Technika",
+      "Technique[other]": "Techniki",
+      "WildShape[one]": "Użycie dzikiej postaci",
+      "WildShape[other]": "Użycia dzikiej postaci"
+    }
+  },
+  "BF.FLAG": {
+    "UnrestrictedTalents": {
+      "label": "Nieograniczone talenty",
+      "hint": "Usuń ograniczenia dotyczące listy talentów w odniesieniu do wszystkich talentów zdobytych w trakcie rozwoju postaci."
+    }
+  },
+  "BF.Formula": {
+    "Action": {
+      "Customize": "Dostosuj formułę"
+    },
+    "Custom": {
+      "Label": "Niestandardowa formuła"
+    },
+    "Default": {
+      "DC": "8 + Modyfikator + Biegłość"
+    },
+    "Label": "Formuła",
+    "Warning": {
+      "MissingReference": "Formuła na {property} w {name} zawiera odniesienia do brakujących danych: {references}"
+    }
+  },
+  "BF.FORWARD": {
+    "FIELDS": {
+      "linked": {
+        "label": "Wyzwalana aktywność"
+      }
+    },
+    "Hint": "Uruchom inną aktywność o innym zużyciu.",
+    "Title": "Naprzód",
+    "Warning": {
+      "NoActivity": "Powiązana aktywność musi zostać skonfigurowana zanim aktywność 'Naprzód' może być użyta."
+    }
+  },
+  "BF.GameSystem": "System gry",
+  "BF.Global": "Globalny",
+  "BF.HEAL": {
+    "FIELDS": {
+      "healing": {
+        "label": "Leczenie"
+      }
+    },
+    "Hint": "Zadbaj o leczenie.",
+    "Title": "Leczenie"
+  },
+  "BF.Healing": {
+    "Label": "Leczenie",
+    "Type": {
+      "Label": "Rodzaj leczenia",
+      "Maximum": "Maks. PW",
+      "Normal": "PW",
+      "Temp": "Tymcz. PW"
+    }
+  },
+  "BF.Health": {
+    "Label": "Życie"
+  },
+  "BF.HitDie": {
+    "Label[one]": "Kość wytrzymałości",
+    "Label[other]": "Kości wytrzymałości",
+    "LabelSpecific": "Kość wytrzymałości: K{denom}",
+    "AvailableCount": "Dostępne {number}",
+    "Warning": {
+      "NoneAvailableGeneric": "Nie ma kości wytrzymałości, którymi można by rzucić.",
+      "NoneAvailableSpecific": "Nie ma dostępnych kości k{denomination} do rzutu."
+    }
+  },
+  "BF.HitPoint": {
+    "Label[one]": "Punkty wytrzymałości",
+    "Label[other]": "Punkty wytrzymałości",
+    "Current": {
+      "LabelLong": "Obecne Punkty wytrzymałości",
+      "LabelShort": "Aktualny"
+    },
+    "Damage": {
+      "Label": "Otrzymano obrażenia"
+    },
+    "Max": {
+      "LabelLong": "Maks. ilość Punktów wytrzymałości",
+      "LabelShort": "Maks."
+    },
+    "Temp": {
+      "LabelLong": "Tymczasowe Punkty wytrzymałości",
+      "LabelShort": "Tymcz."
+    },
+    "TempMax": {
+      "LabelLong": "Maks. ilość tymczasowych punktów wytrzymałości",
+      "LabelShort": "Tymcz. maks."
+    }
+  },
+  "BF.IDENTIFIABLE": {
+    "Action": {
+      "Identify": "Zidentyfikuj przedmiot",
+      "Toggle": "Przełącz identyfikację",
+      "Unidentify": "Niezidentyfikowany przedmiot"
+    },
+    "DefaultName": "Niezidentyfikowany {type}",
+    "FIELDS": {
+      "unidentified": {
+        "description": {
+          "label": "Opis, gdy niezidentyfikowany"
+        },
+        "label": "Szczegóły, gdy niezidentyfikowany",
+        "name": {
+          "label": "Nazwa, gdy niezidentyfikowany"
+        },
+        "value": {
+          "label": "Niezidentyfikowany"
+        }
+      }
+    },
+    "UnknownData": "???"
+  },
+  "BF.Identifier": {
+    "Label": "Identyfikator",
+    "Hint": "Uproszczona i nielokalizowana wersja nazwy używana do wyszukiwania wewnętrznego. Może zawierać wyłącznie litery, cyfry, myślniki i znaki podkreślenia.",
+    "Error": {
+      "Invalid": "Identyfikator może zawierać wyłącznie litery (a-z), cyfry (0-9), myślniki (-) i znaki podkreślenia (_); znaleziono `{value}`."
+    }
+  },
+  "BF.Identity": {
+    "Configure": "Skonfiguruj tożsamość",
+    "Label": "Tożsamość",
+    "ID": "ID",
+    "UUID": "UUID"
+  },
+  "BF.Immunity": {
+    "Label": "Niepodatności",
+    "Abbreviation": "Niep.",
+    "Short": "Niepodatność"
+  },
+  "BF.Initiative": {
+    "Label": "Inicjatywa",
+    "Ability": {
+      "Label": "Zdolność inicjatywy"
+    },
+    "Action": {
+      "Enter": "Dołącz do inicjatywy"
+    }
+  },
+  "BF.Item": {
+    "Action": {
+      "Add": "Dodaj przedmiot",
+      "Attune": "Zestrój przedmiot",
+      "Delete": "Usuń przedmiot",
+      "Duplicate": "Duplikuj przedmiot",
+      "Edit": "Edytuj przedmiot",
+      "Equip": "Wyposaż w przedmiot",
+      "Post": "Wyślij na czat",
+      "Unattune": "Cofnij zestrojenie przedmiotu",
+      "Unequip": "Zdejmij przedmiot",
+      "View": "Zobacz przedmiot"
+    },
+    "Category": {
+      "Concept": {
+        "Label": "Tworzenie postaci"
+      },
+      "Feature": {
+        "Label": "Zdolności"
+      },
+      "Equipment": {
+        "Label": "Wyposażenie"
+      },
+      "Meta": {
+        "Label": "Meta"
+      }
+    },
+    "Clothing": {
+      "Type": {
+        "Amulet[one]": "Amulet",
+        "Amulet[other]": "Amulety",
+        "Belt[one]": "Pas",
+        "Belt[other]": "Pasy",
+        "Boots[one]": "Buty",
+        "Boots[other]": "Para butów",
+        "Cloak[one]": "Płaszcz / Szata",
+        "Cloak[other]": "Płaszcze / Szaty",
+        "Glasses[one]": "Okulary",
+        "Glasses[other]": "Para okularów",
+        "Gloves[one]": "Rękawice",
+        "Gloves[other]": "Para rękawic",
+        "Helm[one]": "Hełm",
+        "Helm[other]": "Hełmy",
+        "Ring[one]": "Pierścień",
+        "Ring[other]": "Pierścienie"
+      }
+    },
+    "Consumable": {
+      "Category": {
+        "Food[one]": "Jedzenie",
+        "Food[other]": "Jedzenie",
+        "Poison[one]": "Trucizna",
+        "Poison[other]": "Trucizny",
+        "Potion[one]": "Mikstura",
+        "Potion[other]": "Mikstury",
+        "Scroll[one]": "Zwój",
+        "Scroll[other]": "Zwoje"
+      }
+    },
+    "Create": {
+      "Prompt": "Jaki typ przedmiotu należy utworzyć?"
+    },
+    "Description": {
+      "FullLabel": "Opis",
+      "FullHint": "Pełny opis dotyczący tego przedmiotu.",
+      "ShortLabel": "Krótki opis",
+      "ShortHint": "Krótki opis tego przedmiotu."
+    },
+    "Equipped": "Wyposażono",
+    "Focus": {
+      "Type": {
+        "ArcaneFocus[one]": "Fokus magii wtajemniczeń",
+        "ArcaneFocus[other]": "Fokusy magii wtajemniczeń",
+        "HolySymbol[one]": "Święty symbol",
+        "HolySymbol[other]": "Święte symbole",
+        "PrimordialFocus[one]": "Pierwotny fokus",
+        "PrimordialFocus[other]": "Pierwotne fokusy",
+        "WyrdFocus[one]": "Fokus przeznaczenia",
+        "WyrdFocus[other]": "Fokusy przeznaczenia"
+      }
+    },
+    "Gear": {
+      "Category": {
+        "AdventuringGear[one]": "Wyposażenie Poszukiwaczy przygód",
+        "AdventuringGear[other]": "Wyposażenie Poszukiwaczy przygód",
+        "Clothing[one]": "Ubranie",
+        "Clothing[other]": "Ubrania",
+        "Focus[one]": "Magiczny fokus",
+        "Focus[other]": "Magiczne fokusy",
+        "Rod[one]": "Berło",
+        "Rod[other]": "Berła",
+        "Staff[one]": "Kostur",
+        "Staff[other]": "Kostury",
+        "Wand[one]": "Różdżka",
+        "Wand[other]": "Różdzki",
+        "WondrousItem[one]": "Cudowny przedmiot",
+        "WondrousItem[other]": "Cudowne przedmioty"
+      }
+    },
+    "Journal": {
+      "Label": "Wpis do dziennika",
+      "Hint": "Link do wpisu w dzienniku zawierającego szczegółowy opis tego przedmiotu.",
+      "Unlink": "Usuń powiązanie z wpisem"
+    },
+    "Poison": {
+      "Type": {
+        "Contact[one]": "Trucizna kontaktowa",
+        "Contact[other]": "Trucizny kontaktowe",
+        "Ingested[one]": "Trucizna do połknięcia",
+        "Ingested[other]": "Trucizny do połknięcia",
+        "Inhaled[one]": "Trucizna do wdychania",
+        "Inhaled[other]": "Trucizny do wdychania",
+        "Injury[one]": "Trucizna do zranienia",
+        "Injury[other]": "Trucizny do zranienia"
+      }
+    },
+    "Property": {
+      "Magical": {
+        "Label": "Magiczny"
+      },
+      "Special": {
+        "Label": "Specjalna"
+      }
+    },
+    "Sundry": {
+      "Category": {
+        "Clothing[one]": "Ubranie",
+        "Clothing[other]": "Ubranie",
+        "Component[one]": "Komponent",
+        "Component[other]": "Komponenty",
+        "TradeGood[one]": "Towar handlowy",
+        "TradeGood[other]": "Towary handlowe",
+        "Treasure[one]": "Skarb",
+        "Treasure[other]": "Skarby",
+        "Trinket[one]": "Drobiazgi"
+      }
+    },
+    "Type": {
+      "Ammunition[one]": "Amunicja",
+      "Ammunition[other]": "Amunicja",
+      "Armor[one]": "Pancerz",
+      "Armor[other]": "Pancerze",
+      "Background[one]": "Przeszłość",
+      "Background[other]": "Przeszłości",
+      "Consumable[one]": "Materiał eksploatacyjny",
+      "Consumable[other]": "Materiały eksploatacyjne",
+      "Container[one]": "Pojemnik",
+      "Container[other]": "Pojemniki",
+      "Class[one]": "Klasa",
+      "Class[other]": "Klasy",
+      "Currency[one]": "Waluta",
+      "Currency[other]": "Waluty",
+      "Feature[one]": "Zdolność",
+      "Feature[other]": "Zdolności",
+      "Gear[one]": "Wyposażenie",
+      "Gear[other]": "Wyposażenie",
+      "Heritage[one]": "Dziedzictwo",
+      "Heritage[other]": "Dziedzictwa",
+      "Lineage[one]": "Pochodzenie",
+      "Lineage[other]": "Pochodzenia",
+      "Spell[one]": "Zaklęcie",
+      "Spell[other]": "Zaklęcia",
+      "Subclass[one]": "Podklasa",
+      "Subclass[other]": "Podklasy",
+      "Sundry[one]": "Różne",
+      "Sundry[other]": "Różne",
+      "Talent[one]": "Talent",
+      "Talent[other]": "Talenty",
+      "Tool[one]": "Narzędzie",
+      "Tool[other]": "Narzędzia",
+      "Unidentified[one]": "Niezidentyfikowany przedmiot",
+      "Unidentified[other]": "Niezidentyfikowane przedmioty",
+      "Weapon[one]": "Broń",
+      "Weapon[other]": "Bronie"
+    },
+    "Unequipped": "Niewyposażony"
+  },
+  "BF.Journal": {
+    "Link": {
+      "DropArea": "Wpisz tutaj wpis do dziennika",
+      "MoreInformation": "Więcej informacji"
+    },
+    "Table": {
+      "TOC": "Tabela: {caption}"
+    }
+  },
+  "BF.JournalPage": {
+    "Edit": "Edytuj",
+    "Class": {
+      "AdditionalDescriptions": {
+        "Label": "Dodatkowe opisy"
+      },
+      "Action": {
+        "Remove": "Usuń klasę"
+      },
+      "Conclusion": {
+        "Label": "Wnioski",
+        "Hint": "Tekst dodany po sekcji zdolności, ale przed sekcją podklas."
+      },
+      "DisplayAdvancement": "Wyświetlanie w tabeli klas",
+      "Equipment": {
+        "Header": "Wyposażenie początkowe",
+        "Description": "Rozpoczynasz grę z następującym wyposażeniem, dodawanym do ekwipunku, jaki zawdzięczasz przeszłości:",
+        "Hint": "Lista przedmiotów przyznawanych w ramach tej klasy, jeśli zostanie wybrana na pierwszym poziomie."
+      },
+      "Features": {
+        "Header": "Właściwości klasy",
+        "Description": "Jako {lowercaseName} dysponujesz następującymi cechami klasy."
+      },
+      "HeadingLevel": {
+        "Label": "Poziom nagłówka",
+        "Inherit": "Dziedziczenie"
+      },
+      "HitDice": "<strong>Kości wytrzymałości:</strong> {dice} na poziom {class}",
+      "HitPoints": {
+        "Header": "Punkty wytrzymałości",
+        "Hint": "Dodatkowy tekst wyświetlany pod automatycznie wygenerowaną sekcją z Punktami wytrzymałości.",
+        "Level1": "<strong>Punkty wytrzymałości na 1. poziomie:</strong> {max} + twój modyfikator KON",
+        "LevelX": "<strong>Punkty wytrzymałości na wyższych poziomach:</strong> {dice} (lub {average}) + twój modyfikator KON na poziom {class} powyżej 1"
+      },
+      "Introduction": {
+        "Label": "Wprowadzenie",
+        "Hint": "Główny opis klasy, który będzie wyświetlany jako pierwszy."
+      },
+      "Item": {
+        "Label": "Wybrana klasa",
+        "Hint": "Upuść klasę tutaj"
+      },
+      "NoClass": "Nie wybrano prawidłowej klasy, naciśnij przycisk edycji, aby dodać klasę.",
+      "Subclass": {
+        "AdvancementDescription": {
+          "Label": "Opis awansu",
+          "Hint": "Krótki opis wyświetlany w pozycji podklasy na liście zdolności.",
+          "Placeholder": "<p>Po osiągnięciu 3. poziomu wybierz podklasę spośród opcji przedstawionych poniżej.</p>"
+        },
+        "Header": "Podklasy: {class}",
+        "Items": "Podklasy",
+        "SectionDescription": {
+          "Label": "Opis sekcji",
+          "Hint": "Dłuższy opis wyświetlany tuż przed listą opcji podklas."
+        }
+      },
+      "Table": {
+        "Caption": "Postęp: {class}"
+      },
+      "Traits": {
+        "Hint": "Dodatkowy tekst opisu wyświetlany poniżej listy biegłości przyznanych przez tę klasę.",
+        "SavesChoice": "oraz {choices} do wyboru"
+      }
+    },
+    "Subclass": {
+      "Action": {
+        "Remove": "Usuń podklasę"
+      },
+      "Conclusion": {
+        "Label": "Wnioski",
+        "Hint": "Tekst dodany na końcu strony."
+      },
+      "Introduction": {
+        "Label": "Wprowadzenie",
+        "Hint": "Główny opis podklasy, który będzie wyświetlany jako pierwszy."
+      },
+      "Item": {
+        "Label": "Wybrana podklasa",
+        "Hint": "Upuść podklasę tutaj"
+      },
+      "NoSubclass": "Nie wybrano prawidłowej podklasy, naciśnij przycisk edycji, aby dodać podklasę."
+    },
+    "Type": {
+      "Class[one]": "Podsumowanie klasy",
+      "Class[other]": "Podsumowania klasy",
+      "Map[one]": "Lokalizacja na mapie",
+      "Map[other]": "Lokalizacje na mapie",
+      "Rule[one]": "Zasada",
+      "Rule[other]": "Zasady",
+      "SpellList[one]": "Lista zaklęć",
+      "SpellList[other]": "Listy zaklęć",
+      "Subclass[one]": "Podsumowanie podklasy",
+      "Subclass[other]": "Podsumowania podklasy"
+    }
+  },
+  "BF.Keybinding": {
+    "SkipDialog": {
+      "Advantage": "Pomiń okno dialogowe (rzut z Ułatwieniem/Krytyk)",
+      "Disadvantage": "Pomiń okno dialogowe (rzut z Utrudnieniem)",
+      "Normal": "Pomiń monit"
+    }
+  },
+  "BF.Lair": {
+    "Action": {
+      "Add": "Dodaj {type}",
+      "Edit": "Edytuj {type}",
+      "Delete": "Usuń {type}"
+    },
+    "Details": "Szczegóły leża"
+  },
+  "BF.Language": {
+    "Label[one]": "Język",
+    "Label[other]": "Języki",
+    "Action": {
+      "Configure": "Skonfiguruj języki"
+    },
+    "All": "Wszystkie języki",
+    "Category": {
+      "Esoteric[one]": "Język ezoteryczny",
+      "Esoteric[other]": "Języki ezoteryczne",
+      "Primordial[one]": "Język pierwotny",
+      "Primordial[other]": "Języki pierwotne",
+      "Secret[one]": "Język sekretny",
+      "Secret[other]": "Języki sekretne",
+      "Standard[one]": "Język standardowy",
+      "Standard[other]": "Języki standardowe"
+    },
+    "Communication": {
+      "Label": "Komunikacja na odległość",
+      "Telepathy": "Telepatia"
+    },
+    "Custom": {
+      "Label": "Języki niestandardowe",
+      "Add": "Dodaj język niestandardowy",
+      "Delete": "Usuń język niestandardowy"
+    },
+    "Dialect": {
+      "Label": "Dialekty językowe",
+      "Abyssal": "Otchłanny",
+      "Aquan": "Aquatyczny",
+      "Auran": "Aurański",
+      "Celestial": "Niebiański",
+      "Common": "Wspólny",
+      "Draconic": "Smoczy",
+      "Druidic": "Druidzki",
+      "Dwarvish": "Krasnoludzki",
+      "Elvish": "Elficki",
+      "Giant": "Giganci",
+      "Gnomish": "Gnomi",
+      "Goblin": "Goblini",
+      "Halfling": "Niziołczy",
+      "Ignan": "Ignański",
+      "Infernal": "Piekielny",
+      "MachineSpeech": "Mechaniczny",
+      "Orcish": "Orczy",
+      "Primordial": "Pierwotny",
+      "Sylvan": "Leśny",
+      "Terran": "Terrański",
+      "ThievesCant": "Grypsera",
+      "Undercommon": "Podwspólny",
+      "VoidSpeech": "Mowa pustki"
+    },
+    "Tag": {
+      "Label": "Cechy języka",
+      "CantSpeak": {
+        "Label": "Nie może mówić",
+        "Formatter": "rozumie {entries}, ale nie potrafi mówić"
+      },
+      "KnownInLife": {
+        "Label": "Wszystkie języki, których nauczył się za życia",
+        "Display": "wszystkie języki, które znał za życia"
+      }
+    },
+    "Telepathy": "Telepatia"
+  },
+  "BF.LANGUAGES": {
+    "FIELDS": {
+      "proficiencies": {
+        "languages": {
+          "communication": {
+            "element": {
+              "range": {
+                "label": "Zasięg"
+              },
+              "unit": {
+                "label": "Jednostka"
+              }
+            },
+            "label": "Komunikacja na odległość"
+          },
+          "label": "Języki"
+        }
+      }
+    }
+  },
+  "BF.LegendaryAction": {
+    "Cost[one]": "Koszt: {count} Akcja",
+    "Cost[other]": "Koszt: {count} Akcje",
+    "Description[one]": "{type} może wykonać 1 akcję legendarną, wybierając jedną z poniższych opcji. W danym momencie można wykonać tylko jedną akcję legendarną i to wyłącznie pod koniec tury innego stworzenia. {type} odzyskuje zużytą akcję legendarną na początku swojej tury.",
+    "Description[other]": "{type} może wykonać {count} legendarnych akcji, wybierając spośród poniższych opcji. W danym momencie można wykonać tylko jedną legendarną akcję i to wyłącznie pod koniec tury innego stworzenia. {type} odzyskuje zużyte legendarne akcje na początku swojej tury.",
+    "Max": {
+      "Label": "Akcje legendarne na rundę"
+    }
+  },
+  "BF.Level": {
+    "Abbreviation": "Poz.",
+    "Specific": "Poziom {level}",
+    "Class": "Poziom klasy",
+    "Count[one]": "{number} poziom",
+    "Count[other]": "{number} poziomy",
+    "Label[one]": "Poziom",
+    "Label[other]": "Poziomy",
+    "None": "Bez poziomów",
+    "Ordinal": "{number} poziom",
+    "Overall": "Ogólny poziom",
+    "Warning": {
+      "Max": "Postaci nie można awansować powyżej poziomu {max}."
+    }
+  },
+  "BF.Link": {
+    "Discord": "Discord",
+    "Issues": "Problemy",
+    "Notes": "Notatki"
+  },
+  "BF.Luck": {
+    "Label": "Szczęście",
+    "Action": {
+      "Add": "Dodaj punkt szczęścia",
+      "Bonus": "Dodaj 1 do wyniku",
+      "Grant": "Przyznaj szczęście",
+      "Remove": "Usuń punkt szczęścia",
+      "Reroll": "Rzuć ponownie jedną kostką"
+    },
+    "Current": "Aktualne szczęście",
+    "FailureAmount": {
+      "Label": "Szczęście z porażki",
+      "Hint": "Ilość szczęścia uzyskanego w przypadku niepowodzenia w rzucie na atak lub rzucie obronnym."
+    },
+    "Formula": {
+      "Label": "Zresetuj formułę",
+      "Hint": "Formuła, która zostanie zastosowana, gdy wartość szczęścia przekroczy maksymalną wartość i zostanie zresetowana."
+    },
+    "Reroll": {
+      "Prompt": "Którą kostką należy rzucić ponownie?",
+      "Title": "Ponowne rzucenie"
+    },
+    "Warning": {
+      "Insufficient": "Zabrakło punktów szczęścia.",
+      "OnlyOneReroll": "Dopuszczalny jest tylko jeden ponowny rzut."
+    }
+  },
+  "BF.Migration": {
+    "Compendium": {
+      "Failed": "Nie udało się przeprowadzić migracji kompendium {compendium}.",
+      "Migrate": "Migracja kompendium {compendium} dla wersji {version}.",
+      "Refresh": "Odświeżanie kompendium {compendium}."
+    },
+    "World": {
+      "Begin": "Trwa migracja systemu do wersji {version}. Prosimy o cierpliwość i nie zamykanie gry ani nie wyłączanie serwera.",
+      "Complete": "Migracja systemu do wersji {version} zakończona!"
+    }
+  },
+  "BF.Minimum": {
+    "Label[one]": "Minimalne",
+    "Label[other]": "Minimalne",
+    "LabelGeneric": "Minimalny rzut",
+    "LabelSpecific": "{type} {type}"
+  },
+  "BF.Modifier": {
+    "Global": "Globalny {type}",
+    "Specific": "{type} {modifier}",
+    "Action": {
+      "Delete": "Usuń modyfikator"
+    },
+    "Proficiency": {
+      "Label": "Biegł.?"
+    }
+  },
+  "BF.MOVEMENT": {
+    "Label": "Ruch",
+    "FIELDS": {
+      "traits": {
+        "movement": {
+          "label": "Szybkość",
+          "base": {
+            "hint": "Podstawowa szybkość ruchu, którą można wykorzystać w formułach do obliczania innych szybkości przy użyciu właściwości <blackFlag-copyable>@base</blackFlag-copyable>.",
+            "label": "Podstawowa szybkość"
+          },
+          "custom": {
+            "label": "Niestandardowa szybkość"
+          },
+          "ignoredDifficultTerrain": {
+            "label": "Ignorowany trudny teren"
+          },
+          "tags": {
+            "label": "Cechy ruchu"
+          },
+          "unit": {
+            "label": "Jednostka szybkości"
+          }
+        },
+        "pace": {
+          "label": "Tempo podróży",
+          "unit": {
+            "label": "Jednostka tempa"
+          }
+        }
+      }
+    },
+    "Action": {
+      "AddCustom": "Dodaj niestandardową szybkość",
+      "DeleteCustom": "Usuń niestandardową szybkość"
+    },
+    "Tag": {
+      "AnimalDrawn": {
+        "Label": "Ciągnięte przez zwierzę",
+        "Display": "Ciągnięte przez zwierzę"
+      },
+      "Hover": {
+        "Label": "Unoszenie się",
+        "Display": "unoszenie się"
+      },
+      "Maneuverable": {
+        "Label": "Zwinny",
+        "Display": "zwinny"
+      }
+    },
+    "Type": {
+      "Label": "Typ ruchu",
+      "Burrow": "Rycie",
+      "Climb": "Wspinaczka",
+      "Fly": "Lot",
+      "Swim": "Pływanie",
+      "Walk": "Chodzenie"
+    }
+  },
+  "BF.New": {
+    "Specific": "Przedmiot: {type}"
+  },
+  "BF.Note": {
+    "Label[one]": "Notatka",
+    "Label[other]": "Notatki"
+  },
+  "BF.Number[1]": "jeden",
+  "BF.Number[2]": "dwa",
+  "BF.Number[3]": "trzy",
+  "BF.Number[4]": "cztery",
+  "BF.Number[5]": "pięć",
+  "BF.Number[6]": "sześć",
+  "BF.Number[7]": "siedem",
+  "BF.Number[8]": "osiem",
+  "BF.Number[9]": "dziewięć",
+  "BF.Number[∞]": "nieskończoność",
+  "BF.Number": {
+    "Maximum": "Maksymalne",
+    "Minimum": "Minimalne",
+    "Ordinal[one]": "{number}.",
+    "Ordinal[two]": "{number}.",
+    "Ordinal[few]": "{number}.",
+    "Ordinal[other]": "{number}."
+  },
+  "BF.Object": "Obiekt",
+  "BF.Override": {
+    "Label[one]": "Nadpisanie",
+    "Label[other]": "Nadpisania"
+  },
+  "BF.PC": {
+    "FIELDS": {
+      "abilities": {
+        "label": "Cechy"
+      },
+      "attributes": {
+        "label": "Atrybuty",
+        "attunement": {
+          "label": "Dostrajanie"
+        },
+        "death": {
+          "label": "Rzuty przeciw śmierci"
+        },
+        "hd": {
+          "label": "Kości wytrzymałości"
+        },
+        "hp": {
+          "label": "Punkty wytrzymałości",
+          "bonuses": {
+            "label": "Premie",
+            "level": {
+              "label": "Premia za poziom"
+            },
+            "overall": {
+              "label": "Ogólna premia",
+              "hint": ""
+            }
+          },
+          "override": {
+            "label": "Nadpisz",
+            "hint": "Zastąp automatycznie obliczone Punkty wytrzymałości, ignorując PW z klas, premii i modyfikatorów ze zdolności."
+          },
+          "temp": {
+            "label": "Tymczasowe PW"
+          },
+          "tempMax": {
+            "label": "Tymczasowe maks.",
+            "hint": "Dodatkowa zmiana maksymalnej liczby PW, wynikająca zazwyczaj z efektu tymczasowego, takiego jak Wsparcie lub wysysanie zdrowia przez potwora."
+          },
+          "value": {
+            "label": "Aktualne PW"
+          }
+        },
+        "initiative": {
+          "label": "Inicjatywa"
+        },
+        "luck": {
+          "label": "Szczęście"
+        }
+      },
+      "biography": {
+        "label": "Biografia"
+      },
+      "proficiencies": {
+        "label": "Biegłości"
+      },
+      "progression": {
+        "label": "Postęp"
+      },
+      "traits": {
+        "label": "Zdolności"
+      }
+    }
+  },
+  "BF.Prerequisite": {
+    "Label": "Wymaganie wstępne",
+    "Ability": {
+      "Label": "{abbreviation} {value} lub wyżej",
+      "Title": "Minimalne wartości cech",
+      "Warning": "musi posiadać {ability} na poziomie {value} lub wyższym"
+    },
+    "Action": {
+      "AddCustom": "Dodaj niestandardowe wymagania wstępne",
+      "Config": "Skonfiguruj wymagania wstępne",
+      "DeleteCustom": "Usuń niestandardowe wymagania wstępne"
+    },
+    "AllowMultipleTimes": {
+      "Label": "Zezwól na wielokrotne użycie",
+      "Hint": "Czy gracz może wybrać tę zdolność więcej niż raz?"
+    },
+    "Config": {
+      "Title": "Konfiguracja wymagań wstępnych",
+      "Details": "Szczegóły wymagań wstępnych"
+    },
+    "Custom": {
+      "Label": "Niestandardowe"
+    },
+    "Items": {
+      "Label": "Inne przedmioty",
+      "Warning": "musi zawierać przedmiot \"{name}\""
+    },
+    "LevelCharacter": {
+      "Label": "Postać poziomu {level} lub wyższego",
+      "ConfigLabel": "Poziom postaci",
+      "Warning": "musi wynosić co najmniej {level} poziom"
+    },
+    "LevelClass": {
+      "Label": "{level} Poziom, {class}",
+      "ConfigLabel": "Poziom klasy",
+      "Warning": "musi być co najmniej na {level} poziomie klasy {class}"
+    },
+    "Listing": "Wymagania wstępne: {prerequisite}",
+    "Proficiency": {
+      "Label": "Biegłość w: {proficiency}",
+      "ConfigLabel": "Specyficzne biegłości",
+      "AtLeastOne": "co najmniej jednej kategorii {category}",
+      "Warning": "musi posiadać biegłość w zakresie {proficiency}"
+    },
+    "RequireAll": {
+      "Label": "Wymagaj wszystkiego",
+      "Hint": "Wymagane jest spełnienie wszystkich podanych filtrów, aby można było wybrać ten przedmiot."
+    },
+    "SpellcastingCantrip": {
+      "Label": "Możliwość rzucania jednego lub więcej zaklęć typu „sztuczka”",
+      "ConfigLabel": "Posiada sztuczki",
+      "Warning": "musi umieć rzucić jedną lub więcej sztuczek"
+    },
+    "SpellcastingCircle": {
+      "Label": "Dostęp do komórek na zaklęcia kręgu {circle}",
+      "ConfigLabel": "Krąg zaklęć",
+      "Warning": "musi mieć dostęp do komórek na zaklęcia kręgu {circle}"
+    },
+    "SpellcastingDamage": {
+      "Label": "Umiejętność rzucenia co najmniej jednego zaklęcia zadającego obrażenia",
+      "ConfigLabel": "Posiada zaklęcia powodujące obrażenia",
+      "Warning": "musi umieć rzucić co najmniej jedno zaklęcie zadające obrażenia"
+    },
+    "SpellcastingFeature": {
+      "Label": "Zdolności klasy związane z rzucaniem zaklęć",
+      "ConfigLabel": "Zdolność rzucania zaklęć",
+      "Warning": "musi posiadać zdolność klasy umożliwiającą rzucanie zaklęć"
+    },
+    "Size": {
+      "Label": "Rozmiar {size}",
+      "Warning": "rozmiar musi wynosić {size}"
+    },
+    "Warning": {
+      "Failure": "{name} {requirements}, aby wybrać ten {type}."
+    }
+  },
+  "BF.Price": {
+    "Label": "Cena"
+  },
+  "BF.Proficiency": {
+    "Label[one]": "Biegłość",
+    "Label[other]": "Biegłości",
+    "LabelSpecific[one]": "Biegłość typu {type}",
+    "LabelSpecific[other]": "Biegłości typu {type}",
+    "Abbreviation": "Biegł.",
+    "Bonus": {
+      "Label": "Premia do biegłości",
+      "Abbreviation": "PB"
+    },
+    "Level": {
+      "Expertise": "Znawstwo",
+      "Half": "Połowa biegłości",
+      "None": "Brak biegłości",
+      "Proficient": "Biegły"
+    },
+    "Multiplier": "Współczynnik biegłości",
+    "None": "Brak",
+    "Override": {
+      "Always": "Zawsze biegły",
+      "Auto": "Automatycznie",
+      "Never": "Nigdy na poziomie biegłym"
+    },
+    "Rounding": "Zaokrąglanie biegłości"
+  },
+  "BF.Progression": {
+    "Label": "Postęp",
+    "Action": {
+      "LevelDown": {
+        "Label": "Poziom w dół",
+        "Title": "Czy na pewno chcesz obniżyć poziom?",
+        "Message": "Obniżenie poziomu tej postaci spowoduje usunięcie wszystkich zdolności przyznanych oraz wyborów dokonanych w trakcie rozwoju postaci."
+      },
+      "LevelUp": {
+        "Label": "Poziom w górę"
+      },
+      "Multiclass": {
+        "Label": "Dodaj nową klasę"
+      },
+      "Return": "Powrót"
+    },
+    "Base": "Podstawowy",
+    "Epic": {
+      "Advancement": {
+        "Boon": "Epicki poziom dobrodziejstwa",
+        "Improvement": "Epickie ulepszenie",
+        "Item": "Epicki awans"
+      },
+      "Label": "Epicki"
+    },
+    "Notification": {
+      "ChooseBackground": "Wybierz przeszłość",
+      "ChooseClass": "Wybierz klasę",
+      "ChooseHeritage": "Wybierz dziedzictwo",
+      "ChooseLineage": "Wybierz pochodzenie",
+      "ChooseSubclass": "Wybierz podklasę dla klasy {class}",
+      "DetermineAbilityScores": "Określ wartości cech"
+    },
+    "Warning": {
+      "InsufficientPrimaryScore": "Aby awansować na kolejny poziom w innej klasie, twoja wartość {ability} musi wynosić co najmniej {threshold}, a wynosi ona tylko {value}.",
+      "InsufficientSecondaryScore[one]": "Aby awansować o jeden poziom w klasie {class}, musisz mieć wartość {ability} co najmniej równą {threshold}.",
+      "InsufficientSecondaryScore[other]": "Aby awansować na kolejny poziom klasy {class}, twoje wartości {ability} muszą wynosić co najmniej {threshold}.",
+      "NoClass": "Klasa musi zostać wybrana podczas awansowania na wyższy poziom poza systemem Epickiego Awansu.",
+      "NoMulticlassing": "W tej grze nie ma obecnie możliwości wyboru wielu klas postaci."
+    }
+  },
+  "BF.Property": {
+    "Label[one]": "Właściwość",
+    "Label[other]": "Właściwości"
+  },
+  "BF.Quantity": {
+    "Label": "Ilość",
+    "Action": {
+      "Decrease": "Zmniejsz ilość",
+      "Increase": "Zwiększ ilość"
+    }
+  },
+  "BF.RANGE": {
+    "FIELDS": {
+      "range": {
+        "label": "Zasięg",
+        "long": {
+          "label": "Długi"
+        },
+        "override": {
+          "label": "Nadpisz zasięg"
+        },
+        "reach": {
+          "label": "Dalekosiężna"
+        },
+        "short": {
+          "label": "Krótki"
+        },
+        "special": {
+          "label": "Specjalny Zasięg"
+        },
+        "unit": {
+          "label": "Typ zasięgu"
+        },
+        "value": {
+          "label": "Wartość zasięgu"
+        }
+      }
+    },
+    "Formatted": {
+      "Range": "zasięg {range}",
+      "Reach": "zasięg {reach}"
+    },
+    "Label": "Zasięg",
+    "Type": {
+      "Any": {
+        "Label": "Bez ograniczeń"
+      },
+      "Self": {
+        "Label": "Na siebie"
+      },
+      "Sight": {
+        "Label": "Widzenie"
+      },
+      "Special": {
+        "Label": "Specjalna"
+      },
+      "Touch": {
+        "Label": "Dotyk"
+      }
+    }
+  },
+  "BF.Rarity": {
+    "Label": "Rzadkość",
+    "Level": {
+      "Artifact": "Artefakt",
+      "Common": "Wspólny",
+      "Fabled": "Sławny",
+      "Legendary": "Legendarny",
+      "Mundane": "Pospolity",
+      "Rare": "Rzadki",
+      "Uncommon": "Niespotykany",
+      "VeryRare": "Bardzo rzadki"
+    }
+  },
+  "BF.Reach": {
+    "Label": "Dalekosiężna"
+  },
+  "BF.Recovery": {
+    "Label": "Użycia odzyskiwania",
+    "Action": {
+      "Add": "Dodaj profil odzyskiwania",
+      "Delete": "Usuń profil odzyskiwania"
+    },
+    "Formula": {
+      "Label": "Formuła rzutu na odzyskiwanie"
+    },
+    "Group": {
+      "Combat": "Walka",
+      "Rest": "Odpoczynek",
+      "Time": "Czas"
+    },
+    "Period": {
+      "Dawn": "Świt",
+      "Day": "Dzień",
+      "Dusk": "Zmierzch",
+      "Encounter": "Spotkanie",
+      "Label": "Okres",
+      "RoundEnd": "Koniec tury",
+      "RoundStart": "Początek tury",
+      "Turn": "W każdej turze"
+    },
+    "Recharge": {
+      "Label": "Odnowienie",
+      "Charged": "Naładowany",
+      "Range": "Odnowienie {min}–6",
+      "Single": "Odnowienie 6",
+      "Trigger": "Wyzwalacz odnowienia (k6)"
+    },
+    "Type": {
+      "Label": "Rodzaj odzyskiwania",
+      "Formula": "Niestandardowa formuła",
+      "LoseAll": "Utrata wszystkich użyć",
+      "RecoverAll": "Odzyskaj wszystkie użycia"
+    }
+  },
+  "BF.REGIONBEHAVIORS": {
+    "DIFFICULTTERRAIN": {
+      "FIELDS": {
+        "ignoredDispositions": {
+          "hint": "Ten trudny teren nie spowalnia tokenów z tymi dyspozycjami.",
+          "label": "Zignorowane dyspozycje"
+        },
+        "magical": {
+          "hint": "Ten trudny teren jest tworzony przez efekt magiczny.",
+          "label": "Magiczny"
+        },
+        "types": {
+          "hint": "Typy, które najlepiej opisują źródło tego trudnego terenu, jeśli takie istnieją.",
+          "label": "Rodzaje"
+        }
+      },
+      "Type": {
+        "All": "Wszystkie typy",
+        "Ice": "Śliski lód",
+        "Magical": "Magiczny",
+        "Nonmagical": "Niemagiczny",
+        "Plants": "Rośliny lub zarośla",
+        "Rocks": "Gruz lub skały",
+        "Liquid": "Płytka ciecz",
+        "Mud": "Gęste błoto",
+        "Sand": "Sypki piasek",
+        "Slope": "Strome zbocze",
+        "Snow": "Głęboki śnieg",
+        "Webs": "Lepka pajęczyna"
+      }
+    }
+  },
+  "BF.Resistance": {
+    "Label": "Odporności",
+    "Abbreviation": "Odp.",
+    "Action": {
+      "Configure": "Konfiguracja odporności, niewrażliwości i podatności"
+    },
+    "AllDamage": "Wszystkie obrażenia",
+    "Config": "Odporność, niewrażliwość i podatność",
+    "Nonmagical": "{type} od ataków niemagicznych",
+    "Short": "Odporny"
+  },
+  "BF.Rest": {
+    "Label": "Odpoczywanie",
+    "Action": {
+      "Rest": {
+        "Label": "Odpoczynek"
+      }
+    },
+    "Configuration": "Konfiguracja odpoczynku",
+    "Result": {
+      "Long": {
+        "Basic": "{name} kończy długi odpoczynek.",
+        "Full": "{name} wykonuje długi odpoczynek i odzyskuje {hitPoints} {hitPointsLabel} oraz {hitDice} {hitDiceLabel}.",
+        "HitDice": "{name} wykonuje długi odpoczynek i odzyskuje {hitDice} {hitDiceLabel}.",
+        "HitPoints": "{name} wykonuje długi odpoczynek i odzyskuje {hitPoints} {hitPointsLabel}."
+      },
+      "Short": {
+        "Basic": "{name} kończy krótki odpoczynek.",
+        "Full": "{name} wykonuje krótki odpoczynek i zużywa {hitDice} {hitDiceLabel}, aby odzyskać {hitPoints} {hitPointsLabel}."
+      }
+    },
+    "Type": {
+      "Long": {
+        "Label": "Długi Odpoczynek",
+        "Abbreviation": "DO",
+        "Hint": "Pod koniec długiego odpoczynku odzyskujesz wszystkie utracone punkty wytrzymałości. Odzyskujesz również zużyte kości wytrzymałości, do połowy ich maksymalnej liczby (co najmniej 1)."
+      },
+      "Short": {
+        "Label": "Krótki Odpoczynek",
+        "Abbreviation": "KO",
+        "Hint": "Pod koniec krótkiego odpoczynku możesz wykorzystać jedną lub więcej kości wytrzymałości, nie przekraczając maksymalnej liczby kości wytrzymałości."
+      }
+    }
+  },
+  "BF.Roll": {
+    "Action": {
+      "Advantage": {
+        "Label": "Ułatwienie",
+        "Abbreviation": "Ułatw."
+      },
+      "Critical": {
+        "Label": "Trafienie krytyczne",
+        "Abbreviation": "K"
+      },
+      "Disadvantage": {
+        "Label": "Utrudnienie",
+        "Abbreviation": "Utr."
+      },
+      "Normal": {
+        "Label": "Normalne",
+        "Abbreviation": "n"
+      },
+      "RollGeneric": "Rzut",
+      "RollSpecific": "Rzuć {type}",
+      "RerollGeneric": "Ponowne rzucenie",
+      "RerollSpecific": "Ponowne rzucenie {type}"
+    },
+    "Configuration": {
+      "LabelGeneric": "Konfiguracja rzutu",
+      "LabelSpecific": "Konfiguracja {type}",
+      "Situational": "Sytuacyjne"
+    },
+    "Formula": {
+      "Label": "Formuła"
+    },
+    "ExtraTerms": {
+      "Label": "Dodatkowe warunki"
+    },
+    "Mode": {
+      "Label": "Tryb rzutu"
+    },
+    "Result": {
+      "CriticalFailure": "Krytyczna porażka",
+      "CriticalSuccess": "Krytyczny sukces",
+      "Failure": "Porażka",
+      "Success": "Sukces"
+    },
+    "Type": {
+      "Label": "rzut typu {type}"
+    }
+  },
+  "BF.Rule": {
+    "Label": "Zasada",
+    "Tooltip": "Podpowiedź",
+    "Type": {
+      "Label": "Rodzaj zasady",
+      "Rule": "Zasada"
+    }
+  },
+  "BF.SAVE": {
+    "FIELDS": {
+      "damage": {
+        "label": "Rzut obronny na obrażenia",
+        "onSave": {
+          "full": "Pełne obrażenia",
+          "half": "Połowa obrażeń",
+          "hint": "Ile obrażeń należy zadać przy udanym rzucie obronnym?",
+          "label": "Obrażenia przy rzucie obronnym",
+          "none": "Brak obrażeń"
+        }
+      },
+      "effects": {
+        "onSave": {
+          "hint": "Efekt ten będzie zawsze stosowany, nawet jeśli cel zda rzut obronny.",
+          "label": "Zawsze stosuj"
+        }
+      },
+      "save": {
+        "label": "Szczegóły rzutu obronnego",
+        "ability": {
+          "hint": "Cechy, na które można wykonać rzut obronny.",
+          "label": "Przeciwstawne zdolności"
+        },
+        "bonus": {
+          "hint": "Do wszystkich rzutów obronnych wykonanych w ramach tej aktywności dodawana jest premia.",
+          "label": "Premia do rzutów obronnych"
+        },
+        "dc": {
+          "ability": {
+            "label": "Obliczanie ST"
+          },
+          "formula": {
+            "label": "Formuła rzutu na ST"
+          },
+          "label": "Stopień Trudności"
+        },
+        "visible": {
+          "hint": "Wyświetl przycisk rzutu na czacie dla wszystkich graczy.",
+          "label": "Widoczny dla wszystkich"
+        }
+      }
+    },
+    "Challenge": "Wyzwanie",
+    "Hint": "Wymuś rzut obronny i wykonaj rzut na obrażenia.",
+    "OnSave": "Przy rzucie obronnym",
+    "Title": "Rzut obronny",
+    "Versus": "przeciw"
+  },
+  "BF.SavingThrow": {
+    "LabelLong[one]": "Rzut obronny",
+    "LabelLong[other]": "Rzuty obronne",
+    "LabelShort[one]": "Rzut obronny",
+    "LabelShort[other]": "Rzuty obronne"
+  },
+  "BF.SENSES": {
+    "Label[one]": "Zmysł",
+    "Label[other]": "Zmysły",
+    "FIELDS": {
+      "traits": {
+        "senses": {
+          "custom": {
+            "label": "Niestandardowe zmysły"
+          },
+          "tags": {
+            "label": "Tagi zmysłów"
+          },
+          "types": {
+            "label": "Rodzaje zmysłów"
+          },
+          "unit": {
+            "label": "Jednostka zmysłów"
+          }
+        }
+      }
+    },
+    "Action": {
+      "AddCustom": "Dodaj niestandardowe",
+      "Configure": "Skonfiguruj zmysły",
+      "DeleteCustom": "Usuń niestandardowe"
+    },
+    "Tag": {
+      "CantSense": {
+        "Label": "Nie można wykryć obiektów poza promieniem",
+        "Display": "nie można wykryć obiektów poza promieniem"
+      }
+    },
+    "Type": {
+      "Darkvision": "Widzenie w ciemności",
+      "Keensense": "Wyostrzone zmysły",
+      "Tremorsense": "Wyczucie drgań",
+      "Truesight": "Prawdziwe widzenie"
+    }
+  },
+  "BF.SETTINGS": {
+    "AbilitySelectionManual": {
+      "Label": "Zezwól na ręczne przypisywanie cech",
+      "Hint": "Umożliw graczom ręczne ustalanie wartości cech zamiast korzystania ze standardowych metod wyboru."
+    },
+    "AbilitySelectionReroll": {
+      "Label": "Zezwól na ponowne rzuty na wartości cech",
+      "Hint": "Zezwól graczom na ponowne rzuty przy stosowaniu metody wyboru cech za pomocą rzutu kostką."
+    },
+    "AttackVisibility": {
+      "Label": "Widoczność ataków",
+      "Hint": "Steruj widocznością wyników rzutów na atak oraz tym, czy gracze mogą widzieć wartości KP celów.",
+      "All": "Pokaż wynik i KP przeciwnika",
+      "HideAC": "Pokaż tylko wyniki",
+      "None": "Ukryj wszystkie"
+    },
+    "AUTOMATION": {
+      "tokenMeasurementAutomation": {
+        "Label": "Automatyzacja pomiarów tokenów",
+        "Hint": "Zastosuj trudny teren i zaznacz ograniczenia ruchu na linijce tokenów."
+      }
+    },
+    "ChallengeVisibility": {
+      "Label": "Widoczność ST",
+      "Hint": "Kontroluj, jakie ST rzutów będą widoczne dla graczy oraz czy będą podświetlane sukcesy/porażki.",
+      "All": "Pokaż wszystko",
+      "None": "Ukryj wszystkie",
+      "Player": "Pokaż tylko od innych graczy"
+    },
+    "CollapseTrays": {
+      "Label": "Zwiń szczegóły na czacie",
+      "Hint": "Automatycznie zwijaj karty celów, obrażeń i efektów wyświetlane w kartach czatu.",
+      "Always": "Zwiń wszystko",
+      "Older": "Zwiń szczegóły starszych wiadomości",
+      "Never": "Rozwiń wszystko"
+    },
+    "COMBAT": {
+      "Hint": "Różne opcje konfiguracji przebiegu walki.",
+      "InitiativeTiebreaker": {
+        "Label": "Dogrywka w ramach inicjatywy",
+        "Hint": "Dodaj wynik cechy inicjatywy w postaci liczby dziesiętnej, aby pomóc w rozstrzyganiu remisów w kolejności inicjatywy."
+      },
+      "Label": "Ustawienia walki",
+      "Name": "Walka"
+    },
+    "CRITICAL": {
+      "Label": "Krytyki",
+      "ChecksAndThrows": {
+        "Label": "Krytyczne testy i rzuty obronne",
+        "Hint": "W przypadku wyniku naturalnego 20 lub 1 należy uznać testy umiejętności i rzuty obronne za krytyczny sukces lub krytyczną porażkę."
+      },
+      "MaximizeDamage": {
+        "Label": "Zmaksymalizuj liczbę kości bonusowych",
+        "Hint": "Zmaksymalizuj wartość kości bonusowych dodawanych w wyniku trafień krytycznych (np. 1k6 staje się 1k6 + 6 zamiast 2k6)."
+      },
+      "MultiplyDice": {
+        "Label": "Podwajanie wyników rzutu kostką",
+        "Hint": "Zamiast rzucać dodatkowymi kostkami, należy pomnożyć wyniki rzutów (np. 1k6 zamienia się na 1k6 * 2, a nie na 2k6)."
+      },
+      "MultiplyNumeric": {
+        "Label": "Mnożenie wyrażeń liczbowych",
+        "Hint": "Oprócz wyników rzutów kostką należy pomnożyć również wyrażenia liczbowe (np. 1k6 + 4 zamienia się na 2k6 + 8, a nie na 2k6 + 4)."
+      }
+    },
+    "Encumbrance": {
+      "Label": "Śledzenie obciążenia",
+      "Hint": "Włącz automatyczne śledzenie obciążenia i stosowanie stanów dla postaci niosących zbyt wiele.",
+      "None": "Brak",
+      "Normal": "Normalne (maksymalna nośność)",
+      "Variant": "Wariant (obciążony i mocno obciążony)"
+    },
+    "LevelingMode": {
+      "Label": "Tryb awansowania",
+      "Hint": "Metoda, którą należy zastosować w celu ustalenia, kiedy gracze osiągają nowy poziom.",
+      "Milestone": "Kamień Milowy",
+      "XP": "Punkty Doświadczenia"
+    },
+    "LOCALIZATION": {
+      "FIELDS": {
+        "approximateConversion": {
+          "hint": "Przy przeliczaniu jednostek imperialnych na metryczne należy stosować wartości przybliżone, a nie dokonywać dokładnych przeliczeń (np. 5 stóp = 1,5 m).",
+          "label": "Przybliżone przeliczenie"
+        },
+        "distance": {
+          "label": "Jednostka odległości"
+        },
+        "volume": {
+          "label": "Jednostki objętości"
+        },
+        "weight": {
+          "label": "Jednostka wagi"
+        }
+      },
+      "Hint": "Skonfiguruj jednostki wymiaru wyświetlane przez system oraz opcje przeliczania.",
+      "Label": "Ustawienia jednostek",
+      "Name": "Jednostki miary"
+    },
+    "Multiclassing": {
+      "Label": "Zezwól na wieloklasowość",
+      "Hint": "Pozwól postaciom wybierać więcej niż jedną klasę podczas zdobywania kolejnych poziomów."
+    },
+    "ProficiencyMode": {
+      "Label": "Wariant biegłości",
+      "Hint": "Skonfiguruj modyfikator biegłości, aby użyć stałej premii lub rzutu kostką.",
+      "Bonus": "Premia (+2, +3, +4, +5, +6)",
+      "Dice": "Kości (1k4, 1k6, 1k8, 1k10, 1k12)"
+    },
+    "RULES": {
+      "FIELDS": {
+        "epicAdvancement": {
+          "hint": "Zezwól na awans powyżej 20. poziomu, aż do 30. poziomu.",
+          "label": "Epicki awans"
+        },
+        "firearms": {
+          "hint": "Zastosuj zasady dotyczące broni palnej oraz typy broni opisane w „Podręczniku Mistrza Gry”.",
+          "label": "Broń palna"
+        }
+      },
+      "Hint": "Skonfiguruj reguły opcjonalne, takie jak „Broń palna”.",
+      "Label": "Ustawienia reguł opcjonalnych",
+      "Name": "Reguły opcjonalne",
+      "Required": "Ta reguła jest wymagana przez {sources}."
+    },
+    "Summoning": {
+      "Label": "Zezwalaj na przywoływanie",
+      "Hint": "Zezwól graczom na używanie zdolności przywoływania w celu przywołania postaci. Aby ta funkcja działała, gracze muszą również posiadać podstawowe uprawnienie do tworzenia tokenów."
+    }
+  },
+  "BF.Sheet": {
+    "Default": {
+      "ClassPage": "Black Flag Karta dziennika klasy",
+      "Concept": "Black Flag Karta koncepcyjna",
+      "Condition": "Black Flag Karta stanu",
+      "Container": "Black Flag Karta pojemnika",
+      "DifficultTerrain": "Black Flag Karta trudnego terenu",
+      "Equipment": "Black Flag Karta wyposażenia",
+      "Feature": "Black Flag Karta zdolności",
+      "Journal": "Black Flag Karta dziennika",
+      "JournalLegacy": "Black Flag Karta starszego wpisu do dziennika",
+      "Map": "Black Flag Karta strony dziennika z miejscem na mapie",
+      "NPC": "Black Flag Karta BN",
+      "PC": "Black Flag Karta BG",
+      "Rule": "Black Flag Karta dziennika zasad",
+      "SiegeWeapon": "Black Flag Karta broni oblężniczej",
+      "Vehicle": "Black Flag Karta pojazdu"
+    },
+    "Sorting": {
+      "Mode": {
+        "Alphabetic": "Alfabetycznie",
+        "Manual": "Manualnie"
+      }
+    },
+    "Tab": {
+      "Activities": "Aktywności",
+      "Advancement": "Awans",
+      "AdvancementEffects": "Awans i Efekty",
+      "Biography": "Biografia",
+      "Contents": "Zawartość",
+      "Description": "Opis",
+      "Details": "Szczegóły",
+      "Effects": "Efekty",
+      "Features": "Zdolności",
+      "Inventory": "Ekwipunek",
+      "Main": "Główna",
+      "Spellcasting": "Rzucanie zaklęć"
+    }
+  },
+  "BF.Shield": {
+    "Bonus": {
+      "Label": "Premia od tarczy"
+    }
+  },
+  "BF.Size": {
+    "Label": "Rozmiar",
+    "Action": {
+      "Configure": "Skonfiguruj typ i rozmiar"
+    },
+    "Gargantuan": "Ogromny",
+    "Huge": "Wielki",
+    "Large": "Duży",
+    "Medium": "Średni",
+    "Small": "Mały",
+    "Tiny": "Malutki"
+  },
+  "BF.Skill": {
+    "Label[one]": "Umiejętność",
+    "Label[other]": "Umiejętności",
+    "Action": {
+      "CheckGeneric": "Test umiejętności",
+      "CheckSpecific": "Test: {skill}"
+    },
+    "Passive": {
+      "Label": "Pasywne umiejętności",
+      "LabelGeneric": "Pasywny",
+      "LabelSpecific": "Pasywna umiejętność: {skill}"
+    },
+    "Acrobatics": {
+      "Label": "Akrobatyka"
+    },
+    "AnimalHandling": {
+      "Label": "Opieka nad zwierzętami"
+    },
+    "Arcana": {
+      "Label": "Wiedza tajemna"
+    },
+    "Athletics": {
+      "Label": "Atletyka"
+    },
+    "Deception": {
+      "Label": "Oszustwo"
+    },
+    "History": {
+      "Label": "Historia"
+    },
+    "Insight": {
+      "Label": "Intuicja"
+    },
+    "Intimidation": {
+      "Label": "Zastraszanie"
+    },
+    "Investigation": {
+      "Label": "Śledztwo"
+    },
+    "Medicine": {
+      "Label": "Medycyna"
+    },
+    "Nature": {
+      "Label": "Przyroda"
+    },
+    "Perception": {
+      "Label": "Percepcja"
+    },
+    "Performance": {
+      "Label": "Występy"
+    },
+    "Persuasion": {
+      "Label": "Perswazja"
+    },
+    "Religion": {
+      "Label": "Religia"
+    },
+    "SleightOfHand": {
+      "Label": "Zwinne dłonie"
+    },
+    "Stealth": {
+      "Label": "Skradanie się"
+    },
+    "Survival": {
+      "Label": "Sztuka przetrwania"
+    }
+  },
+  "BF.Speed": {
+    "Label": "Szybkość",
+    "Action": {
+      "Configure": "Skonfiguruj szybkość"
+    }
+  },
+  "BF.Spell": {
+    "Action": {
+      "Add": "Dodaj zaklęcie",
+      "Edit": "Edytuj zaklęcie",
+      "Delete": "Usuń zaklęcie",
+      "Duplicate": "Duplikuj zaklęcie",
+      "Prepare": "Przygotuj zaklęcie",
+      "Unprepare": "Cofnij przygotowanie zaklęcia",
+      "View": "Zobacz zaklęcie"
+    },
+    "Casting": {
+      "Label": "Rzucanie"
+    },
+    "CastingTime": {
+      "Label": "Czas rzucania"
+    },
+    "Circle": {
+      "Label": "Krąg zaklęć",
+      "Base": {
+        "Label": "Bazowy krąg"
+      },
+      "Cantrip[one]": "Sztuczka",
+      "Cantrip[other]": "Sztuczki",
+      "Effective": {
+        "Label": "Efektywny krąg"
+      },
+      "Level": "Krąg {number}",
+      "LevelDashed": "{number}.-Krąg",
+      "Maximum": "Maksymalny krąg"
+    },
+    "CircleType": {
+      "Cantrip": "Sztuczka {types} ({school})",
+      "Ritual": "Rytuał kręgu {circle}. {types} ({school})",
+      "Standard": "{circle}. {types} ({school})"
+    },
+    "Component": {
+      "Label": "Komponenty",
+      "RuleLabel": "Komponent zaklęcia",
+      "Material": {
+        "Label": "Materialny",
+        "Abbreviation": "M",
+        "Consumed": {
+          "Label": "Zużywany?"
+        },
+        "Cost": {
+          "Label": "Koszt"
+        },
+        "Description": {
+          "Label": "Opis"
+        }
+      },
+      "Somatic": {
+        "Label": "Somatyczny",
+        "Abbreviation": "S"
+      },
+      "Verbal": {
+        "Label": "Werbalny",
+        "Abbreviation": "W"
+      }
+    },
+    "Configuration": "Konfiguracja",
+    "Preparation": {
+      "Label": "Tryb przygotowania",
+      "AlwaysPrepared": "Zawsze przygotowany",
+      "Prepared": "Przygotowany",
+      "NotPrepared": "Nieprzygotowany",
+      "Mode": {
+        "AtWill": "Do woli",
+        "Innate": "Wrodzony",
+        "Pact": "Pakt",
+        "Rituals": "Rytuały",
+        "Standard": "Standardowy"
+      }
+    },
+    "School": {
+      "Label": "Szkoła magii",
+      "RuleLabel": "Szkoła zaklęcia",
+      "Abjuration": {
+        "Label": "Odpychania"
+      },
+      "Conjuration": {
+        "Label": "Przywoływania"
+      },
+      "Divination": {
+        "Label": "Wieszczenia"
+      },
+      "Enchantment": {
+        "Label": "Uroków"
+      },
+      "Evocation": {
+        "Label": "Wywoływania"
+      },
+      "Illusion": {
+        "Label": "Iluzji"
+      },
+      "Necromancy": {
+        "Label": "Nekromancji"
+      },
+      "Transmutation": {
+        "Label": "Przemian"
+      }
+    },
+    "Source": {
+      "Label": "Źródło magii",
+      "RuleLabel": "Źródło zaklęcia",
+      "Arcane": {
+        "Label": "Tajemny"
+      },
+      "Divine": {
+        "Label": "Boski"
+      },
+      "Primordial": {
+        "Label": "Pierwotny"
+      },
+      "Wyrd": {
+        "Label": "Glif"
+      }
+    },
+    "Tag": {
+      "Label": "Tagi",
+      "RuleLabel": "Tag zaklęcia",
+      "Concentration": {
+        "Label": "Koncentracja",
+        "Abbreviation": "K",
+        "Formatted": "Koncentracja, aż do {duration}"
+      },
+      "Ritual": {
+        "Label": "Rytuał",
+        "Abbreviation": "R"
+      }
+    }
+  },
+  "BF.Spellbook": {
+    "Action": {
+      "LearnSpells": "Nauka zaklęć",
+      "ManageSpells": "Zarządzaj zaklęciami"
+    },
+    "FreeSpell": {
+      "Label[one]": "Darmowe zaklęcie",
+      "Label[other]": "Darmowe zaklęcia"
+    },
+    "NoneAvailable": "Brak dostępnych zaklęć",
+    "Notification": {
+      "LearningAvailable": "Dostępne są nowe zaklęcia do nauczenia się."
+    },
+    "Slots": {
+      "Label": "Wybór zaklęć",
+      "New": "Nowe komórki"
+    },
+    "Title": "Menedżer zaklęć"
+  },
+  "BF.Spellcasting": {
+    "Label": "Rzucanie zaklęć",
+    "Ability": {
+      "Label": "Cecha bazowa rzucania zaklęć"
+    },
+    "Action": {
+      "Configure": "Konfiguracja rzucania zaklęć"
+    },
+    "Attack": {
+      "Label": "Modyfikator ataku magicznego",
+      "Abbreviation": "Atak"
+    },
+    "Details": {
+      "Label": "Szczegóły rzucania zaklęć"
+    },
+    "DC": {
+      "Label": "ST rzutu obronnego na zaklęcia",
+      "Abbreviation": "ST"
+    },
+    "FIELDS": {
+      "ability": {
+        "label": "Cecha bazowa rzucania zaklęć",
+        "hint": "Cecha wykorzystywana do obliczania modyfikatora ataku zaklęciem oraz współczynnika ST rzutu obronnego przed zaklęciem."
+      },
+      "cantrips": {
+        "label": "Znane sztuczki",
+        "hint": "Liczba sztuczek znanych rzucającemu na danym poziomie."
+      },
+      "permissiveSources": {
+        "label": "Dopuszczalne źródła",
+        "hint": "Zezwól na wybór spośród dowolnych określonych źródeł magii podczas wybierania zaklęć. Jeśli opcja ta nie jest zaznaczona, niektóre pola wyboru będą ograniczone do jednego źródła magii."
+      },
+      "progression": {
+        "label": "Rozwój możliwości rzucania zaklęć",
+        "hint": "Określa, ile komórek na zaklęcia ma do dyspozycji rzucający zaklęcia na danym poziomie. Zasadniczo rzucający zaklęcia, którzy zyskują zdolność rzucania zaklęć na 1. poziomie, są pełnoprawnymi rzucającymi, na 2. poziomie – połowicznie, a na 3. poziomie – trzeciorzędnymi."
+      },
+      "rituals": {
+        "label": "Znane rytuały",
+        "hint": "Liczba zaklęć rytualnych znanych rzucającemu na danym poziomie.",
+        "restricted": {
+          "label": "Ograniczone źródło",
+          "hint": "Ogranicz rytuały, których można się nauczyć, do głównego źródła magii."
+        }
+      },
+      "slots": {
+        "label": "Komórki paktu",
+        "hint": "Liczba dostępnych komórek paktu na danym poziomie."
+      },
+      "sources": {
+        "label": "Źródła magii",
+        "hint": "Źródła magii, które zapewniają dostęp do określonego zestawu zaklęć."
+      },
+      "spells": {
+        "label": "Znane zaklęcia",
+        "hint": "Liczba standardowych zaklęć znanych rzucającemu na danym poziomie.",
+        "mode": {
+          "label": "Tryb nauki",
+          "hint": "W jaki sposób rzucający zaklęcia zdobywa zaklęcia na poszczególnych poziomach?"
+        },
+        "replacement": {
+          "label": "Wymiana",
+          "hint": "Czy rzucający zaklęcie może przy awansowaniu na kolejny poziom zastąpić nim jedno ze znanych mu wcześniej zaklęć?"
+        },
+        "schools": {
+          "label": "Szkoły",
+          "hint": "Wybór zaklęć może pochodzić wyłącznie z tych szkół, o ile zostały one ustawione."
+        },
+        "special": {
+          "label": "Komórki specjalne",
+          "hint": "Jedno z wybranych na początku zaklęć może ominąć standardowe ograniczenia dotyczące źródła lub szkoły."
+        },
+        "spellbook": {
+          "label": "Darmowe zaklęcia",
+          "hint": "Liczba zaklęć, które można zapisać w księdze zaklęć za darmo.",
+          "firstLevel": {
+            "label": "1. krąg"
+          },
+          "otherLevels": {
+            "label": "Inne poziomy"
+          }
+        }
+      },
+      "type": {
+        "label": "Rodzaj rzucania zaklęć",
+        "hint": "Sposób, w jaki rzucający zaklęcia rzuca zaklęcia, oraz ograniczenia dotyczące liczby dostępnych komórek."
+      }
+    },
+    "Learning": {
+      "Mode": {
+        "All": {
+          "Label": "Wszystkie zaklęcia",
+          "Hint": "Rzucający zaklęcia zna wszystkie zaklęcia pochodzące z jego Źródła Magii."
+        },
+        "Limited": {
+          "Label": "Ograniczone",
+          "Hint": "Rzucający zaklęcia może nauczyć się tylko określonej liczby zaklęć, zależnej od jego poziomu."
+        },
+        "Spellbook": {
+          "Label": "Księga zaklęć",
+          "Hint": "Rzucający zaklęcia musi zapisywać zaklęcia w swojej księdze zaklęć, co wiąże się z pewnymi kosztami."
+        }
+      },
+      "Schools": {
+        "NoRestriction": "Brak ograniczeń"
+      }
+    },
+    "NPC": {
+      "AtWill": "Do woli",
+      "Period": "{uses} każdy",
+      "Description": "{name} rzuca jedno z poniższych zaklęć, wykorzystując {ability} jako cechę do rzucania zaklęć (ST rzutu obronnego przed zaklęciem {dc}):"
+    },
+    "Origin": "Pochodzenie",
+    "Preparation": {
+      "Label": "Przygotować zaklęcia?",
+      "Hint": "Czy ta postać rzucająca zaklęcia musi przygotowywać zaklęcia z dostępnej listy, czy też może w dowolnym momencie rzucać wszystkie znane sobie zaklęcia?",
+      "Trait": "Przygotowany"
+    },
+    "Progression": {
+      "Full": {
+        "Label": "Pełna"
+      },
+      "Half": {
+        "Label": "Połowa",
+        "Trait": "Połowicznie rzucający czary"
+      },
+      "Third": {
+        "Label": "Trzeci",
+        "Trait": "Trzeciorzędny rzucający czary"
+      }
+    },
+    "Source": "Źródło magii",
+    "Trait": {
+      "Display": "{source} {prepared} {progression}"
+    },
+    "Type": {
+      "Trait": "Rzucający czary",
+      "Leveled": {
+        "Label": "Poziomowe rzucanie zaklęć"
+      },
+      "Pact": {
+        "Label": "Rzucanie zaklęć Paktu",
+        "Trait": "Rzucający czary Paktu",
+        "Section": "Magia Paktu ({circleLowercase})",
+        "Slots": "Komórki paktu"
+      }
+    },
+    "Warning": {
+      "NoLeveledSlot": "W {circleLowercase} nie ma wolnych komórek, aby rzucić to zaklęcie."
+    }
+  },
+  "BF.SPELLLIST": {
+    "FIELDS": {
+      "description": {
+        "conclusion": {
+          "label": "Wnioski"
+        },
+        "introduction": {
+          "label": "Wprowadzenie"
+        }
+      },
+      "grouping": {
+        "label": "Domyślne grupowanie",
+        "hint": "Określa, w jaki sposób zaklęcia będą domyślnie grupowane na liście."
+      },
+      "headingLevel": {
+        "label": "Poziom nagłówka",
+        "hint": "Poziom dla wygenerowanego nagłówka."
+      },
+      "spells": {
+        "label": "Zaklęcia"
+      }
+    },
+    "Action": {
+      "Delete": "Usuń"
+    },
+    "DropHint": "Upuść zaklęcia lub katalogi z zaklęciami tutaj, aby dodać je do listy",
+    "Grouping": {
+      "Label": "Grupowanie",
+      "Alphabetical": "Po pierwszej literze",
+      "Circle": "Po kręgu zaklęć",
+      "None": "Bez grupowania",
+      "School": "Po szkole zaklęć"
+    }
+  },
+  "BF.SplitStack": {
+    "Action": "Rozdziel",
+    "Title": "Rozdziel stos"
+  },
+  "BF.SOURCE": {
+    "Label": "Źródło",
+    "FIELDS": {
+      "description": {
+        "source": {
+          "label": "Źródło",
+          "book": {
+            "label": "Podręcznik źródłowy",
+            "hint": "Podręcznik lub moduł, z którego pochodzi ta pozycja."
+          },
+          "fallback": {
+            "label": "Niestandardowa etykieta"
+          },
+          "page": {
+            "label": "Strona źródłowa"
+          }
+        }
+      }
+    },
+    "Compendium": "Łącze do kompendium",
+    "Config": "Skonfiguruj źródło",
+    "Display": {
+      "Full": "{book} {page}",
+      "Page": "str. {page}"
+    }
+  },
+  "BF.Subclass": {
+    "LabelSpecific": "Podklasa: {class}",
+    "Warning": {
+      "ExistingSubclass": "Klasa {class} ma już podklasę {subclass}. Nie można dodać kolejnej.",
+      "MissingClass": "Postać nie posiada żadnego poziomu klasy {class}, aby móc wybrać tę podklasę."
+    }
+  },
+  "BF.SUMMON": {
+    "Title": "Przywołanie",
+    "Hint": "Przywołaj stworzenie na scenę.",
+    "FIELDS": {
+      "bonuses": {
+        "ac": {
+          "label": "Premia do Klasy Pancerza",
+          "hint": "Premia do KP przywołanego stworzenia, dodana do tego, co jest określone w jej statystykach."
+        },
+        "attackDamage": {
+          "label": "Premia do obrażeń z ataku",
+          "hint": "Dodatkowe obrażenia zadawane przez ataki tego stworzenia."
+        },
+        "healing": {
+          "label": "Premia do leczenia",
+          "hint": "Dodatkowe leczenie zapewniane przez zdolności lecznicze."
+        },
+        "hp": {
+          "label": "Premia do Punktów wytrzymałości",
+          "hint": "Dodatkowe Punkty Wytrzymałości dodawane stworzeniu ponad to, co określono w jej bloku statystyk."
+        },
+        "saveDamage": {
+          "label": "Premia do obrażeń wymagających rzutu obronnego",
+          "hint": "Dodatkowe obrażenia zadawane przez zdolności tego stworzenia, które wymagają rzutów obronnych."
+        }
+      },
+      "creatureSizes": {
+        "label": "Rozmiary stworzeń",
+        "hint": "Przywołane stworzenie i token zostaną zmienione na ten rozmiar. Jeśli wybrano więcej niż jeden rozmiar, gracz będzie mógł wybrać jeden podczas przywoływania."
+      },
+      "creatureTypes": {
+        "label": "Rodzaje stworzeń",
+        "hint": "Przywołane stworzenie zostanie zmieniona w ten rodzaj. Jeśli wybrano więcej niż jeden rodzaj, gracz będzie mógł wybrać jeden podczas przywoływania."
+      },
+      "match": {
+        "attacks": {
+          "label": "Dopasuj ataki",
+          "hint": "Zmodyfikuj wartości trafień w atakach przywołanego stworzenia, aby odpowiadały wartościom przywołującego."
+        },
+        "disposition": {
+          "label": "Dopasuj usposobienie",
+          "hint": "Zmodyfikuj usposobienie przywołanego stworzenia, aby odpowiadały usposobieniu przywołującego."
+        },
+        "proficiency": {
+          "label": "Dopasuj biegłość",
+          "hint": "Zmodyfikuj biegłości przywołanego stworzenia, aby odpowiadały biegłościom przywołującego."
+        },
+        "saves": {
+          "label": "Dopasuj rzuty obronne",
+          "hint": "Zmodyfikuj wartości rzutów obronnych przywołanego stworzenia, aby odpowiadały wartościom przywołującego."
+        }
+      },
+      "profiles": {
+        "label": "Profile przywoływań",
+        "element": {
+          "circle": {
+            "label": "Limit kręgu",
+            "hint": "Zakres kręgów wymaganych do korzystania z tego profilu.",
+            "max": {
+              "label": "Maksymalny krąg"
+            },
+            "min": {
+              "label": "Minimalny krąg"
+            }
+          },
+          "count": {
+            "label": "Ilość"
+          },
+          "cr": {
+            "label": "Stopień Wyzwania",
+            "abbr": "SW",
+            "hint": "Maksymalne SW przywołanego stworzenia."
+          },
+          "level": {
+            "label": "Limit poziomu",
+            "hint": "Zakres poziomów wymaganych do użycia tego profilu.",
+            "max": {
+              "label": "Poziom maksymalny"
+            },
+            "min": {
+              "label": "Poziom minimalny"
+            }
+          },
+          "name": {
+            "label": "Wyświetlana nazwa",
+            "hint": "Nazwa profilu wyświetlana w oknie dialogowym."
+          },
+          "types": {
+            "label": "Rodzaje stworzeń",
+            "hint": "Lista rodzajów stworzeń, z których można wybrać przywołane stworzenie."
+          },
+          "uuid": {
+            "label": "Powiązane stworzenie"
+          }
+        }
+      },
+      "summon": {
+        "label": "Szczegóły przywołania",
+        "mode": {
+          "label": "Tryb",
+          "hint": "Określa, w jaki sposób określane są stworzenia, które mają zostać wezwane.",
+          "CR": "Według stopnia wyzwania i rodzaju stworzenia",
+          "Direct": "Według bezpośredniego odnośnika"
+        },
+        "prompt": {
+          "label": "Monit o przywołanie",
+          "hint": "Czy gracz powinien zostać poproszony o umieszczenie przywołanego stworzenia? Gracze nadal będą mogli przywoływać z karty czatu, jeśli monit jest wyłączony."
+        }
+      },
+      "tempHP": {
+        "label": "Tymcz. PW",
+        "hint": "Przyznaj przywołanemu stworzeniu tymczasowe PW, zastępując nimi dotychczasowe tymczasowe PW."
+      }
+    },
+    "SECTIONS": {
+      "Changes": "Zmiany",
+      "Profiles": "Profile",
+      "Summoning": "Przywoływanie"
+    },
+    "Action": {
+      "Place": "Umieść stworzenia do przywołania",
+      "Summon": "Przywołanie",
+      "View": "Podgląd przywołania"
+    },
+    "CreatureChanges": {
+      "Label": "Zmiany w stworzeniu",
+      "Hint": "Zmiany, które zostaną wprowadzone w przywołanemu stworzeniu. Wszelkie odnośniki @ użyte w poniższych formułach będą oparte na statystykach osoby przywołującej. Do statystyk przywołanych stworzeń można odwoływać się za pomocą @summon (np. @summon.attributes.hd.max, aby odwołać się do liczby Kości Wytrzymałości stworzenia)."
+    },
+    "ItemChanges": {
+      "Label": "Zmiany w przedmiotach",
+      "Hint": "Zmiany wprowadzone do wyposażenia przywołanego stworzenia."
+    },
+    "Profile": {
+      "Label": "Profil przywoływania",
+      "Action": {
+        "Create": "Utwórz profil",
+        "Delete": "Usuń profil"
+      },
+      "ChallengeRatingLabel": "Stopień wyzwania {cr} lub niższy",
+      "DropHint": "Upuść stworzenie tutaj",
+      "Empty": "Kliknij przycisk <i class=\"fas fa-plus\"></i> powyżej aby stworzyć profil.",
+      "EmptyDrop": "Kliknij przycisk <i class=\"fas fa-plus\"></i> powyżej, aby dodać profil lub upuść stworzenie, aby ją przywołać."
+    },
+    "Warning": {
+      "CreateActor": "Aby przywołać bezpośrednio z kompendium, musisz mieć uprawnienie \"Utwórz nowych aktorów\".",
+      "CreateToken": "Aby przywołać stworzenie, musisz posiadać uprawnienie „Tworzenie nowych tokenów”, a funkcja przywoływania musi być włączona.",
+      "NoActor": "Nie można znaleźć aktora z identyfikatorem UUID '{uuid}' do przywołania.",
+      "NoOwnership": "Musisz mieć własność '{actor}', aby go przywołać.",
+      "NoProfile": "Nie można znaleźć profilu przywołania {profileId} w '{item}'.",
+      "NoScene": "Nie można przywołać bez aktywnej sceny.",
+      "PlaceTokens": "Wystąpił błąd podczas umieszczania przywołanych stworzeń w scenie.",
+      "Wildcard": "Musisz mieć uprawnienia \"Użyj przeglądarki plików\", aby przywoływać stworzenia ze zmiennymi grafikami."
+    }
+  },
+  "BF.TableOfContents": {
+    "Title": "Spis treści"
+  },
+  "BF.Talent": {
+    "Details": "Szczegóły talentu"
+  },
+  "BF.TARGET": {
+    "Action": {
+      "PlaceTemplate": "Umieść szablon"
+    },
+    "Choice": "{number} według swojego uznania",
+    "Count": {
+      "Label": "Liczba celów",
+      "AnyGeneric": "Dowolny",
+      "AnySpecific": "Dowolny {typeLowercase}",
+      "Counted": "{number} {typeLowercase}",
+      "EveryGeneric": "Wszyscy",
+      "EverySpecific": "Każdy {typeLowercase}"
+    },
+    "FIELDS": {
+      "target": {
+        "affects": {
+          "label": "Objęte cele",
+          "choice": {
+            "label": "Wybierz cele",
+            "hint": "Czy użytkownik może wybrać, na które z celów znajdujących się w danym obszarze wywrze wpływ?"
+          },
+          "count": {
+            "label": "Liczba celów",
+            "hint": "Liczba poszczególnych celów, które mogą zostać objęte."
+          },
+          "special": {
+            "label": "Specjalne celowanie",
+            "hint": "Opis szczegółów dotyczących specjalnego celowania."
+          },
+          "type": {
+            "label": "Typ celu",
+            "hint": "Rodzaj celów, które mogą zostać objęte (np. stworzenia, przedmioty, pola)."
+          }
+        },
+        "override": {
+          "label": "Nadpisanie celowania"
+        },
+        "prompt": {
+          "label": "Monit o umieszczenie szablonu pomiarowego",
+          "hint": "Czy gracz powinien zostać poproszony o umieszczenie szablonu pomiarowego? Gracze nadal będą mogli umieszczać szablony z karty czatu, jeśli monit jest wyłączony."
+        },
+        "template": {
+          "label": "Obszar działania",
+          "contiguous": {
+            "label": "Przyległe obszary",
+            "hint": "Czy wszystkie utworzone obszary muszą być ze sobą połączone?"
+          },
+          "count": {
+            "label": "Liczba obszarów",
+            "hint": "Liczba odrębnych obszarów, które można obrać za cel."
+          },
+          "height": {
+            "label": "Wysokość obszaru",
+            "hint": "Wysokość cylindra, jeśli dotyczy."
+          },
+          "size": {
+            "label": "Rozmiar obszaru",
+            "hint": "Wielkość obszaru działania na jego głównej osi."
+          },
+          "type": {
+            "label": "Rodzaj obszaru",
+            "hint": "Rodzaj obszaru działania obranego za cel."
+          },
+          "unit": {
+            "label": "Jednostka powierzchni",
+            "hint": "Jednostka używane do pomiaru obszaru działania."
+          },
+          "width": {
+            "label": "Szerokość obszaru",
+            "hint": "Szerokość linii, jeśli dotyczy."
+          }
+        }
+      }
+    },
+    "InSwarmsSpace": "{target} w przestrzeni roju",
+    "Label[one]": "Cel",
+    "Label[other]": "Cele",
+    "Type": {
+      "Label": "Typ celu",
+      "Ally": {
+        "Counted[one]": "{number} sojusznik",
+        "Counted[other]": "{number} sojuszników",
+        "Label[one]": "Sojusznik",
+        "Label[other]": "Sojusznicy"
+      },
+      "Creature": {
+        "Counted[one]": "{number} stworzenie",
+        "Counted[other]": "{number} stworzeń",
+        "Label[one]": "Stworzenie",
+        "Label[other]": "Stworzenia"
+      },
+      "CreatureObject": {
+        "Counted[one]": "{number} stworzenie lub obiekt",
+        "Counted[other]": "{number} stworzeń lub obiektów",
+        "Label[one]": "Stworzenie lub obiekt",
+        "Label[other]": "Stworzenia lub obiekty"
+      },
+      "Enemy": {
+        "Counted[one]": "{number} wróg",
+        "Counted[other]": "{number} wrogów",
+        "Label[one]": "Wróg",
+        "Label[other]": "Wrogów"
+      },
+      "Object": {
+        "Counted[one]": "{number} obiekt",
+        "Counted[other]": "{number} obiektów",
+        "Label[one]": "Obiekt",
+        "Label[other]": "Obiektów"
+      },
+      "ObjectNotWorn": {
+        "Counted[one]": "Obiekt {number} nie jest założony ani noszony",
+        "Counted[other]": "Obiekty {number} nie są założone ani noszone",
+        "Label[one]": "Obiekt nie jest założony ani noszony",
+        "Label[other]": "Obiekty nie są założone ani noszone"
+      },
+      "Special": {
+        "Label": "Specjalna"
+      },
+      "Target": {
+        "Counted[one]": "{number} cel",
+        "Counted[other]": "{number} celów"
+      },
+      "WillingCreature": {
+        "Counted[one]": "{number} przychylne stworzenie",
+        "Counted[other]": "{number} przychylnych stworzeń",
+        "Label[one]": "Przychylne stworzenie",
+        "Label[other]": "Przychylnych stworzeń"
+      }
+    },
+    "Warning": {
+      "PlaceTemplate": "Nie udało się umieścić szablonu pomiarowego."
+    }
+  },
+  "BF.Targeting": {
+    "Label": "Celowanie"
+  },
+  "BF.TELEPORT": {
+    "Action": {
+      "Teleport": "Teleportacja"
+    },
+    "Details": "Szczegóły teleportacji",
+    "FIELDS": {
+      "distance": {
+        "hint": "Maksymalna odległość teleportacji.",
+        "label": "Odległość",
+        "unit": {
+          "label": "Jednostka odległości"
+        },
+        "value": {
+          "label": "Wartość odległości"
+        }
+      },
+      "unlimited": {
+        "hint": "Zezwól na teleportację poza maksymalną odległość.",
+        "label": "Bez ograniczeń"
+      }
+    },
+    "Hint": "Teleportuj token do wybranego miejsca docelowego.",
+    "SECTIONS": {
+      "Teleport": "Teleportacja"
+    },
+    "Title": "Teleportacja",
+    "Warning": {
+      "InvalidDistance": "Teleportacji nie można używać w scenach, w których nie ma obsługiwanych jednostek ruchu."
+    }
+  },
+  "BF.Time": {
+    "Category": {
+      "Combat": {
+        "Label": "Walka"
+      },
+      "Time": {
+        "Label": "Czas"
+      }
+    },
+    "Unit": {
+      "Day": {
+        "Label[one]": "Dzień",
+        "Label[other]": "Dni"
+      },
+      "Encounter": {
+        "Label[one]": "Spotkanie",
+        "Label[other]": "Spotkania"
+      },
+      "Hour": {
+        "Label[one]": "Godzina",
+        "Label[other]": "Godziny"
+      },
+      "Minute": {
+        "Label[one]": "Minuta",
+        "Label[other]": "Minut"
+      },
+      "Month": {
+        "Label[one]": "Miesiąc",
+        "Label[other]": "Miesiące"
+      },
+      "Round": {
+        "Label[one]": "Runda",
+        "Label[other]": "Rundy"
+      },
+      "Turn": {
+        "Label[one]": "Tura",
+        "Label[other]": "Tury"
+      },
+      "Year": {
+        "Label[one]": "Rok",
+        "Label[other]": "Lata"
+      }
+    }
+  },
+  "BF.Tokens": {
+    "NoneSelected": "Nie wybrano tokenów",
+    "NoneTargeted": "Brak tokenów obranych za cel",
+    "Selected": "Wybrane",
+    "Targeted": "Obrane za cel"
+  },
+  "BF.Tool": {
+    "Label[one]": "Narzędzie",
+    "Label[other]": "Narzędzia",
+    "Action": {
+      "CheckGeneric": "Test wykorzystania narzędzi",
+      "CheckSpecific": "Test {tool}"
+    },
+    "Category": {
+      "GamingSet[one]": "zestaw do gry",
+      "GamingSet[other]": "Zestawy do gry",
+      "MusicalInstrument[one]": "Instrument muzyczny",
+      "MusicalInstrument[other]": "Instrumenty muzyczne"
+    },
+    "Listed": "Wymienione narzędzia",
+    "Type": {
+      "AlchemistsTools": "Narzędzia alchemika",
+      "ArtistTools": "Narzędzia artystyczne",
+      "Bagpipes": "Dudy",
+      "CardSet": "Zestaw kart",
+      "CharlatanTools": "Narzędzia szarlatanów",
+      "ClothierTools": "Narzędzia krawieckie",
+      "ConstructionTools": "Narzędzia budowlane",
+      "DiceSet": "Zestaw kości",
+      "Drum": "Bęben",
+      "Flute": "Flet",
+      "HerbalistTools": "Narzędzia zielarskie",
+      "Horn": "Róg",
+      "Lute": "Lutnia",
+      "Lyre": "Lira",
+      "NavigatorTools": "Narzędzia nawigacyjne",
+      "ProvisionerTools": "Narzędzia kucharskie",
+      "SmithingTools": "Narzędzia kowalskie",
+      "TrapperTools": "Narzędzia myśliwskie",
+      "ThievesTools": "Narzędzia złodziejskie",
+      "TinkerTools": "Narzędzia rzemieślnicze"
+    }
+  },
+  "BF.Trait": {
+    "Label[one]": "Zdolność",
+    "Label[other]": "Zdolności",
+    "All": "Wszystkie {category}",
+    "Type": "Typ"
+  },
+  "BF.UNITS": {
+    "DISTANCE": {
+      "Label": "Jednostka odległości",
+      "Foot": {
+        "Label": "Stopy",
+        "Abbreviation": "ft"
+      },
+      "Kilometer": {
+        "Label": "Kilometr",
+        "Abbreviation": "km"
+      },
+      "Meter": {
+        "Label": "Miernik",
+        "Abbreviation": "m"
+      },
+      "Mile": {
+        "Label": "Mile",
+        "Abbreviation": "mi"
+      }
+    },
+    "PACE": {
+      "Label": "Jednostki tempa podróży",
+      "KilometerPerHour": {
+        "Label": "Kilometry na godzinę",
+        "Abbreviation": "km/h"
+      },
+      "MilePerHour": {
+        "Label": "Mile na godzinę",
+        "Abbreviation": "mph"
+      }
+    },
+    "SYSTEM": {
+      "Imperial": "Imperialne",
+      "Metric": "Metryczne"
+    },
+    "TIME": {
+      "Label": "Jednostki czasu",
+      "Day": {
+        "Label": "Dni",
+        "Abbreviation": "d"
+      },
+      "Encounter": {
+        "Label": "Spotkania",
+        "Abbreviation": "spotk.",
+        "Counted": {
+          "narrow": {
+            "one": "{number} spt.",
+            "other": "{number} spt.",
+            "few": "{number} spt.",
+            "many": "{number} spt."
+          },
+          "short": {
+            "one": "{number} spotk.",
+            "other": "{number} spotk.",
+            "few": "{number} spotk.",
+            "many": "{number} spotk."
+          },
+          "long": {
+            "one": "{number} spotkanie",
+            "other": "{number} spotkania",
+            "few": "{number} spotkania",
+            "many": "{number} spotkań"
+          }
+        }
+      },
+      "Hour": {
+        "Label": "Godziny",
+        "Abbreviation": "godz."
+      },
+      "Minute": {
+        "Label": "Minut",
+        "Abbreviation": "m"
+      },
+      "Month": {
+        "Label": "Miesiące",
+        "Abbreviation": "mc"
+      },
+      "Round": {
+        "Label": "Rundy",
+        "Abbreviation": "rnd",
+        "Counted": {
+          "narrow": {
+            "one": "{number} r",
+            "other": "{number} r",
+            "few": "{number} r",
+            "many": "{number} r"
+          },
+          "short": {
+            "one": "{number} rnd",
+            "other": "{number} rnd",
+            "few": "{number} rnd",
+            "many": "{number} rnd"
+          },
+          "long": {
+            "one": "{number} runda",
+            "other": "{number} rund",
+            "few": "{number} rund",
+            "many": "{number} rund"
+          }
+        }
+      },
+      "Turn": {
+        "Label": "Tury",
+        "Abbreviation": "tr",
+        "Counted": {
+          "narrow": {
+            "one": "{number} t",
+            "other": "{number} t",
+            "few": "{number} t",
+            "many": "{number} t"
+          },
+          "short": {
+            "one": "{number} tr",
+            "other": "{number} tr",
+            "few": "{number} tr",
+            "many": "{number} tr"
+          },
+          "long": {
+            "one": "{number} tura",
+            "other": "{number} tur",
+            "few": "{number} tur",
+            "many": "{number} tur"
+          }
+        }
+      },
+      "Year": {
+        "Label": "Lata",
+        "Abbreviation": "r"
+      }
+    },
+    "VOLUME": {
+      "Label": "Jednostki objętości",
+      "CubicFoot": {
+        "Label": "Stopa sześcienna",
+        "Abbreviation": "ft³",
+        "Counted": {
+          "narrow": {
+            "one": "{number}ft³",
+            "other": "{number}ft³",
+            "few": "{number}ft³",
+            "many": "{number}ft³"
+          },
+          "short": {
+            "one": "{number} stopa sześcienna",
+            "other": "{number} stóp sześciennych",
+            "few": "{number} stóp sześciennych",
+            "many": "{number} stóp sześciennych"
+          },
+          "long": {
+            "one": "{number} stopa sześcienna",
+            "other": "{number} stóp sześciennych",
+            "few": "{number} stóp sześciennych",
+            "many": "{number} stóp sześciennych"
+          }
+        }
+      },
+      "Liter": {
+        "Label": "Litr",
+        "Abbreviation": "l"
+      }
+    },
+    "WEIGHT": {
+      "Label": "Jednostka wagi",
+      "Gram": {
+        "Label": "Gram",
+        "Abbreviation": "g"
+      },
+      "Kilogram": {
+        "Label": "Kilogram",
+        "Abbreviation": "kg"
+      },
+      "Metagram": {
+        "Label": "Tony (metryczne)",
+        "Abbreviation": "t",
+        "Counted": {
+          "narrow": {
+            "one": "{number} t",
+            "other": "{number} t",
+            "few": "{number} t",
+            "many": "{number} t"
+          },
+          "short": {
+            "one": "{number} t",
+            "other": "{number} t",
+            "few": "{number} t",
+            "many": "{number} t"
+          },
+          "long": {
+            "one": "{number} tona",
+            "other": "{number} ton",
+            "few": "{number} ton",
+            "many": "{number} ton"
+          }
+        }
+      },
+      "Ounce": {
+        "Label": "Uncje",
+        "Abbreviation": "oz"
+      },
+      "Pound": {
+        "Label": "Funty",
+        "Abbreviation": "lb"
+      },
+      "Ton": {
+        "Label": "Tony (imperialne)",
+        "Abbreviation": "tn",
+        "Counted": {
+          "narrow": {
+            "one": "{number} tn",
+            "other": "{number} tn",
+            "few": "{number} tn",
+            "many": "{number} tn"
+          },
+          "short": {
+            "one": "{number} tn",
+            "other": "{number} tn",
+            "few": "{number} tn",
+            "many": "{number} tn"
+          },
+          "long": {
+            "one": "{number} tona",
+            "other": "{number} ton",
+            "few": "{number} ton",
+            "many": "{number} ton"
+          }
+        }
+      }
+    }
+  },
+  "BF.Uses": {
+    "Label": "Ograniczone ładunki użyć",
+    "Short": "Użycia",
+    "ConsumeQuantity": {
+      "Label": "Ilość do zużycia",
+      "Hint": "Zużyj określoną ilość przedmiotu, gdy liczba użyć spadnie do zera, i zresetuj liczbę użyć do maksymalnej wartości."
+    },
+    "Display": {
+      "Of": "{value} z {max}",
+      "Recovery": "{value} / {period}"
+    },
+    "Limits": {
+      "Label": "Limity"
+    },
+    "Maximum": {
+      "Label": "Formuła maksimum",
+      "DebugName": "Maksymalna ilość użyć"
+    },
+    "Spent": {
+      "Label": "Wykorzystane użycia"
+    }
+  },
+  "BF.UTILITY": {
+    "Title": "Użycie",
+    "Hint": "Wykonaj ogólną akcję.",
+    "FIELDS": {
+      "roll": {
+        "label": "Rzut",
+        "formula": {
+          "label": "Formuła rzutu",
+          "hint": "Formuła na dowolny rzut."
+        },
+        "name": {
+          "label": "Etykieta rzutu",
+          "hint": "Wyświetlana nazwa przycisku rzutu."
+        },
+        "prompt": {
+          "label": "Monit o rzut",
+          "hint": "Wyświetl okno dialogowe konfiguracji rzutu podczas wykonywania rzutu."
+        },
+        "visible": {
+          "label": "Widoczny dla wszystkich",
+          "hint": "Wyświetl przycisk rzutu na czacie dla wszystkich graczy."
+        }
+      }
+    }
+  },
+  "BF.VEHICLE": {
+    "Label[one]": "Pojazd",
+    "Label[other]": "Pojazdy",
+    "Action": {
+      "CheckGeneric": "Test pojazdu",
+      "CheckSpecific": "Test: {vehicle}"
+    },
+    "ArmorClassThreshold": "{ac} (próg obrażeń {threshold})",
+    "Category": {
+      "Air[one]": "Statek powietrzny",
+      "Air[other]": "Statki powietrzne",
+      "Land[one]": "Pojazd lądowy",
+      "Land[other]": "Pojazdy lądowe",
+      "Water[one]": "Statek wodny",
+      "Water[other]": "Statki wodne"
+    },
+    "Dimensions": "{length} na {width}",
+    "FIELDS": {
+      "attributes": {
+        "cargo": {
+          "label": "Ładunek",
+          "max": {
+            "label": "Pojemność ładunkowa"
+          },
+          "unit": {
+            "label": "Jednostka ładunkowa"
+          }
+        },
+        "crew": {
+          "label": "Załoga",
+          "required": {
+            "label": "Wymagana załoga"
+          }
+        },
+        "passengers": {
+          "label": "Pasażerowie",
+          "max": {
+            "label": "Liczba miejsc pasażerskich"
+          }
+        }
+      },
+      "traits": {
+        "dimensions": {
+          "label": "Wymiary",
+          "length": {
+            "label": "Długość"
+          },
+          "unit": {
+            "label": "Jednostka"
+          },
+          "width": {
+            "label": "Szerokość"
+          }
+        },
+        "size": {
+          "label": "Rozmiar"
+        },
+        "type": {
+          "value": {
+            "label": "Rodzaj pojazdu"
+          }
+        }
+      }
+    },
+    "FormattedPace": "{speed}, {perHour} ({perDay})",
+    "Listed": "Wymienione pojazdy"
+  },
+  "BF.Version": {
+    "Label": "Wersja {version} {type}, Build {build}",
+    "Alpha": "Alpha",
+    "Beta": "Beta",
+    "Release": "Wydanie"
+  },
+  "BF.Vulnerability": {
+    "Label": "Podatności",
+    "Abbreviation": "Pod",
+    "Short": "Podatność"
+  },
+  "BF.Volume": {
+    "Label": "Objętość"
+  },
+  "BF.WEAPON": {
+    "Base": {
+      "Arquebus": "Arkebuz",
+      "Battleaxe": "Topór bojowy",
+      "Blowgun": "Dmuchawka",
+      "Blunderbuss": "Garłacz",
+      "Club": "Pałka",
+      "CrossbowHand": "Kusza, ręczna",
+      "CrossbowHeavy": "Kusza, ciężka",
+      "CrossbowLight": "Kusza, lekka",
+      "Dagger": "Sztylet",
+      "Dart": "Strzałka",
+      "Flail": "Kiścień",
+      "Glaive": "Glewia",
+      "Greataxe": "Topór dwuręczny",
+      "Greatclub": "Maczuga",
+      "Greatsword": "Miecz dwuręczny",
+      "Halberd": "Halabarda",
+      "Handaxe": "Toporek",
+      "Javelin": "Oszczep",
+      "Lance": "Lanca",
+      "LightHammer": "Lekki młot",
+      "Longbow": "Długi łuk",
+      "Longsword": "Długi miecz",
+      "Mace": "Buława",
+      "Maul": "Młot dwuręczny",
+      "Morningstar": "Morgensztern",
+      "Musket": "Muszkiet",
+      "Pike": "Pika",
+      "Pistol": "Pistolet",
+      "Quarterstaff": "Kostur",
+      "Rapier": "Rapier",
+      "RevolvingMusket": "Muszkiet obrotowy",
+      "Scimitar": "Sejmitar",
+      "Scythe": "Kosa",
+      "Shortbow": "Krótki łuk",
+      "Shortsword": "Krótki miecz",
+      "Sickle": "Sierp",
+      "Sling": "Proca",
+      "Spear": "Włócznia",
+      "Trident": "Trójząb",
+      "WarPick": "Nadziak",
+      "Warhammer": "Młot bojowy",
+      "Whip": "Bicz"
+    },
+    "Category": {
+      "Simple": "Proste",
+      "Simple[one]": "Broń prosta",
+      "Simple[other]": "Bronie proste",
+      "Martial": "Żołnierskie",
+      "Martial[one]": "Broń żołnierska",
+      "Martial[other]": "Bronie żołnierske",
+      "Natural": "Natualna (atak wręcz)",
+      "Natural[one]": "Broń naturalna",
+      "Natural[other]": "Bronie naturalne"
+    },
+    "Details": "Szczegóły broni",
+    "FIELDS": {
+      "ammunition": {
+        "label": "Amunicja",
+        "capacity": {
+          "label": "Pojemność magazynka"
+        },
+        "type": {
+          "label": "Rodzaj amunicji"
+        }
+      },
+      "damage": {
+        "label": "Obrażenia"
+      },
+      "magicalBonus": {
+        "hint": "Do ataku i obrażeń dodano premię magiczną.",
+        "label": "Premia magiczna"
+      },
+      "options": {
+        "label": "Opcje broni"
+      },
+      "range": {
+        "label": "Zasięg",
+        "long": {
+          "label": "Daleki Zasięg"
+        },
+        "reach": {
+          "label": "Dalekosiężna"
+        },
+        "short": {
+          "label": "Krótki Zasięg"
+        },
+        "unit": {
+          "label": "Jednostka zasięgu"
+        }
+      }
+    },
+    "Label[one]": "Broń",
+    "Label[other]": "Bronie",
+    "MagicalBonus": {
+      "Label": "Premia magiczna",
+      "Hint": "Do ataku i obrażeń dodano premię magiczną."
+    },
+    "Option": {
+      "Label[one]": "Opcja broni",
+      "Label[other]": "Opcje broni",
+      "Bash": "Walnięcie",
+      "Disarm": "Rozbrojenie",
+      "Hamstring": "Krępowanie",
+      "HarmlessFusillade": "Nieszkodliwa salwa",
+      "PinningShot": "Strzał przyszpilający",
+      "Pull": "Ciągnięcie",
+      "RicochetShot": "Strzał rykoszetowy",
+      "Trip": "Podcięcie"
+    },
+    "Property": {
+      "Ammunition": "Amunicja",
+      "Finesse": "Finezyjna",
+      "Gunpowder": "Proch strzelniczy",
+      "Heavy": "Ciężka",
+      "Light": "Lekka",
+      "Loading": "Ładowanie",
+      "Magazine": "Magazynek",
+      "Reach": "Dalekosiężna",
+      "Thrown": "Rzucana",
+      "TwoHanded": "Dwuręczna",
+      "Versatile": "Półtoraręczna"
+    },
+    "Type": {
+      "Label": "Typ",
+      "CombinedLabel[one]": "Broń {category} {type}",
+      "CombinedLabel[other]": "Bronie {category} {type}",
+      "Melee": "Wręcz",
+      "Ranged": "Dystansowa"
+    }
+  },
+  "BF.Weight": {
+    "Label": "Waga",
+    "Unit": {
+      "Pound": {
+        "Label[one]": "Funt",
+        "Label[other]": "Funty"
+      },
+      "Ounce": {
+        "Label[one]": "Uncja",
+        "Label[other]": "Uncje"
+      },
+      "Ton": {
+        "Label[one]": "Tona",
+        "Label[other]": "Tony (imperialne)"
+      }
+    }
+  },
+  "BF.WELCOME": {
+    "Button": "Przewodnik powitalny",
+    "Documentation": "Dokumentacja dotycząca Black Flag",
+    "Message": {
+      "Bugs": "Znalazłeś jakieś błędy? Zgłoś je na <a href=\"https://support.koboldpress.com\">stronie pomocy technicznej Kobold Press</a> lub w <a href=\"https://github.com/koboldpress/black-flag/issues\">systemie śledzenia błędów</a>.",
+      "Content": "Przejdź do zakładki <strong>Oficjalne materiały</strong>, aby sprawdzić, jakie materiały oferuje wydawnictwo Kobold Press, które pozwolą Ci jeszcze bardziej wzbogacić swoje wrażenia z gry.",
+      "Documentation": "Zapoznaj się z <a href=\"https://koboldpress.github.io/black-flag-docs/\">dokumentacją</a>, aby uzyskać wskazówki dotyczące korzystania z systemu.",
+      "Introduction": "<p>Witamy w <strong>grze fabularnej „Black Flag”</strong> – systemie zgodnym z 5. edycją, na którym opiera się gra fabularna wydawnictwa Kobold Press <strong>Tales of the Valiant</strong>.</p>"
+    },
+    "Module": {
+      "Enabled": "Włączony",
+      "NotInstalled": "Nie zainstalowano"
+    },
+    "SECTION": {
+      "Adventures": "Przygody",
+      "Core": "Główna zawartość",
+      "Main": "Witamy",
+      "Modules": "Oficjalne materiały"
+    },
+    "Title": "Witamy w grze fabularnej Black Flag!"
+  },
+  "DOCUMENT.BF": {
+    "Activity": "Aktywność",
+    "Advancement": "Awans"
+  },
+  "EFFECT.BF": {
+    "Bleeding": "Krwawienie",
+    "Burning": "Palący się",
+    "Burrowing": "Ryjący",
+    "Concentrating": "Skoncentrowany",
+    "Cursed": "Przeklęty",
+    "Dehydration": "Odwodnienie",
+    "Dodging": "Unikający",
+    "Diseased": "Chory",
+    "Encumbered": "Obciążony",
+    "Ethereal": "Eteryczny",
+    "ExceedingCarryingCapacity": "Przekroczenie nośności",
+    "Falling": "Spadający",
+    "Flying": "Latający",
+    "HalfCover": "Połowa osłony",
+    "HeavilyEncumbered": "Mocno obciążony",
+    "Hiding": "Ukrywający się",
+    "Hovering": "Unoszący się",
+    "Malnutrition": "Niedożywienie",
+    "Marked": "Naznaczony",
+    "Sleeping": "Śpiący",
+    "Silenced": "Wyciszony",
+    "Stable": "Stabilny",
+    "Suffocation": "Duszenie",
+    "ThreeQuartersCover": "Osłona na trzy czwarte",
+    "TotalCover": "Osłona całkowita",
+    "Transformed": "Przekształcony"
+  },
+  "TYPES": {
+    "ActiveEffect": {
+      "base": "Efekt",
+      "enchantment": "Zaklinanie"
+    },
+    "Actor": {
+      "lair": "Leże",
+      "npc": "Postać NPC",
+      "pc": "Postać gracza",
+      "siege": "Broń oblężnicza",
+      "vehicle": "Pojazd"
+    },
+    "ChatMessage": {
+      "activation": "Komunikat o aktywacji",
+      "rest": "Komunikat o odpoczynku",
+      "turn": "Komunikat o turze walki"
+    },
+    "HINTS": {
+      "ActiveEffect": {
+        "base": "Standardowy aktywny efekt, który może nakładać zmiany lub stany na postać.",
+        "enchantment": "Efekt, który stosuje swoje zmiany do przedmiotu, a nie do postaci."
+      },
+      "JournalEntryPage": {
+        "class": "Wyświetl podsumowanie pojedynczej klasy wraz z opcjonalnymi podsumowaniami listy podklas.",
+        "map": "Opisz miejsce na mapie za pomocą specjalnego kodu wyświetlanego w pasku bocznym oraz za pomocą specjalnego znacznika na mapie.",
+        "rule": "Opisz regułę systemową z opcjonalną podpowiedzią wyświetlaną po najechaniu kursorem na narzędzie wzbogacające odniesienia.",
+        "spellList": "Wyświetl listę zaklęć z różnymi opcjami grupowania.",
+        "subclass": "Wyświetl podsumowanie pojedynczej podklasy."
+      },
+      "RegionBehavior": {
+        "black-flag.difficultTerrain": "Oznacz region jako trudny teren, ustaw jego rodzaj i na kogo ma wypływ."
+      }
+    },
+    "Item": {
+      "ammunition": "Amunicja",
+      "armor": "Pancerz",
+      "background": "Przeszłość",
+      "consumable": "Materiał eksploatacyjny",
+      "container": "Pojemnik",
+      "class": "Klasa",
+      "currency": "Waluta",
+      "feature": "Zdolność",
+      "gear": "Wyposażenie",
+      "heritage": "Dziedzictwo",
+      "lineage": "Pochodzenie",
+      "spell": "Zaklęcie",
+      "subclass": "Podklasa",
+      "sundry": "Różne",
+      "talent": "Talent",
+      "tool": "Narzędzie",
+      "weapon": "Broń"
+    },
+    "JournalEntryPage": {
+      "class": "Podsumowanie klasy",
+      "map": "Lokalizacja na mapie",
+      "rule": "Zasada",
+      "spellList": "Lista zaklęć",
+      "subclass": "Podsumowanie podklasy"
+    },
+    "RegionBehavior": {
+      "black-flag.difficultTerrain": "Trudny teren"
+    }
+  }
+}
