@@ -4864,7 +4864,7 @@
       "CombinedLabel[one]": "Broń {category} {type}",
       "CombinedLabel[other]": "Bronie {category} {type}",
       "Melee": "Wręcz",
-      "Ranged": "Dystansowa"
+      "Ranged": "Dystansowy"
     }
   },
   "BF.Weight": {
