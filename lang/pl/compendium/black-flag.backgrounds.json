@@ -1,0 +1,180 @@
+{
+    "label": "Przeszłości (SRD)",
+    "mapping": {
+        "description": "system.description.value",
+        "short": "system.description.short",
+        "requirements": "system.requirements",
+        "materials": "system.materials.value",
+        "chat": "system.description.chat",
+        "activation": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "activities": {
+            "path": "system.activities",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "name",
+                "type"
+            ],
+            "mapping": {
+                "name": "name",
+                "description": "description",
+                "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
+                "duration": "duration.special",
+                "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
+                "range": {
+                    "path": "range",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "target",
+                    "converter": "imperialToMetric"
+                },
+                "profiles": {
+                    "path": "profiles",
+                    "converter": "nameCollection"
+                }
+            }
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "advancement": {
+            "path": "system.advancement",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "title"
+            ],
+            "mapping": {
+                "title": "title",
+                "hint": "hint",
+                "_variants": [
+                    {
+                        "_when": {
+                            "path": "type",
+                            "equals": "ScaleValue"
+                        },
+                        "distance": {
+                            "path": "configuration.distance",
+                            "converter": "imperialToMetric"
+                        },
+                        "scale": {
+                            "path": "configuration.scale",
+                            "converter": "imperialToMetric"
+                        }
+                    }
+                ]
+            }
+        },
+        "movement": {
+            "path": "system.movement",
+            "converter": "imperialToMetric"
+        },
+        "weight": {
+            "path": "system.weight",
+            "converter": "imperialToMetric"
+        },
+        "range": {
+            "path": "system.range",
+            "converter": "imperialToMetric"
+        },
+        "capacityWeight": {
+            "path": "system.capacity.weight",
+            "converter": "imperialToMetric"
+        },
+        "senses": {
+            "path": "system.senses",
+            "converter": "imperialToMetric"
+        },
+        "target": {
+            "path": "system.target",
+            "converter": "imperialToMetric"
+        },
+        "volume": {
+            "path": "system.capacity.volume",
+            "converter": "imperialToMetric"
+        }
+    },
+    "entries": {
+        "Criminal": {
+            "name": "Przestępca",
+            "description": "<p>@Embed[.Advancement.S0mJoNomg3fwsPh9 inline]{Biegłości w umiejętnościach}</p><p>@Embed[.Advancement.uhDnJGd03n5tf8QI inline]{Dodatkowe biegłości}</p><p>@Embed[.Advancement.DeHsdenX3W8whQNx inline]{Wyposażenie}</p><h5>Talent</h5><p>@Embed[.Advancement.f5eehJFY4H9AkMBJ inline list=false]</p>",
+            "advancement": {
+                "Skill Proficiencies": {
+                    "title": "Biegłości w umiejętnościach",
+                    "hint": "Wybierz dwie z następujących umiejętności: Skradanie się, Śledztwo, Intuicja lub Oszustwo."
+                },
+                "Additional Proficiencies": {
+                    "title": "Dodatkowe biegłości",
+                    "hint": "Znasz Grypserę. Jeśli znasz już ten język, uczysz się innego języka według własnego uznania. Zyskujesz biegłość w posługiwaniu się narzędziami i pojazdem."
+                },
+                "Talent": {
+                    "title": "Talent",
+                    "hint": "Zarabiałeś na życie na marginesie legalnego społeczeństwa. Wybierz jeden z poniższych talentów, który odzwierciedla twoje doświadczenie: Przykrywka, Wnikliwość lub Dotyk szczęścia."
+                },
+                "DeHsdenX3W8whQNx": {
+                    "hint": "Pięć sztuk kredy, hak wspinaczkowy, komplet ciemnych ubrań podróżnych lub kostium oraz woreczek zawierający 10 sztuk złota."
+                }
+            }
+        },
+        "Scholar": {
+            "name": "Uczony",
+            "description": "<p>@Embed[.Advancement.pEYskJJdpwVHJhJi inline]{Biegłości w umiejętnościach}</p><p>@Embed[.Advancement.3Qnb0oAVdHBgsK8t inline]{Dodatkowe biegłości}</p><p>@Embed[.Advancement.siKPfdbIxGakSmTN inline]{Wyposażenie}</p><h5>Talent</h5><p>@Embed[.Advancement.8jc0KWnsuX1WvfdT inline list=false]</p>",
+            "advancement": {
+                "Skill Proficiencies": {
+                    "title": "Biegłości w umiejętnościach",
+                    "hint": "Wybierz dwie z następujących umiejętności: Wiedza tajemna, Historia, Przyroda lub Religia."
+                },
+                "Additional Proficiencies": {
+                    "title": "Dodatkowe biegłości",
+                    "hint": "Naucz się dwóch dodatkowych języków według własnego uznania lub opanuj obsługę narzędzia lub pojazdu związanego z kierunkiem studiów."
+                },
+                "Talent": {
+                    "title": "Talent",
+                    "hint": "Poświęciłeś czas na zgłębianie konkretnych przedmiotów akademickich w instytucji edukacyjnej lub pod okiem doświadczonego nauczyciela. Wybierz jeden z poniższych talentów, który odzwierciedla twoje doświadczenie: Poliglota, Rytualista lub Specjalizacja szkoły."
+                },
+                "siKPfdbIxGakSmTN": {
+                    "hint": "Butelka atramentu, gęsie pióro, mały nożyk, podręcznik poświęcony bardzo wąskiej tematyce, komplet zwykłych ubrań oraz woreczek zawierający 10 sz."
+                }
+            }
+        },
+        "Soldier": {
+            "name": "Żołnierz",
+            "description": "<p>@Embed[.Advancement.LU90CIyYZNPt2LMv inline]{Biegłości w umiejętnościach}</p><p>@Embed[.Advancement.q8kgh3KDjxCpXcH5 inline]{Dodatkowe biegłości}</p><p>@Embed[.Advancement.zDKJ2aoVzMQ2mlu1 inline]{Wyposażenie}</p><h5>Talent</h5><p>@Embed[.Advancement.zyeIe2LttZsNCm3U inline list=false]</p>",
+            "advancement": {
+                "Skill Proficiencies": {
+                    "title": "Biegłości w umiejętnościach",
+                    "hint": "Wybierz dwie z następujących umiejętności: Opieka nad zwierzętami, Atletyka, Medycyna lub Sztuka przetrwania."
+                },
+                "Additional Proficiencies": {
+                    "title": "Dodatkowe biegłości",
+                    "hint": "Zdobądź biegłość w posługiwaniu się wybranym narzędziem i pojazdem."
+                },
+                "Talent": {
+                    "title": "Talent",
+                    "hint": "Jako żołnierz przeszedłeś specjalne szkolenie lub doskonaliłeś swoje naturalne zdolności, dzięki czemu byłeś bezpieczny podczas służby. Wybierz jeden z poniższych talentów, który odzwierciedla to doświadczenie."
+                },
+                "zDKJ2aoVzMQ2mlu1": {
+                    "hint": "Symbol stopnia (np. litera, naszywka lub plakietka identyfikacyjna), zestaw żywnościowy, talia kart do gry lub zestaw kości do gry, komplet zwykłej odzieży oraz woreczek zawierający 10 sz."
+                }
+            }
+        },
+        "Symbol of Rank": {
+            "name": "Symbol stopnia",
+            "description": "<p>Na przykład list, odznaka lub plakietki identyfikacyjne.</p>"
+        }
+    },
+    "folders": {
+        "Equipment": "Wyposażenie"
+    }
+}
