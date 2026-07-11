@@ -1933,7 +1933,7 @@
     },
     "Damage": {
       "Double": "{first} plus {second}",
-      "Extended": "<em>Trafienie:</em> {damage} obrażeń",
+      "Extended": "<em>Trafienie:</em> {damage} obrażenia",
       "Long": "{average} ({formula}) {type}",
       "Short": "{formula} {type}"
     },
