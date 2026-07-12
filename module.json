@@ -13,6 +13,7 @@
     "babele-register.js"
   ],
   "styles": [
+    "styles/black-flag-pl.css"
   ],
   "relationships": {
     "systems": [
