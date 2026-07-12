@@ -1933,7 +1933,7 @@
     },
     "Damage": {
       "Double": "{first} plus {second}",
-      "Extended": "<em>Trafienie:</em> {damage} obrażeń",
+      "Extended": "<em>Trafienie:</em> {damage} obrażenia",
       "Long": "{average} ({formula}) {type}",
       "Short": "{formula} {type}"
     },
@@ -3655,7 +3655,7 @@
       "NotPrepared": "Nieprzygotowany",
       "Mode": {
         "AtWill": "Do woli",
-        "Innate": "Wrodzony",
+        "Innate": "Wrodzone",
         "Pact": "Pakt",
         "Rituals": "Rytuały",
         "Standard": "Standardowy"
@@ -4781,7 +4781,7 @@
       "Whip": "Bicz"
     },
     "Category": {
-      "Simple": "Proste",
+      "Simple": "Prosta",
       "Simple[one]": "Broń prosta",
       "Simple[other]": "Bronie proste",
       "Martial": "Żołnierskie",
@@ -4864,7 +4864,7 @@
       "CombinedLabel[one]": "Broń {category} {type}",
       "CombinedLabel[other]": "Bronie {category} {type}",
       "Melee": "Wręcz",
-      "Ranged": "Dystansowa"
+      "Ranged": "Dystansowy"
     }
   },
   "BF.Weight": {
